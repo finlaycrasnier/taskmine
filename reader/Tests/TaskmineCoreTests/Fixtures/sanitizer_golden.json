@@ -1,0 +1,6736 @@
+{
+ "schema": "acmeflo.sanitizer_golden.v1",
+ "sanitizer_version": 2,
+ "min_supported_version": 2,
+ "cases": [
+  {
+   "id": "composition_fragment_0_0_text",
+   "kind": "text",
+   "input_parts": [
+    "",
+    "Password = ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\" \"",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_0_0_title",
+   "kind": "title",
+   "input_parts": [
+    "",
+    "Password = ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\" \"",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_0_1_text",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "Password = ",
+    "'",
+    "fixtureHead",
+    "42",
+    "' + '",
+    "fixtureTail",
+    "43!",
+    "'"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_0_1_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "Password = ",
+    "'",
+    "fixtureHead",
+    "42",
+    "' + '",
+    "fixtureTail",
+    "43!",
+    "'"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_0_2_text",
+   "kind": "text",
+   "input_parts": [
+    "TOKEN=None; ",
+    "Password = ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\"\n\"",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_0_2_title",
+   "kind": "title",
+   "input_parts": [
+    "TOKEN=None; ",
+    "Password = ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\"\n\"",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_0_3_text",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=\"[redacted]\" ",
+    "Password = ",
+    "\"[redacted]\" \"",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_0_3_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=\"[redacted]\" ",
+    "Password = ",
+    "\"[redacted]\" \"",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_0_4_text",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=os.environ[\"DEMO\"] ",
+    "Password = ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\" nearby ",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_0_4_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=os.environ[\"DEMO\"] ",
+    "Password = ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\" nearby ",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_0_5_text",
+   "kind": "text",
+   "input_parts": [
+    "",
+    "Password = ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\"}",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_0_5_title",
+   "kind": "title",
+   "input_parts": [
+    "",
+    "Password = ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\"}",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_1_0_text",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "Password: ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\" \"",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_1_0_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "Password: ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\" \"",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_1_1_text",
+   "kind": "text",
+   "input_parts": [
+    "TOKEN=None; ",
+    "Password: ",
+    "'",
+    "fixtureHead",
+    "42",
+    "' + '",
+    "fixtureTail",
+    "43!",
+    "'"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_1_1_title",
+   "kind": "title",
+   "input_parts": [
+    "TOKEN=None; ",
+    "Password: ",
+    "'",
+    "fixtureHead",
+    "42",
+    "' + '",
+    "fixtureTail",
+    "43!",
+    "'"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_1_2_text",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=\"[redacted]\" ",
+    "Password: ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\"\n\"",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_1_2_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=\"[redacted]\" ",
+    "Password: ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\"\n\"",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_1_3_text",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=os.environ[\"DEMO\"] ",
+    "Password: ",
+    "\"[redacted]\" \"",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_1_3_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=os.environ[\"DEMO\"] ",
+    "Password: ",
+    "\"[redacted]\" \"",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_1_4_text",
+   "kind": "text",
+   "input_parts": [
+    "",
+    "Password: ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\" nearby ",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_1_4_title",
+   "kind": "title",
+   "input_parts": [
+    "",
+    "Password: ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\" nearby ",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_1_5_text",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "Password: ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\"}",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_1_5_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "Password: ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\"}",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_2_0_text",
+   "kind": "text",
+   "input_parts": [
+    "TOKEN=None; ",
+    "Password:= ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\" \"",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_2_0_title",
+   "kind": "title",
+   "input_parts": [
+    "TOKEN=None; ",
+    "Password:= ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\" \"",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_2_1_text",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=\"[redacted]\" ",
+    "Password:= ",
+    "'",
+    "fixtureHead",
+    "42",
+    "' + '",
+    "fixtureTail",
+    "43!",
+    "'"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_2_1_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=\"[redacted]\" ",
+    "Password:= ",
+    "'",
+    "fixtureHead",
+    "42",
+    "' + '",
+    "fixtureTail",
+    "43!",
+    "'"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_2_2_text",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=os.environ[\"DEMO\"] ",
+    "Password:= ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\"\n\"",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_2_2_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=os.environ[\"DEMO\"] ",
+    "Password:= ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\"\n\"",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_2_3_text",
+   "kind": "text",
+   "input_parts": [
+    "",
+    "Password:= ",
+    "\"[redacted]\" \"",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_2_3_title",
+   "kind": "title",
+   "input_parts": [
+    "",
+    "Password:= ",
+    "\"[redacted]\" \"",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_2_4_text",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "Password:= ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\" nearby ",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_2_4_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "Password:= ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\" nearby ",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_2_5_text",
+   "kind": "text",
+   "input_parts": [
+    "TOKEN=None; ",
+    "Password:= ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\"}",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_2_5_title",
+   "kind": "title",
+   "input_parts": [
+    "TOKEN=None; ",
+    "Password:= ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\"}",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_3_0_text",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=\"[redacted]\" ",
+    "Password=> ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\" \"",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_3_0_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=\"[redacted]\" ",
+    "Password=> ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\" \"",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_3_1_text",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=os.environ[\"DEMO\"] ",
+    "Password=> ",
+    "'",
+    "fixtureHead",
+    "42",
+    "' + '",
+    "fixtureTail",
+    "43!",
+    "'"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_3_1_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=os.environ[\"DEMO\"] ",
+    "Password=> ",
+    "'",
+    "fixtureHead",
+    "42",
+    "' + '",
+    "fixtureTail",
+    "43!",
+    "'"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_3_2_text",
+   "kind": "text",
+   "input_parts": [
+    "",
+    "Password=> ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\"\n\"",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_3_2_title",
+   "kind": "title",
+   "input_parts": [
+    "",
+    "Password=> ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\"\n\"",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_3_3_text",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "Password=> ",
+    "\"[redacted]\" \"",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_3_3_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "Password=> ",
+    "\"[redacted]\" \"",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_3_4_text",
+   "kind": "text",
+   "input_parts": [
+    "TOKEN=None; ",
+    "Password=> ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\" nearby ",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_3_4_title",
+   "kind": "title",
+   "input_parts": [
+    "TOKEN=None; ",
+    "Password=> ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\" nearby ",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_3_5_text",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=\"[redacted]\" ",
+    "Password=> ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\"}",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_3_5_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=\"[redacted]\" ",
+    "Password=> ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\"}",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_4_0_text",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=os.environ[\"DEMO\"] ",
+    "Password is ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\" \"",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_4_0_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=os.environ[\"DEMO\"] ",
+    "Password is ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\" \"",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_4_1_text",
+   "kind": "text",
+   "input_parts": [
+    "",
+    "Password is ",
+    "'",
+    "fixtureHead",
+    "42",
+    "' + '",
+    "fixtureTail",
+    "43!",
+    "'"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_4_1_title",
+   "kind": "title",
+   "input_parts": [
+    "",
+    "Password is ",
+    "'",
+    "fixtureHead",
+    "42",
+    "' + '",
+    "fixtureTail",
+    "43!",
+    "'"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_4_2_text",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "Password is ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\"\n\"",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_4_2_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "Password is ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\"\n\"",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_4_3_text",
+   "kind": "text",
+   "input_parts": [
+    "TOKEN=None; ",
+    "Password is ",
+    "\"[redacted]\" \"",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_4_3_title",
+   "kind": "title",
+   "input_parts": [
+    "TOKEN=None; ",
+    "Password is ",
+    "\"[redacted]\" \"",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_4_4_text",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=\"[redacted]\" ",
+    "Password is ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\" nearby ",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_4_4_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=\"[redacted]\" ",
+    "Password is ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\" nearby ",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_4_5_text",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=os.environ[\"DEMO\"] ",
+    "Password is ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\"}",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_4_5_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=os.environ[\"DEMO\"] ",
+    "Password is ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\"}",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_5_0_text",
+   "kind": "text",
+   "input_parts": [
+    "",
+    "Password was ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\" \"",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_5_0_title",
+   "kind": "title",
+   "input_parts": [
+    "",
+    "Password was ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\" \"",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_5_1_text",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "Password was ",
+    "'",
+    "fixtureHead",
+    "42",
+    "' + '",
+    "fixtureTail",
+    "43!",
+    "'"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_5_1_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "Password was ",
+    "'",
+    "fixtureHead",
+    "42",
+    "' + '",
+    "fixtureTail",
+    "43!",
+    "'"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_5_2_text",
+   "kind": "text",
+   "input_parts": [
+    "TOKEN=None; ",
+    "Password was ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\"\n\"",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_5_2_title",
+   "kind": "title",
+   "input_parts": [
+    "TOKEN=None; ",
+    "Password was ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\"\n\"",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_5_3_text",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=\"[redacted]\" ",
+    "Password was ",
+    "\"[redacted]\" \"",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_5_3_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=\"[redacted]\" ",
+    "Password was ",
+    "\"[redacted]\" \"",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_5_4_text",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=os.environ[\"DEMO\"] ",
+    "Password was ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\" nearby ",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_5_4_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=os.environ[\"DEMO\"] ",
+    "Password was ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\" nearby ",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_5_5_text",
+   "kind": "text",
+   "input_parts": [
+    "",
+    "Password was ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\"}",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_5_5_title",
+   "kind": "title",
+   "input_parts": [
+    "",
+    "Password was ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\"}",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_6_0_text",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "--password ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\" \"",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_6_0_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "--password ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\" \"",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_6_1_text",
+   "kind": "text",
+   "input_parts": [
+    "TOKEN=None; ",
+    "--password ",
+    "'",
+    "fixtureHead",
+    "42",
+    "' + '",
+    "fixtureTail",
+    "43!",
+    "'"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_6_1_title",
+   "kind": "title",
+   "input_parts": [
+    "TOKEN=None; ",
+    "--password ",
+    "'",
+    "fixtureHead",
+    "42",
+    "' + '",
+    "fixtureTail",
+    "43!",
+    "'"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_6_2_text",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=\"[redacted]\" ",
+    "--password ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\"\n\"",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_6_2_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=\"[redacted]\" ",
+    "--password ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\"\n\"",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_6_3_text",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=os.environ[\"DEMO\"] ",
+    "--password ",
+    "\"[redacted]\" \"",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_6_3_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=os.environ[\"DEMO\"] ",
+    "--password ",
+    "\"[redacted]\" \"",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_6_4_text",
+   "kind": "text",
+   "input_parts": [
+    "",
+    "--password ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\" nearby ",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_6_4_title",
+   "kind": "title",
+   "input_parts": [
+    "",
+    "--password ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\" nearby ",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_6_5_text",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "--password ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\"}",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_6_5_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "--password ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\"}",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_7_0_text",
+   "kind": "text",
+   "input_parts": [
+    "TOKEN=None; ",
+    "-api-key ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\" \"",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_7_0_title",
+   "kind": "title",
+   "input_parts": [
+    "TOKEN=None; ",
+    "-api-key ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\" \"",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_7_1_text",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=\"[redacted]\" ",
+    "-api-key ",
+    "'",
+    "fixtureHead",
+    "42",
+    "' + '",
+    "fixtureTail",
+    "43!",
+    "'"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_7_1_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=\"[redacted]\" ",
+    "-api-key ",
+    "'",
+    "fixtureHead",
+    "42",
+    "' + '",
+    "fixtureTail",
+    "43!",
+    "'"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_7_2_text",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=os.environ[\"DEMO\"] ",
+    "-api-key ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\"\n\"",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_7_2_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=os.environ[\"DEMO\"] ",
+    "-api-key ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\"\n\"",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_7_3_text",
+   "kind": "text",
+   "input_parts": [
+    "",
+    "-api-key ",
+    "\"[redacted]\" \"",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_7_3_title",
+   "kind": "title",
+   "input_parts": [
+    "",
+    "-api-key ",
+    "\"[redacted]\" \"",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_7_4_text",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "-api-key ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\" nearby ",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_7_4_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "-api-key ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\" nearby ",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_7_5_text",
+   "kind": "text",
+   "input_parts": [
+    "TOKEN=None; ",
+    "-api-key ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\"}",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_fragment_7_5_title",
+   "kind": "title",
+   "input_parts": [
+    "TOKEN=None; ",
+    "-api-key ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\"}",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_span_0_0",
+   "kind": "text",
+   "input_parts": [
+    "Password: ",
+    "fixtureHead",
+    "42",
+    ",",
+    "fixtureTail",
+    "43!",
+    " psql"
+   ],
+   "output": "Password: [redacted]"
+  },
+  {
+   "id": "composition_span_0_0_title",
+   "kind": "title",
+   "input_parts": [
+    "Password: ",
+    "fixtureHead",
+    "42",
+    ",",
+    "fixtureTail",
+    "43!",
+    " psql"
+   ],
+   "output": "Password: [redacted]"
+  },
+  {
+   "id": "composition_span_0_1",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "Password: ",
+    "fixtureHead",
+    "42",
+    ";",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "API_KEY=[redacted] Password: [redacted]"
+  },
+  {
+   "id": "composition_span_0_1_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "Password: ",
+    "fixtureHead",
+    "42",
+    ";",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "API_KEY=[redacted] Password: [redacted]"
+  },
+  {
+   "id": "composition_span_0_2",
+   "kind": "text",
+   "input_parts": [
+    "TOKEN=None; ",
+    "Password: ",
+    "fixtureHead",
+    "42",
+    "&",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "TOKEN=None; Password: [redacted]"
+  },
+  {
+   "id": "composition_span_0_2_title",
+   "kind": "title",
+   "input_parts": [
+    "TOKEN=None; ",
+    "Password: ",
+    "fixtureHead",
+    "42",
+    "&",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "TOKEN=None; Password: [redacted]"
+  },
+  {
+   "id": "composition_span_0_3",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\" ",
+    "Password: ",
+    "fixtureHead",
+    "42",
+    "-",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "API_KEY=\"[redacted]\" Password: [redacted]"
+  },
+  {
+   "id": "composition_span_0_3_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\" ",
+    "Password: ",
+    "fixtureHead",
+    "42",
+    "-",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "API_KEY=\"[redacted]\" Password: [redacted]"
+  },
+  {
+   "id": "composition_span_0_4",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    " ",
+    "Password: ",
+    "\"",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": "API_KEY=[redacted] Password: \"[redacted]\""
+  },
+  {
+   "id": "composition_span_0_4_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    " ",
+    "Password: ",
+    "\"",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": "API_KEY=[redacted] Password: \"[redacted]\""
+  },
+  {
+   "id": "composition_span_0_5",
+   "kind": "text",
+   "input_parts": [
+    "Password: ",
+    "'",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!",
+    "'"
+   ],
+   "output": "Password: '[redacted]'"
+  },
+  {
+   "id": "composition_span_0_5_title",
+   "kind": "title",
+   "input_parts": [
+    "Password: ",
+    "'",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!",
+    "'"
+   ],
+   "output": "Password: '[redacted]'"
+  },
+  {
+   "id": "composition_span_0_6",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "Password: ",
+    "\"",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_span_0_6_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "Password: ",
+    "\"",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_span_0_7",
+   "kind": "text",
+   "input_parts": [
+    "TOKEN=None; ",
+    "Password: ",
+    "'",
+    "fixtureHead",
+    "42",
+    "\n",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_span_0_7_title",
+   "kind": "title",
+   "input_parts": [
+    "TOKEN=None; ",
+    "Password: ",
+    "'",
+    "fixtureHead",
+    "42",
+    "\n",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_span_0_8",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\" ",
+    "Password: ",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "API_KEY=\"[redacted]\" Password: [redacted]"
+  },
+  {
+   "id": "composition_span_0_8_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\" ",
+    "Password: ",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "API_KEY=\"[redacted]\" Password: [redacted]"
+  },
+  {
+   "id": "composition_span_0_9",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    " ",
+    "Password: ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\",",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_span_0_9_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    " ",
+    "Password: ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\",",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_span_1_0",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "PGPASSWORD=",
+    "fixtureHead",
+    "42",
+    ",",
+    "fixtureTail",
+    "43!",
+    " psql"
+   ],
+   "output": "API_KEY=[redacted] PGPASSWORD=[redacted]"
+  },
+  {
+   "id": "composition_span_1_0_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "PGPASSWORD=",
+    "fixtureHead",
+    "42",
+    ",",
+    "fixtureTail",
+    "43!",
+    " psql"
+   ],
+   "output": "API_KEY=[redacted] PGPASSWORD=[redacted]"
+  },
+  {
+   "id": "composition_span_1_1",
+   "kind": "text",
+   "input_parts": [
+    "TOKEN=None; ",
+    "PGPASSWORD=",
+    "fixtureHead",
+    "42",
+    ";",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "TOKEN=None; PGPASSWORD=[redacted]"
+  },
+  {
+   "id": "composition_span_1_1_title",
+   "kind": "title",
+   "input_parts": [
+    "TOKEN=None; ",
+    "PGPASSWORD=",
+    "fixtureHead",
+    "42",
+    ";",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "TOKEN=None; PGPASSWORD=[redacted]"
+  },
+  {
+   "id": "composition_span_1_2",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\" ",
+    "PGPASSWORD=",
+    "fixtureHead",
+    "42",
+    "&",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "API_KEY=\"[redacted]\" PGPASSWORD=[redacted]"
+  },
+  {
+   "id": "composition_span_1_2_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\" ",
+    "PGPASSWORD=",
+    "fixtureHead",
+    "42",
+    "&",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "API_KEY=\"[redacted]\" PGPASSWORD=[redacted]"
+  },
+  {
+   "id": "composition_span_1_3",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    " ",
+    "PGPASSWORD=",
+    "fixtureHead",
+    "42",
+    "-",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "API_KEY=[redacted] PGPASSWORD=[redacted]"
+  },
+  {
+   "id": "composition_span_1_3_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    " ",
+    "PGPASSWORD=",
+    "fixtureHead",
+    "42",
+    "-",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "API_KEY=[redacted] PGPASSWORD=[redacted]"
+  },
+  {
+   "id": "composition_span_1_4",
+   "kind": "text",
+   "input_parts": [
+    "PGPASSWORD=",
+    "\"",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": "PGPASSWORD=\"[redacted]\""
+  },
+  {
+   "id": "composition_span_1_4_title",
+   "kind": "title",
+   "input_parts": [
+    "PGPASSWORD=",
+    "\"",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": "PGPASSWORD=\"[redacted]\""
+  },
+  {
+   "id": "composition_span_1_5",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "PGPASSWORD=",
+    "'",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!",
+    "'"
+   ],
+   "output": "API_KEY=[redacted] PGPASSWORD='[redacted]'"
+  },
+  {
+   "id": "composition_span_1_5_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "PGPASSWORD=",
+    "'",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!",
+    "'"
+   ],
+   "output": "API_KEY=[redacted] PGPASSWORD='[redacted]'"
+  },
+  {
+   "id": "composition_span_1_6",
+   "kind": "text",
+   "input_parts": [
+    "TOKEN=None; ",
+    "PGPASSWORD=",
+    "\"",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_span_1_6_title",
+   "kind": "title",
+   "input_parts": [
+    "TOKEN=None; ",
+    "PGPASSWORD=",
+    "\"",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_span_1_7",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\" ",
+    "PGPASSWORD=",
+    "'",
+    "fixtureHead",
+    "42",
+    "\n",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_span_1_7_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\" ",
+    "PGPASSWORD=",
+    "'",
+    "fixtureHead",
+    "42",
+    "\n",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_span_1_8",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    " ",
+    "PGPASSWORD=",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "API_KEY=[redacted] PGPASSWORD=[redacted]"
+  },
+  {
+   "id": "composition_span_1_8_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    " ",
+    "PGPASSWORD=",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "API_KEY=[redacted] PGPASSWORD=[redacted]"
+  },
+  {
+   "id": "composition_span_1_9",
+   "kind": "text",
+   "input_parts": [
+    "PGPASSWORD=",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\",",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_span_1_9_title",
+   "kind": "title",
+   "input_parts": [
+    "PGPASSWORD=",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\",",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_span_2_0",
+   "kind": "text",
+   "input_parts": [
+    "TOKEN=None; ",
+    "PWD:=",
+    "fixtureHead",
+    "42",
+    ",",
+    "fixtureTail",
+    "43!",
+    " psql"
+   ],
+   "output": "TOKEN=None; PWD:=[redacted]"
+  },
+  {
+   "id": "composition_span_2_0_title",
+   "kind": "title",
+   "input_parts": [
+    "TOKEN=None; ",
+    "PWD:=",
+    "fixtureHead",
+    "42",
+    ",",
+    "fixtureTail",
+    "43!",
+    " psql"
+   ],
+   "output": "TOKEN=None; PWD:=[redacted]"
+  },
+  {
+   "id": "composition_span_2_1",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\" ",
+    "PWD:=",
+    "fixtureHead",
+    "42",
+    ";",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "API_KEY=\"[redacted]\" PWD:=[redacted]"
+  },
+  {
+   "id": "composition_span_2_1_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\" ",
+    "PWD:=",
+    "fixtureHead",
+    "42",
+    ";",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "API_KEY=\"[redacted]\" PWD:=[redacted]"
+  },
+  {
+   "id": "composition_span_2_2",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    " ",
+    "PWD:=",
+    "fixtureHead",
+    "42",
+    "&",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "API_KEY=[redacted] PWD:=[redacted]"
+  },
+  {
+   "id": "composition_span_2_2_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    " ",
+    "PWD:=",
+    "fixtureHead",
+    "42",
+    "&",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "API_KEY=[redacted] PWD:=[redacted]"
+  },
+  {
+   "id": "composition_span_2_3",
+   "kind": "text",
+   "input_parts": [
+    "PWD:=",
+    "fixtureHead",
+    "42",
+    "-",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "PWD:=[redacted]"
+  },
+  {
+   "id": "composition_span_2_3_title",
+   "kind": "title",
+   "input_parts": [
+    "PWD:=",
+    "fixtureHead",
+    "42",
+    "-",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "PWD:=[redacted]"
+  },
+  {
+   "id": "composition_span_2_4",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "PWD:=",
+    "\"",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": "API_KEY=[redacted] PWD:=\"[redacted]\""
+  },
+  {
+   "id": "composition_span_2_4_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "PWD:=",
+    "\"",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": "API_KEY=[redacted] PWD:=\"[redacted]\""
+  },
+  {
+   "id": "composition_span_2_5",
+   "kind": "text",
+   "input_parts": [
+    "TOKEN=None; ",
+    "PWD:=",
+    "'",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!",
+    "'"
+   ],
+   "output": "TOKEN=None; PWD:='[redacted]'"
+  },
+  {
+   "id": "composition_span_2_5_title",
+   "kind": "title",
+   "input_parts": [
+    "TOKEN=None; ",
+    "PWD:=",
+    "'",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!",
+    "'"
+   ],
+   "output": "TOKEN=None; PWD:='[redacted]'"
+  },
+  {
+   "id": "composition_span_2_6",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\" ",
+    "PWD:=",
+    "\"",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_span_2_6_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\" ",
+    "PWD:=",
+    "\"",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_span_2_7",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    " ",
+    "PWD:=",
+    "'",
+    "fixtureHead",
+    "42",
+    "\n",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_span_2_7_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    " ",
+    "PWD:=",
+    "'",
+    "fixtureHead",
+    "42",
+    "\n",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_span_2_8",
+   "kind": "text",
+   "input_parts": [
+    "PWD:=",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "PWD:=[redacted]"
+  },
+  {
+   "id": "composition_span_2_8_title",
+   "kind": "title",
+   "input_parts": [
+    "PWD:=",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "PWD:=[redacted]"
+  },
+  {
+   "id": "composition_span_2_9",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "PWD:=",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\",",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_span_2_9_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "PWD:=",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\",",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_span_3_0",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\" ",
+    "TOKEN=>",
+    "fixtureHead",
+    "42",
+    ",",
+    "fixtureTail",
+    "43!",
+    " psql"
+   ],
+   "output": "API_KEY=\"[redacted]\" TOKEN=>[redacted]"
+  },
+  {
+   "id": "composition_span_3_0_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\" ",
+    "TOKEN=>",
+    "fixtureHead",
+    "42",
+    ",",
+    "fixtureTail",
+    "43!",
+    " psql"
+   ],
+   "output": "API_KEY=\"[redacted]\" TOKEN=>[redacted]"
+  },
+  {
+   "id": "composition_span_3_1",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    " ",
+    "TOKEN=>",
+    "fixtureHead",
+    "42",
+    ";",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "API_KEY=[redacted] TOKEN=>[redacted]"
+  },
+  {
+   "id": "composition_span_3_1_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    " ",
+    "TOKEN=>",
+    "fixtureHead",
+    "42",
+    ";",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "API_KEY=[redacted] TOKEN=>[redacted]"
+  },
+  {
+   "id": "composition_span_3_2",
+   "kind": "text",
+   "input_parts": [
+    "TOKEN=>",
+    "fixtureHead",
+    "42",
+    "&",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "TOKEN=>[redacted]"
+  },
+  {
+   "id": "composition_span_3_2_title",
+   "kind": "title",
+   "input_parts": [
+    "TOKEN=>",
+    "fixtureHead",
+    "42",
+    "&",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "TOKEN=>[redacted]"
+  },
+  {
+   "id": "composition_span_3_3",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "TOKEN=>",
+    "fixtureHead",
+    "42",
+    "-",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "API_KEY=[redacted] TOKEN=>[redacted]"
+  },
+  {
+   "id": "composition_span_3_3_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "TOKEN=>",
+    "fixtureHead",
+    "42",
+    "-",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "API_KEY=[redacted] TOKEN=>[redacted]"
+  },
+  {
+   "id": "composition_span_3_4",
+   "kind": "text",
+   "input_parts": [
+    "TOKEN=None; ",
+    "TOKEN=>",
+    "\"",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": "TOKEN=None; TOKEN=>\"[redacted]\""
+  },
+  {
+   "id": "composition_span_3_4_title",
+   "kind": "title",
+   "input_parts": [
+    "TOKEN=None; ",
+    "TOKEN=>",
+    "\"",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": "TOKEN=None; TOKEN=>\"[redacted]\""
+  },
+  {
+   "id": "composition_span_3_5",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\" ",
+    "TOKEN=>",
+    "'",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!",
+    "'"
+   ],
+   "output": "API_KEY=\"[redacted]\" TOKEN=>'[redacted]'"
+  },
+  {
+   "id": "composition_span_3_5_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\" ",
+    "TOKEN=>",
+    "'",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!",
+    "'"
+   ],
+   "output": "API_KEY=\"[redacted]\" TOKEN=>'[redacted]'"
+  },
+  {
+   "id": "composition_span_3_6",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    " ",
+    "TOKEN=>",
+    "\"",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_span_3_6_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    " ",
+    "TOKEN=>",
+    "\"",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_span_3_7",
+   "kind": "text",
+   "input_parts": [
+    "TOKEN=>",
+    "'",
+    "fixtureHead",
+    "42",
+    "\n",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_span_3_7_title",
+   "kind": "title",
+   "input_parts": [
+    "TOKEN=>",
+    "'",
+    "fixtureHead",
+    "42",
+    "\n",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_span_3_8",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "TOKEN=>",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "API_KEY=[redacted] TOKEN=>[redacted]"
+  },
+  {
+   "id": "composition_span_3_8_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "TOKEN=>",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "API_KEY=[redacted] TOKEN=>[redacted]"
+  },
+  {
+   "id": "composition_span_3_9",
+   "kind": "text",
+   "input_parts": [
+    "TOKEN=None; ",
+    "TOKEN=>",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\",",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_span_3_9_title",
+   "kind": "title",
+   "input_parts": [
+    "TOKEN=None; ",
+    "TOKEN=>",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\",",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_span_4_0",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    " ",
+    "Password is ",
+    "fixtureHead",
+    "42",
+    ",",
+    "fixtureTail",
+    "43!",
+    " psql"
+   ],
+   "output": "API_KEY=[redacted] Password is [redacted]"
+  },
+  {
+   "id": "composition_span_4_0_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    " ",
+    "Password is ",
+    "fixtureHead",
+    "42",
+    ",",
+    "fixtureTail",
+    "43!",
+    " psql"
+   ],
+   "output": "API_KEY=[redacted] Password is [redacted]"
+  },
+  {
+   "id": "composition_span_4_1",
+   "kind": "text",
+   "input_parts": [
+    "Password is ",
+    "fixtureHead",
+    "42",
+    ";",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "Password is [redacted]"
+  },
+  {
+   "id": "composition_span_4_1_title",
+   "kind": "title",
+   "input_parts": [
+    "Password is ",
+    "fixtureHead",
+    "42",
+    ";",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "Password is [redacted]"
+  },
+  {
+   "id": "composition_span_4_2",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "Password is ",
+    "fixtureHead",
+    "42",
+    "&",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "API_KEY=[redacted] Password is [redacted]"
+  },
+  {
+   "id": "composition_span_4_2_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "Password is ",
+    "fixtureHead",
+    "42",
+    "&",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "API_KEY=[redacted] Password is [redacted]"
+  },
+  {
+   "id": "composition_span_4_3",
+   "kind": "text",
+   "input_parts": [
+    "TOKEN=None; ",
+    "Password is ",
+    "fixtureHead",
+    "42",
+    "-",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "TOKEN=None; Password is [redacted]"
+  },
+  {
+   "id": "composition_span_4_3_title",
+   "kind": "title",
+   "input_parts": [
+    "TOKEN=None; ",
+    "Password is ",
+    "fixtureHead",
+    "42",
+    "-",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "TOKEN=None; Password is [redacted]"
+  },
+  {
+   "id": "composition_span_4_4",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\" ",
+    "Password is ",
+    "\"",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": "API_KEY=\"[redacted]\" Password is \"[redacted]\""
+  },
+  {
+   "id": "composition_span_4_4_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\" ",
+    "Password is ",
+    "\"",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": "API_KEY=\"[redacted]\" Password is \"[redacted]\""
+  },
+  {
+   "id": "composition_span_4_5",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    " ",
+    "Password is ",
+    "'",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!",
+    "'"
+   ],
+   "output": "API_KEY=[redacted] Password is '[redacted]'"
+  },
+  {
+   "id": "composition_span_4_5_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    " ",
+    "Password is ",
+    "'",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!",
+    "'"
+   ],
+   "output": "API_KEY=[redacted] Password is '[redacted]'"
+  },
+  {
+   "id": "composition_span_4_6",
+   "kind": "text",
+   "input_parts": [
+    "Password is ",
+    "\"",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_span_4_6_title",
+   "kind": "title",
+   "input_parts": [
+    "Password is ",
+    "\"",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_span_4_7",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "Password is ",
+    "'",
+    "fixtureHead",
+    "42",
+    "\n",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_span_4_7_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "Password is ",
+    "'",
+    "fixtureHead",
+    "42",
+    "\n",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_span_4_8",
+   "kind": "text",
+   "input_parts": [
+    "TOKEN=None; ",
+    "Password is ",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "TOKEN=None; Password is [redacted]"
+  },
+  {
+   "id": "composition_span_4_8_title",
+   "kind": "title",
+   "input_parts": [
+    "TOKEN=None; ",
+    "Password is ",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "TOKEN=None; Password is [redacted]"
+  },
+  {
+   "id": "composition_span_4_9",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\" ",
+    "Password is ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\",",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_span_4_9_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\" ",
+    "Password is ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\",",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_span_5_0",
+   "kind": "text",
+   "input_parts": [
+    "Password was ",
+    "fixtureHead",
+    "42",
+    ",",
+    "fixtureTail",
+    "43!",
+    " psql"
+   ],
+   "output": "Password was [redacted]"
+  },
+  {
+   "id": "composition_span_5_0_title",
+   "kind": "title",
+   "input_parts": [
+    "Password was ",
+    "fixtureHead",
+    "42",
+    ",",
+    "fixtureTail",
+    "43!",
+    " psql"
+   ],
+   "output": "Password was [redacted]"
+  },
+  {
+   "id": "composition_span_5_1",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "Password was ",
+    "fixtureHead",
+    "42",
+    ";",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "API_KEY=[redacted] Password was [redacted]"
+  },
+  {
+   "id": "composition_span_5_1_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "Password was ",
+    "fixtureHead",
+    "42",
+    ";",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "API_KEY=[redacted] Password was [redacted]"
+  },
+  {
+   "id": "composition_span_5_2",
+   "kind": "text",
+   "input_parts": [
+    "TOKEN=None; ",
+    "Password was ",
+    "fixtureHead",
+    "42",
+    "&",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "TOKEN=None; Password was [redacted]"
+  },
+  {
+   "id": "composition_span_5_2_title",
+   "kind": "title",
+   "input_parts": [
+    "TOKEN=None; ",
+    "Password was ",
+    "fixtureHead",
+    "42",
+    "&",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "TOKEN=None; Password was [redacted]"
+  },
+  {
+   "id": "composition_span_5_3",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\" ",
+    "Password was ",
+    "fixtureHead",
+    "42",
+    "-",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "API_KEY=\"[redacted]\" Password was [redacted]"
+  },
+  {
+   "id": "composition_span_5_3_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\" ",
+    "Password was ",
+    "fixtureHead",
+    "42",
+    "-",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "API_KEY=\"[redacted]\" Password was [redacted]"
+  },
+  {
+   "id": "composition_span_5_4",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    " ",
+    "Password was ",
+    "\"",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": "API_KEY=[redacted] Password was \"[redacted]\""
+  },
+  {
+   "id": "composition_span_5_4_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    " ",
+    "Password was ",
+    "\"",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": "API_KEY=[redacted] Password was \"[redacted]\""
+  },
+  {
+   "id": "composition_span_5_5",
+   "kind": "text",
+   "input_parts": [
+    "Password was ",
+    "'",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!",
+    "'"
+   ],
+   "output": "Password was '[redacted]'"
+  },
+  {
+   "id": "composition_span_5_5_title",
+   "kind": "title",
+   "input_parts": [
+    "Password was ",
+    "'",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!",
+    "'"
+   ],
+   "output": "Password was '[redacted]'"
+  },
+  {
+   "id": "composition_span_5_6",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "Password was ",
+    "\"",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_span_5_6_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "Password was ",
+    "\"",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_span_5_7",
+   "kind": "text",
+   "input_parts": [
+    "TOKEN=None; ",
+    "Password was ",
+    "'",
+    "fixtureHead",
+    "42",
+    "\n",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_span_5_7_title",
+   "kind": "title",
+   "input_parts": [
+    "TOKEN=None; ",
+    "Password was ",
+    "'",
+    "fixtureHead",
+    "42",
+    "\n",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_span_5_8",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\" ",
+    "Password was ",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "API_KEY=\"[redacted]\" Password was [redacted]"
+  },
+  {
+   "id": "composition_span_5_8_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\" ",
+    "Password was ",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "API_KEY=\"[redacted]\" Password was [redacted]"
+  },
+  {
+   "id": "composition_span_5_9",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    " ",
+    "Password was ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\",",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_span_5_9_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    " ",
+    "Password was ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\",",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_span_6_0",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "--password ",
+    "fixtureHead",
+    "42",
+    ",",
+    "fixtureTail",
+    "43!",
+    " psql"
+   ],
+   "output": "API_KEY=[redacted] --password [redacted]"
+  },
+  {
+   "id": "composition_span_6_0_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "--password ",
+    "fixtureHead",
+    "42",
+    ",",
+    "fixtureTail",
+    "43!",
+    " psql"
+   ],
+   "output": "API_KEY=[redacted] --password [redacted]"
+  },
+  {
+   "id": "composition_span_6_1",
+   "kind": "text",
+   "input_parts": [
+    "TOKEN=None; ",
+    "--password ",
+    "fixtureHead",
+    "42",
+    ";",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "TOKEN=None; --password [redacted]"
+  },
+  {
+   "id": "composition_span_6_1_title",
+   "kind": "title",
+   "input_parts": [
+    "TOKEN=None; ",
+    "--password ",
+    "fixtureHead",
+    "42",
+    ";",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "TOKEN=None; --password [redacted]"
+  },
+  {
+   "id": "composition_span_6_2",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\" ",
+    "--password ",
+    "fixtureHead",
+    "42",
+    "&",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "API_KEY=\"[redacted]\" --password [redacted]"
+  },
+  {
+   "id": "composition_span_6_2_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\" ",
+    "--password ",
+    "fixtureHead",
+    "42",
+    "&",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "API_KEY=\"[redacted]\" --password [redacted]"
+  },
+  {
+   "id": "composition_span_6_3",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    " ",
+    "--password ",
+    "fixtureHead",
+    "42",
+    "-",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "API_KEY=[redacted] --password [redacted]"
+  },
+  {
+   "id": "composition_span_6_3_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    " ",
+    "--password ",
+    "fixtureHead",
+    "42",
+    "-",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "API_KEY=[redacted] --password [redacted]"
+  },
+  {
+   "id": "composition_span_6_4",
+   "kind": "text",
+   "input_parts": [
+    "--password ",
+    "\"",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": "--password \"[redacted]\""
+  },
+  {
+   "id": "composition_span_6_4_title",
+   "kind": "title",
+   "input_parts": [
+    "--password ",
+    "\"",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": "--password \"[redacted]\""
+  },
+  {
+   "id": "composition_span_6_5",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "--password ",
+    "'",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!",
+    "'"
+   ],
+   "output": "API_KEY=[redacted] --password '[redacted]'"
+  },
+  {
+   "id": "composition_span_6_5_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "--password ",
+    "'",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!",
+    "'"
+   ],
+   "output": "API_KEY=[redacted] --password '[redacted]'"
+  },
+  {
+   "id": "composition_span_6_6",
+   "kind": "text",
+   "input_parts": [
+    "TOKEN=None; ",
+    "--password ",
+    "\"",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_span_6_6_title",
+   "kind": "title",
+   "input_parts": [
+    "TOKEN=None; ",
+    "--password ",
+    "\"",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_span_6_7",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\" ",
+    "--password ",
+    "'",
+    "fixtureHead",
+    "42",
+    "\n",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_span_6_7_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\" ",
+    "--password ",
+    "'",
+    "fixtureHead",
+    "42",
+    "\n",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_span_6_8",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    " ",
+    "--password ",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "API_KEY=[redacted] --password [redacted]"
+  },
+  {
+   "id": "composition_span_6_8_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    " ",
+    "--password ",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "API_KEY=[redacted] --password [redacted]"
+  },
+  {
+   "id": "composition_span_6_9",
+   "kind": "text",
+   "input_parts": [
+    "--password ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\",",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_span_6_9_title",
+   "kind": "title",
+   "input_parts": [
+    "--password ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\",",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_span_7_0",
+   "kind": "text",
+   "input_parts": [
+    "TOKEN=None; ",
+    "-api-key ",
+    "fixtureHead",
+    "42",
+    ",",
+    "fixtureTail",
+    "43!",
+    " psql"
+   ],
+   "output": "TOKEN=None; -api-key [redacted]"
+  },
+  {
+   "id": "composition_span_7_0_title",
+   "kind": "title",
+   "input_parts": [
+    "TOKEN=None; ",
+    "-api-key ",
+    "fixtureHead",
+    "42",
+    ",",
+    "fixtureTail",
+    "43!",
+    " psql"
+   ],
+   "output": "TOKEN=None; -api-key [redacted]"
+  },
+  {
+   "id": "composition_span_7_1",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\" ",
+    "-api-key ",
+    "fixtureHead",
+    "42",
+    ";",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "API_KEY=\"[redacted]\" -api-key [redacted]"
+  },
+  {
+   "id": "composition_span_7_1_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\" ",
+    "-api-key ",
+    "fixtureHead",
+    "42",
+    ";",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "API_KEY=\"[redacted]\" -api-key [redacted]"
+  },
+  {
+   "id": "composition_span_7_2",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    " ",
+    "-api-key ",
+    "fixtureHead",
+    "42",
+    "&",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "API_KEY=[redacted] -api-key [redacted]"
+  },
+  {
+   "id": "composition_span_7_2_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    " ",
+    "-api-key ",
+    "fixtureHead",
+    "42",
+    "&",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "API_KEY=[redacted] -api-key [redacted]"
+  },
+  {
+   "id": "composition_span_7_3",
+   "kind": "text",
+   "input_parts": [
+    "-api-key ",
+    "fixtureHead",
+    "42",
+    "-",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "-api-key [redacted]"
+  },
+  {
+   "id": "composition_span_7_3_title",
+   "kind": "title",
+   "input_parts": [
+    "-api-key ",
+    "fixtureHead",
+    "42",
+    "-",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "-api-key [redacted]"
+  },
+  {
+   "id": "composition_span_7_4",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "-api-key ",
+    "\"",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": "API_KEY=[redacted] -api-key \"[redacted]\""
+  },
+  {
+   "id": "composition_span_7_4_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "-api-key ",
+    "\"",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!",
+    "\""
+   ],
+   "output": "API_KEY=[redacted] -api-key \"[redacted]\""
+  },
+  {
+   "id": "composition_span_7_5",
+   "kind": "text",
+   "input_parts": [
+    "TOKEN=None; ",
+    "-api-key ",
+    "'",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!",
+    "'"
+   ],
+   "output": "TOKEN=None; -api-key '[redacted]'"
+  },
+  {
+   "id": "composition_span_7_5_title",
+   "kind": "title",
+   "input_parts": [
+    "TOKEN=None; ",
+    "-api-key ",
+    "'",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!",
+    "'"
+   ],
+   "output": "TOKEN=None; -api-key '[redacted]'"
+  },
+  {
+   "id": "composition_span_7_6",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\" ",
+    "-api-key ",
+    "\"",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_span_7_6_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\" ",
+    "-api-key ",
+    "\"",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_span_7_7",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    " ",
+    "-api-key ",
+    "'",
+    "fixtureHead",
+    "42",
+    "\n",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_span_7_7_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    " ",
+    "-api-key ",
+    "'",
+    "fixtureHead",
+    "42",
+    "\n",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_span_7_8",
+   "kind": "text",
+   "input_parts": [
+    "-api-key ",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "-api-key [redacted]"
+  },
+  {
+   "id": "composition_span_7_8_title",
+   "kind": "title",
+   "input_parts": [
+    "-api-key ",
+    "fixtureHead",
+    "42",
+    " ",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": "-api-key [redacted]"
+  },
+  {
+   "id": "composition_span_7_9",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "-api-key ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\",",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_span_7_9_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=[redacted] ",
+    "-api-key ",
+    "\"",
+    "fixtureHead",
+    "42",
+    "\",",
+    "fixtureTail",
+    "43!"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_literal_secret_0",
+   "kind": "text",
+   "input_parts": [
+    "password is ",
+    "true"
+   ],
+   "output": "password is [redacted]"
+  },
+  {
+   "id": "composition_literal_secret_1",
+   "kind": "text",
+   "input_parts": [
+    "--password ",
+    "true"
+   ],
+   "output": "--password [redacted]"
+  },
+  {
+   "id": "composition_0_0_0",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    " password=\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted] password=\"[redacted]\""
+  },
+  {
+   "id": "composition_0_0_1",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\"",
+    "; password=\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=\"[redacted]\"; password=\"[redacted]\""
+  },
+  {
+   "id": "composition_0_0_2",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=[redacted]",
+    ", password=\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted], password=\"[redacted]\""
+  },
+  {
+   "id": "composition_0_0_3",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=os.environ[\"DEMO\"]",
+    " & password=\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=os.environ[\"DEMO\"] & password=\"[redacted]\""
+  },
+  {
+   "id": "composition_0_1_0",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    "; password:=\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted]; password:=\"[redacted]\""
+  },
+  {
+   "id": "composition_0_1_1",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\"",
+    ", password:=\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=\"[redacted]\", password:=\"[redacted]\""
+  },
+  {
+   "id": "composition_0_1_2",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=[redacted]",
+    " & password:=\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted] & password:=\"[redacted]\""
+  },
+  {
+   "id": "composition_0_1_3",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=os.environ[\"DEMO\"]",
+    "\npassword:=\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=os.environ[\"DEMO\"]\npassword:=\"[redacted]\""
+  },
+  {
+   "id": "composition_0_2_0",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    ", password=>\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted], password=>\"[redacted]\""
+  },
+  {
+   "id": "composition_0_2_1",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\"",
+    " & password=>\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=\"[redacted]\" & password=>\"[redacted]\""
+  },
+  {
+   "id": "composition_0_2_2",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=[redacted]",
+    "\npassword=>\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted]\npassword=>\"[redacted]\""
+  },
+  {
+   "id": "composition_0_2_3",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=os.environ[\"DEMO\"]",
+    " password=>\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=os.environ[\"DEMO\"] password=>\"[redacted]\""
+  },
+  {
+   "id": "composition_0_3_0",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    " & password:\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted] & password:\"[redacted]\""
+  },
+  {
+   "id": "composition_0_3_1",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\"",
+    "\npassword:\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=\"[redacted]\"\npassword:\"[redacted]\""
+  },
+  {
+   "id": "composition_0_3_2",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=[redacted]",
+    " password:\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted] password:\"[redacted]\""
+  },
+  {
+   "id": "composition_0_3_3",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=os.environ[\"DEMO\"]",
+    "; password:\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=os.environ[\"DEMO\"]; password:\"[redacted]\""
+  },
+  {
+   "id": "composition_1_0_0",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    "; \"password\"=\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted]; \"password\"=\"[redacted]\""
+  },
+  {
+   "id": "composition_1_0_1",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\"",
+    ", \"password\"=\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=\"[redacted]\", \"password\"=\"[redacted]\""
+  },
+  {
+   "id": "composition_1_0_2",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=[redacted]",
+    " & \"password\"=\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted] & \"password\"=\"[redacted]\""
+  },
+  {
+   "id": "composition_1_0_3",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=os.environ[\"DEMO\"]",
+    "\n\"password\"=\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=os.environ[\"DEMO\"]\n\"password\"=\"[redacted]\""
+  },
+  {
+   "id": "composition_1_1_0",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    ", \"password\":=\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted], \"password\":=\"[redacted]\""
+  },
+  {
+   "id": "composition_1_1_1",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\"",
+    " & \"password\":=\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=\"[redacted]\" & \"password\":=\"[redacted]\""
+  },
+  {
+   "id": "composition_1_1_2",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=[redacted]",
+    "\n\"password\":=\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted]\n\"password\":=\"[redacted]\""
+  },
+  {
+   "id": "composition_1_1_3",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=os.environ[\"DEMO\"]",
+    " \"password\":=\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=os.environ[\"DEMO\"] \"password\":=\"[redacted]\""
+  },
+  {
+   "id": "composition_1_2_0",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    " & \"password\"=>\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted] & \"password\"=>\"[redacted]\""
+  },
+  {
+   "id": "composition_1_2_1",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\"",
+    "\n\"password\"=>\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=\"[redacted]\"\n\"password\"=>\"[redacted]\""
+  },
+  {
+   "id": "composition_1_2_2",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=[redacted]",
+    " \"password\"=>\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted] \"password\"=>\"[redacted]\""
+  },
+  {
+   "id": "composition_1_2_3",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=os.environ[\"DEMO\"]",
+    "; \"password\"=>\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=os.environ[\"DEMO\"]; \"password\"=>\"[redacted]\""
+  },
+  {
+   "id": "composition_1_3_0",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    "\n\"password\":\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted]\n\"password\":\"[redacted]\""
+  },
+  {
+   "id": "composition_1_3_1",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\"",
+    " \"password\":\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=\"[redacted]\" \"password\":\"[redacted]\""
+  },
+  {
+   "id": "composition_1_3_2",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=[redacted]",
+    "; \"password\":\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted]; \"password\":\"[redacted]\""
+  },
+  {
+   "id": "composition_1_3_3",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=os.environ[\"DEMO\"]",
+    ", \"password\":\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=os.environ[\"DEMO\"], \"password\":\"[redacted]\""
+  },
+  {
+   "id": "composition_2_0_0",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    ", 'password'=\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted], 'password'=\"[redacted]\""
+  },
+  {
+   "id": "composition_2_0_1",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\"",
+    " & 'password'=\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=\"[redacted]\" & 'password'=\"[redacted]\""
+  },
+  {
+   "id": "composition_2_0_2",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=[redacted]",
+    "\n'password'=\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted]\n'password'=\"[redacted]\""
+  },
+  {
+   "id": "composition_2_0_3",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=os.environ[\"DEMO\"]",
+    " 'password'=\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=os.environ[\"DEMO\"] 'password'=\"[redacted]\""
+  },
+  {
+   "id": "composition_2_1_0",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    " & 'password':=\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted] & 'password':=\"[redacted]\""
+  },
+  {
+   "id": "composition_2_1_1",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\"",
+    "\n'password':=\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=\"[redacted]\"\n'password':=\"[redacted]\""
+  },
+  {
+   "id": "composition_2_1_2",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=[redacted]",
+    " 'password':=\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted] 'password':=\"[redacted]\""
+  },
+  {
+   "id": "composition_2_1_3",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=os.environ[\"DEMO\"]",
+    "; 'password':=\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=os.environ[\"DEMO\"]; 'password':=\"[redacted]\""
+  },
+  {
+   "id": "composition_2_2_0",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    "\n'password'=>\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted]\n'password'=>\"[redacted]\""
+  },
+  {
+   "id": "composition_2_2_1",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\"",
+    " 'password'=>\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=\"[redacted]\" 'password'=>\"[redacted]\""
+  },
+  {
+   "id": "composition_2_2_2",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=[redacted]",
+    "; 'password'=>\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted]; 'password'=>\"[redacted]\""
+  },
+  {
+   "id": "composition_2_2_3",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=os.environ[\"DEMO\"]",
+    ", 'password'=>\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=os.environ[\"DEMO\"], 'password'=>\"[redacted]\""
+  },
+  {
+   "id": "composition_2_3_0",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    " 'password':\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted] 'password':\"[redacted]\""
+  },
+  {
+   "id": "composition_2_3_1",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\"",
+    "; 'password':\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=\"[redacted]\"; 'password':\"[redacted]\""
+  },
+  {
+   "id": "composition_2_3_2",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=[redacted]",
+    ", 'password':\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted], 'password':\"[redacted]\""
+  },
+  {
+   "id": "composition_2_3_3",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=os.environ[\"DEMO\"]",
+    " & 'password':\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=os.environ[\"DEMO\"] & 'password':\"[redacted]\""
+  },
+  {
+   "id": "composition_shell_json",
+   "kind": "text",
+   "input_parts": [
+    "TOKEN=none; curl -d '{\"password\":\"",
+    "fixtureTwo",
+    "43",
+    "\"}' https://example.test"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_standalone_quoted",
+   "kind": "text",
+   "input_parts": [
+    "\"password\":\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "\"password\":\"[redacted]\""
+  },
+  {
+   "id": "composition_already_redacted_prefix",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=[redacted] \"password\":\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted] \"password\":\"[redacted]\""
+  },
+  {
+   "id": "composition_three_assignments",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    " \"password\":\"",
+    "fixtureTwo",
+    "43",
+    "\" TOKEN=",
+    "true",
+    "!Demo26"
+   ],
+   "output": "API_KEY=[redacted] \"password\":\"[redacted]\" TOKEN=[redacted]"
+  },
+  {
+   "id": "composition_unterminated",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=[redacted] \"password\":\"prefix ",
+    "fixtureTwo",
+    "43"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_unterminated_multiline",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=[redacted] \"password\":\"prefix\n",
+    "fixtureTwo",
+    "43"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_quoted_suffix",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=[redacted] \"password\":\"prefix\"",
+    "fixtureTwo",
+    "43"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_quoted_escape",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=\"prefix \\\" ",
+    "fixtureOne",
+    "42",
+    "\" \"password\":\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=\"[redacted]\" \"password\":\"[redacted]\""
+  },
+  {
+   "id": "composition_backtick",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=`",
+    "fixtureOne",
+    "42",
+    "` \"password\":\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=`[redacted]` \"password\":\"[redacted]\""
+  },
+  {
+   "id": "composition_redacted_suffix",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=[redacted] \"password\":[redacted]",
+    "fixtureTwo",
+    "43"
+   ],
+   "output": "API_KEY=[redacted] \"password\":[redacted]"
+  },
+  {
+   "id": "composition_nested_assignment",
+   "kind": "text",
+   "input_parts": [
+    "API_KEY=\"prefix password=",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=\"[redacted]\""
+  },
+  {
+   "id": "composition_0_0_0_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    " password=\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted] password=\"[redacted]\""
+  },
+  {
+   "id": "composition_0_0_1_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\"",
+    "; password=\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=\"[redacted]\"; password=\"[redacted]\""
+  },
+  {
+   "id": "composition_0_0_2_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=[redacted]",
+    ", password=\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted], password=\"[redacted]\""
+  },
+  {
+   "id": "composition_0_0_3_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=os.environ[\"DEMO\"]",
+    " & password=\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=os.environ[\"DEMO\"] & password=\"[redacted]\""
+  },
+  {
+   "id": "composition_0_1_0_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    "; password:=\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted]; password:=\"[redacted]\""
+  },
+  {
+   "id": "composition_0_1_1_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\"",
+    ", password:=\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=\"[redacted]\", password:=\"[redacted]\""
+  },
+  {
+   "id": "composition_0_1_2_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=[redacted]",
+    " & password:=\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted] & password:=\"[redacted]\""
+  },
+  {
+   "id": "composition_0_1_3_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=os.environ[\"DEMO\"]",
+    "\npassword:=\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=os.environ[\"DEMO\"]\npassword:=\"[redacted]\""
+  },
+  {
+   "id": "composition_0_2_0_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    ", password=>\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted], password=>\"[redacted]\""
+  },
+  {
+   "id": "composition_0_2_1_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\"",
+    " & password=>\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=\"[redacted]\" & password=>\"[redacted]\""
+  },
+  {
+   "id": "composition_0_2_2_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=[redacted]",
+    "\npassword=>\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted]\npassword=>\"[redacted]\""
+  },
+  {
+   "id": "composition_0_2_3_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=os.environ[\"DEMO\"]",
+    " password=>\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=os.environ[\"DEMO\"] password=>\"[redacted]\""
+  },
+  {
+   "id": "composition_0_3_0_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    " & password:\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted] & password:\"[redacted]\""
+  },
+  {
+   "id": "composition_0_3_1_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\"",
+    "\npassword:\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=\"[redacted]\"\npassword:\"[redacted]\""
+  },
+  {
+   "id": "composition_0_3_2_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=[redacted]",
+    " password:\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted] password:\"[redacted]\""
+  },
+  {
+   "id": "composition_0_3_3_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=os.environ[\"DEMO\"]",
+    "; password:\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=os.environ[\"DEMO\"]; password:\"[redacted]\""
+  },
+  {
+   "id": "composition_1_0_0_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    "; \"password\"=\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted]; \"password\"=\"[redacted]\""
+  },
+  {
+   "id": "composition_1_0_1_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\"",
+    ", \"password\"=\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=\"[redacted]\", \"password\"=\"[redacted]\""
+  },
+  {
+   "id": "composition_1_0_2_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=[redacted]",
+    " & \"password\"=\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted] & \"password\"=\"[redacted]\""
+  },
+  {
+   "id": "composition_1_0_3_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=os.environ[\"DEMO\"]",
+    "\n\"password\"=\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=os.environ[\"DEMO\"]\n\"password\"=\"[redacted]\""
+  },
+  {
+   "id": "composition_1_1_0_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    ", \"password\":=\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted], \"password\":=\"[redacted]\""
+  },
+  {
+   "id": "composition_1_1_1_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\"",
+    " & \"password\":=\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=\"[redacted]\" & \"password\":=\"[redacted]\""
+  },
+  {
+   "id": "composition_1_1_2_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=[redacted]",
+    "\n\"password\":=\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted]\n\"password\":=\"[redacted]\""
+  },
+  {
+   "id": "composition_1_1_3_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=os.environ[\"DEMO\"]",
+    " \"password\":=\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=os.environ[\"DEMO\"] \"password\":=\"[redacted]\""
+  },
+  {
+   "id": "composition_1_2_0_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    " & \"password\"=>\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted] & \"password\"=>\"[redacted]\""
+  },
+  {
+   "id": "composition_1_2_1_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\"",
+    "\n\"password\"=>\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=\"[redacted]\"\n\"password\"=>\"[redacted]\""
+  },
+  {
+   "id": "composition_1_2_2_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=[redacted]",
+    " \"password\"=>\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted] \"password\"=>\"[redacted]\""
+  },
+  {
+   "id": "composition_1_2_3_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=os.environ[\"DEMO\"]",
+    "; \"password\"=>\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=os.environ[\"DEMO\"]; \"password\"=>\"[redacted]\""
+  },
+  {
+   "id": "composition_1_3_0_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    "\n\"password\":\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted]\n\"password\":\"[redacted]\""
+  },
+  {
+   "id": "composition_1_3_1_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\"",
+    " \"password\":\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=\"[redacted]\" \"password\":\"[redacted]\""
+  },
+  {
+   "id": "composition_1_3_2_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=[redacted]",
+    "; \"password\":\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted]; \"password\":\"[redacted]\""
+  },
+  {
+   "id": "composition_1_3_3_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=os.environ[\"DEMO\"]",
+    ", \"password\":\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=os.environ[\"DEMO\"], \"password\":\"[redacted]\""
+  },
+  {
+   "id": "composition_2_0_0_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    ", 'password'=\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted], 'password'=\"[redacted]\""
+  },
+  {
+   "id": "composition_2_0_1_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\"",
+    " & 'password'=\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=\"[redacted]\" & 'password'=\"[redacted]\""
+  },
+  {
+   "id": "composition_2_0_2_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=[redacted]",
+    "\n'password'=\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted]\n'password'=\"[redacted]\""
+  },
+  {
+   "id": "composition_2_0_3_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=os.environ[\"DEMO\"]",
+    " 'password'=\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=os.environ[\"DEMO\"] 'password'=\"[redacted]\""
+  },
+  {
+   "id": "composition_2_1_0_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    " & 'password':=\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted] & 'password':=\"[redacted]\""
+  },
+  {
+   "id": "composition_2_1_1_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\"",
+    "\n'password':=\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=\"[redacted]\"\n'password':=\"[redacted]\""
+  },
+  {
+   "id": "composition_2_1_2_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=[redacted]",
+    " 'password':=\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted] 'password':=\"[redacted]\""
+  },
+  {
+   "id": "composition_2_1_3_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=os.environ[\"DEMO\"]",
+    "; 'password':=\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=os.environ[\"DEMO\"]; 'password':=\"[redacted]\""
+  },
+  {
+   "id": "composition_2_2_0_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    "\n'password'=>\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted]\n'password'=>\"[redacted]\""
+  },
+  {
+   "id": "composition_2_2_1_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\"",
+    " 'password'=>\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=\"[redacted]\" 'password'=>\"[redacted]\""
+  },
+  {
+   "id": "composition_2_2_2_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=[redacted]",
+    "; 'password'=>\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted]; 'password'=>\"[redacted]\""
+  },
+  {
+   "id": "composition_2_2_3_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=os.environ[\"DEMO\"]",
+    ", 'password'=>\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=os.environ[\"DEMO\"], 'password'=>\"[redacted]\""
+  },
+  {
+   "id": "composition_2_3_0_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    " 'password':\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted] 'password':\"[redacted]\""
+  },
+  {
+   "id": "composition_2_3_1_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=\"",
+    "fixtureOne",
+    "42",
+    "\"",
+    "; 'password':\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=\"[redacted]\"; 'password':\"[redacted]\""
+  },
+  {
+   "id": "composition_2_3_2_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=[redacted]",
+    ", 'password':\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted], 'password':\"[redacted]\""
+  },
+  {
+   "id": "composition_2_3_3_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=os.environ[\"DEMO\"]",
+    " & 'password':\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=os.environ[\"DEMO\"] & 'password':\"[redacted]\""
+  },
+  {
+   "id": "composition_shell_json_title",
+   "kind": "title",
+   "input_parts": [
+    "TOKEN=none; curl -d '{\"password\":\"",
+    "fixtureTwo",
+    "43",
+    "\"}' https://example.test"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_standalone_quoted_title",
+   "kind": "title",
+   "input_parts": [
+    "\"password\":\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "\"password\":\"[redacted]\""
+  },
+  {
+   "id": "composition_already_redacted_prefix_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=[redacted] \"password\":\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=[redacted] \"password\":\"[redacted]\""
+  },
+  {
+   "id": "composition_three_assignments_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=",
+    "fixtureOne",
+    "42",
+    " \"password\":\"",
+    "fixtureTwo",
+    "43",
+    "\" TOKEN=",
+    "true",
+    "!Demo26"
+   ],
+   "output": "API_KEY=[redacted] \"password\":\"[redacted]\" TOKEN=[redacted]"
+  },
+  {
+   "id": "composition_unterminated_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=[redacted] \"password\":\"prefix ",
+    "fixtureTwo",
+    "43"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_unterminated_multiline_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=[redacted] \"password\":\"prefix\n",
+    "fixtureTwo",
+    "43"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_quoted_suffix_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=[redacted] \"password\":\"prefix\"",
+    "fixtureTwo",
+    "43"
+   ],
+   "output": null
+  },
+  {
+   "id": "composition_quoted_escape_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=\"prefix \\\" ",
+    "fixtureOne",
+    "42",
+    "\" \"password\":\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=\"[redacted]\" \"password\":\"[redacted]\""
+  },
+  {
+   "id": "composition_backtick_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=`",
+    "fixtureOne",
+    "42",
+    "` \"password\":\"",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=`[redacted]` \"password\":\"[redacted]\""
+  },
+  {
+   "id": "composition_redacted_suffix_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=[redacted] \"password\":[redacted]",
+    "fixtureTwo",
+    "43"
+   ],
+   "output": "API_KEY=[redacted] \"password\":[redacted]"
+  },
+  {
+   "id": "composition_nested_assignment_title",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=\"prefix password=",
+    "fixtureTwo",
+    "43",
+    "\""
+   ],
+   "output": "API_KEY=\"[redacted]\""
+  },
+  {
+   "id": "keyword_suffix_0",
+   "kind": "text",
+   "input_parts": [
+    "Password= ",
+    "true",
+    "!Demo26"
+   ],
+   "output": "Password= [redacted]"
+  },
+  {
+   "id": "keyword_operator_0",
+   "kind": "text",
+   "input_parts": [
+    "Password= ",
+    "false",
+    "+Demo26"
+   ],
+   "output": "Password= [redacted]"
+  },
+  {
+   "id": "env_suffix_0",
+   "kind": "text",
+   "input_parts": [
+    "Password= ",
+    "os.environ[\"DEMO\"]",
+    "!Demo26"
+   ],
+   "output": "Password= [redacted]"
+  },
+  {
+   "id": "multiple_assignments_3",
+   "kind": "text",
+   "input_parts": [
+    "DB_PASSWORD= ",
+    "fixtureOne",
+    "42",
+    " API_KEY= ",
+    "fixtureTwo",
+    "43"
+   ],
+   "output": "DB_PASSWORD= [redacted] API_KEY= [redacted]"
+  },
+  {
+   "id": "multiple_assignments_4",
+   "kind": "text",
+   "input_parts": [
+    "DB_PASSWORD= ",
+    "fixtureOne",
+    "42",
+    ";API_KEY= ",
+    "fixtureTwo",
+    "43"
+   ],
+   "output": "DB_PASSWORD= [redacted];API_KEY= [redacted]"
+  },
+  {
+   "id": "multiple_assignments_5",
+   "kind": "text",
+   "input_parts": [
+    "DB_PASSWORD= ",
+    "fixtureOne",
+    "42",
+    ", API_KEY= ",
+    "fixtureTwo",
+    "43"
+   ],
+   "output": "DB_PASSWORD= [redacted], API_KEY= [redacted]"
+  },
+  {
+   "id": "multiple_assignments_6",
+   "kind": "text",
+   "input_parts": [
+    "DB_PASSWORD= ",
+    "fixtureOne",
+    "42",
+    " & API_KEY= ",
+    "fixtureTwo",
+    "43"
+   ],
+   "output": "DB_PASSWORD= [redacted] & API_KEY= [redacted]"
+  },
+  {
+   "id": "keyword_suffix_1",
+   "kind": "text",
+   "input_parts": [
+    "Password:= ",
+    "true",
+    "!Demo26"
+   ],
+   "output": "Password:= [redacted]"
+  },
+  {
+   "id": "keyword_operator_1",
+   "kind": "text",
+   "input_parts": [
+    "Password:= ",
+    "false",
+    "+Demo26"
+   ],
+   "output": "Password:= [redacted]"
+  },
+  {
+   "id": "env_suffix_1",
+   "kind": "text",
+   "input_parts": [
+    "Password:= ",
+    "os.environ[\"DEMO\"]",
+    "!Demo26"
+   ],
+   "output": "Password:= [redacted]"
+  },
+  {
+   "id": "multiple_assignments_10",
+   "kind": "text",
+   "input_parts": [
+    "DB_PASSWORD:= ",
+    "fixtureOne",
+    "42",
+    " API_KEY:= ",
+    "fixtureTwo",
+    "43"
+   ],
+   "output": "DB_PASSWORD:= [redacted] API_KEY:= [redacted]"
+  },
+  {
+   "id": "multiple_assignments_11",
+   "kind": "text",
+   "input_parts": [
+    "DB_PASSWORD:= ",
+    "fixtureOne",
+    "42",
+    ";API_KEY:= ",
+    "fixtureTwo",
+    "43"
+   ],
+   "output": "DB_PASSWORD:= [redacted];API_KEY:= [redacted]"
+  },
+  {
+   "id": "multiple_assignments_12",
+   "kind": "text",
+   "input_parts": [
+    "DB_PASSWORD:= ",
+    "fixtureOne",
+    "42",
+    ", API_KEY:= ",
+    "fixtureTwo",
+    "43"
+   ],
+   "output": "DB_PASSWORD:= [redacted], API_KEY:= [redacted]"
+  },
+  {
+   "id": "multiple_assignments_13",
+   "kind": "text",
+   "input_parts": [
+    "DB_PASSWORD:= ",
+    "fixtureOne",
+    "42",
+    " & API_KEY:= ",
+    "fixtureTwo",
+    "43"
+   ],
+   "output": "DB_PASSWORD:= [redacted] & API_KEY:= [redacted]"
+  },
+  {
+   "id": "keyword_suffix_2",
+   "kind": "text",
+   "input_parts": [
+    "Password=> ",
+    "true",
+    "!Demo26"
+   ],
+   "output": "Password=> [redacted]"
+  },
+  {
+   "id": "keyword_operator_2",
+   "kind": "text",
+   "input_parts": [
+    "Password=> ",
+    "false",
+    "+Demo26"
+   ],
+   "output": "Password=> [redacted]"
+  },
+  {
+   "id": "env_suffix_2",
+   "kind": "text",
+   "input_parts": [
+    "Password=> ",
+    "os.environ[\"DEMO\"]",
+    "!Demo26"
+   ],
+   "output": "Password=> [redacted]"
+  },
+  {
+   "id": "multiple_assignments_17",
+   "kind": "text",
+   "input_parts": [
+    "DB_PASSWORD=> ",
+    "fixtureOne",
+    "42",
+    " API_KEY=> ",
+    "fixtureTwo",
+    "43"
+   ],
+   "output": "DB_PASSWORD=> [redacted] API_KEY=> [redacted]"
+  },
+  {
+   "id": "multiple_assignments_18",
+   "kind": "text",
+   "input_parts": [
+    "DB_PASSWORD=> ",
+    "fixtureOne",
+    "42",
+    ";API_KEY=> ",
+    "fixtureTwo",
+    "43"
+   ],
+   "output": "DB_PASSWORD=> [redacted];API_KEY=> [redacted]"
+  },
+  {
+   "id": "multiple_assignments_19",
+   "kind": "text",
+   "input_parts": [
+    "DB_PASSWORD=> ",
+    "fixtureOne",
+    "42",
+    ", API_KEY=> ",
+    "fixtureTwo",
+    "43"
+   ],
+   "output": "DB_PASSWORD=> [redacted], API_KEY=> [redacted]"
+  },
+  {
+   "id": "multiple_assignments_20",
+   "kind": "text",
+   "input_parts": [
+    "DB_PASSWORD=> ",
+    "fixtureOne",
+    "42",
+    " & API_KEY=> ",
+    "fixtureTwo",
+    "43"
+   ],
+   "output": "DB_PASSWORD=> [redacted] & API_KEY=> [redacted]"
+  },
+  {
+   "id": "keyword_suffix_3",
+   "kind": "text",
+   "input_parts": [
+    "Password: ",
+    "true",
+    "!Demo26"
+   ],
+   "output": "Password: [redacted]"
+  },
+  {
+   "id": "keyword_operator_3",
+   "kind": "text",
+   "input_parts": [
+    "Password: ",
+    "false",
+    "+Demo26"
+   ],
+   "output": "Password: [redacted]"
+  },
+  {
+   "id": "env_suffix_3",
+   "kind": "text",
+   "input_parts": [
+    "Password: ",
+    "os.environ[\"DEMO\"]",
+    "!Demo26"
+   ],
+   "output": "Password: [redacted]"
+  },
+  {
+   "id": "multiple_assignments_24",
+   "kind": "text",
+   "input_parts": [
+    "DB_PASSWORD: ",
+    "fixtureOne",
+    "42",
+    " API_KEY: ",
+    "fixtureTwo",
+    "43"
+   ],
+   "output": "DB_PASSWORD: [redacted] API_KEY: [redacted]"
+  },
+  {
+   "id": "multiple_assignments_25",
+   "kind": "text",
+   "input_parts": [
+    "DB_PASSWORD: ",
+    "fixtureOne",
+    "42",
+    ";API_KEY: ",
+    "fixtureTwo",
+    "43"
+   ],
+   "output": "DB_PASSWORD: [redacted];API_KEY: [redacted]"
+  },
+  {
+   "id": "multiple_assignments_26",
+   "kind": "text",
+   "input_parts": [
+    "DB_PASSWORD: ",
+    "fixtureOne",
+    "42",
+    ", API_KEY: ",
+    "fixtureTwo",
+    "43"
+   ],
+   "output": "DB_PASSWORD: [redacted], API_KEY: [redacted]"
+  },
+  {
+   "id": "multiple_assignments_27",
+   "kind": "text",
+   "input_parts": [
+    "DB_PASSWORD: ",
+    "fixtureOne",
+    "42",
+    " & API_KEY: ",
+    "fixtureTwo",
+    "43"
+   ],
+   "output": "DB_PASSWORD: [redacted] & API_KEY: [redacted]"
+  },
+  {
+   "id": "following_assignment_28",
+   "kind": "text",
+   "input_parts": [
+    "DB_PASSWORD=[redacted] API_KEY=",
+    "fixtureTwo",
+    "43"
+   ],
+   "output": "DB_PASSWORD=[redacted] API_KEY=[redacted]"
+  },
+  {
+   "id": "following_assignment_29",
+   "kind": "text",
+   "input_parts": [
+    "DB_PASSWORD=true API_KEY=",
+    "fixtureTwo",
+    "43"
+   ],
+   "output": "DB_PASSWORD=true API_KEY=[redacted]"
+  },
+  {
+   "id": "following_assignment_30",
+   "kind": "text",
+   "input_parts": [
+    "DB_PASSWORD=os.environ[\"DEMO\"] API_KEY=",
+    "fixtureTwo",
+    "43"
+   ],
+   "output": "DB_PASSWORD=os.environ[\"DEMO\"] API_KEY=[redacted]"
+  },
+  {
+   "id": "following_assignment_31",
+   "kind": "text",
+   "input_parts": [
+    "DB_PASSWORD=\"\" API_KEY=",
+    "fixtureTwo",
+    "43"
+   ],
+   "output": "DB_PASSWORD=\"\" API_KEY=[redacted]"
+  },
+  {
+   "id": "following_assignment_32",
+   "kind": "text",
+   "input_parts": [
+    "DB_PASSWORD=\"ordinary\" API_KEY=",
+    "fixtureTwo",
+    "43"
+   ],
+   "output": "DB_PASSWORD=\"[redacted]\" API_KEY=[redacted]"
+  },
+  {
+   "id": "keyword_suffix_title",
+   "kind": "title",
+   "input_parts": [
+    "Password: ",
+    "true",
+    "!Demo26"
+   ],
+   "output": "Password: [redacted]"
+  },
+  {
+   "id": "multiple_assignments_title",
+   "kind": "title",
+   "input_parts": [
+    "Password=",
+    "fixtureOne",
+    "42",
+    " API_KEY=",
+    "fixtureTwo",
+    "43"
+   ],
+   "output": "Password=[redacted] API_KEY=[redacted]"
+  },
+  {
+   "id": "code_complete_literals",
+   "kind": "text",
+   "input_parts": [
+    "password: str\ntoken = None\nsecret = false"
+   ],
+   "output": "password: str\ntoken = None\nsecret = false"
+  },
+  {
+   "id": "call_password_0",
+   "kind": "text",
+   "input_parts": [
+    "Password: ",
+    "summer",
+    "(2026)"
+   ],
+   "output": "Password: [redacted]"
+  },
+  {
+   "id": "call_password_1",
+   "kind": "text",
+   "input_parts": [
+    "Password=",
+    "summer",
+    "(2026)"
+   ],
+   "output": "Password=[redacted]"
+  },
+  {
+   "id": "call_password_2",
+   "kind": "text",
+   "input_parts": [
+    "Password:= ",
+    "summer",
+    "(2026)"
+   ],
+   "output": "Password:= [redacted]"
+  },
+  {
+   "id": "call_password_3",
+   "kind": "text",
+   "input_parts": [
+    "Password => ",
+    "summer",
+    "(2026)"
+   ],
+   "output": "Password => [redacted]"
+  },
+  {
+   "id": "call_password_title",
+   "kind": "title",
+   "input_parts": [
+    "Password: ",
+    "summer",
+    "(2026)"
+   ],
+   "output": "Password: [redacted]"
+  },
+  {
+   "id": "subscript_password_5",
+   "kind": "text",
+   "input_parts": [
+    "Password: ",
+    "summer",
+    "[2026]"
+   ],
+   "output": "Password: [redacted]"
+  },
+  {
+   "id": "subscript_password_6",
+   "kind": "text",
+   "input_parts": [
+    "Password=",
+    "summer",
+    "[2026]"
+   ],
+   "output": "Password=[redacted]"
+  },
+  {
+   "id": "subscript_password_7",
+   "kind": "text",
+   "input_parts": [
+    "Password:= ",
+    "summer",
+    "[2026]"
+   ],
+   "output": "Password:= [redacted]"
+  },
+  {
+   "id": "subscript_password_8",
+   "kind": "text",
+   "input_parts": [
+    "Password => ",
+    "summer",
+    "[2026]"
+   ],
+   "output": "Password => [redacted]"
+  },
+  {
+   "id": "subscript_password_title",
+   "kind": "title",
+   "input_parts": [
+    "Password: ",
+    "summer",
+    "[2026]"
+   ],
+   "output": "Password: [redacted]"
+  },
+  {
+   "id": "keyword_password_10",
+   "kind": "text",
+   "input_parts": [
+    "Password: ",
+    "str",
+    "(2026)"
+   ],
+   "output": "Password: [redacted]"
+  },
+  {
+   "id": "keyword_password_11",
+   "kind": "text",
+   "input_parts": [
+    "Password=",
+    "str",
+    "(2026)"
+   ],
+   "output": "Password=[redacted]"
+  },
+  {
+   "id": "keyword_password_12",
+   "kind": "text",
+   "input_parts": [
+    "Password:= ",
+    "str",
+    "(2026)"
+   ],
+   "output": "Password:= [redacted]"
+  },
+  {
+   "id": "keyword_password_13",
+   "kind": "text",
+   "input_parts": [
+    "Password => ",
+    "str",
+    "(2026)"
+   ],
+   "output": "Password => [redacted]"
+  },
+  {
+   "id": "keyword_password_title",
+   "kind": "title",
+   "input_parts": [
+    "Password: ",
+    "str",
+    "(2026)"
+   ],
+   "output": "Password: [redacted]"
+  },
+  {
+   "id": "env_assignment",
+   "kind": "text",
+   "input_parts": [
+    "export API_KEY=",
+    "sk-",
+    "proj-",
+    "FAKEacmefloFixture0123456789"
+   ],
+   "output": "export API_KEY=[redacted]"
+  },
+  {
+   "id": "json_password",
+   "kind": "text",
+   "input_parts": [
+    "{\"password\": \"",
+    "FAKE-acmeflo-",
+    "Fixture-pw-42",
+    "\", \"user\": \"fixture-user\"}"
+   ],
+   "output": "{\"password\": \"[redacted]\", \"user\": \"fixture-user\"}"
+  },
+  {
+   "id": "shell_export_password",
+   "kind": "text",
+   "input_parts": [
+    "export DB_PASSWORD=",
+    "FAKE-acmeflo-",
+    "Fixture-pw-42",
+    "\nnpm test"
+   ],
+   "output": "export DB_PASSWORD=[redacted]\nnpm test"
+  },
+  {
+   "id": "command_flag_password",
+   "kind": "text",
+   "input_parts": [
+    "mysql --password ",
+    "FAKE-acmeflo-",
+    "Fixture-pw-42",
+    " --host db.internal"
+   ],
+   "output": "mysql --password [redacted] --host db.internal"
+  },
+  {
+   "id": "terminal_labelled_line",
+   "kind": "text",
+   "input_parts": [
+    "$ deploy\nPassword: ",
+    "FAKE-acmeflo-",
+    "Fixture-pw-42",
+    "\nDone"
+   ],
+   "output": "$ deploy\nPassword: [redacted]\nDone"
+  },
+  {
+   "id": "password_is_phrase",
+   "kind": "text",
+   "input_parts": [
+    "The staging password is ",
+    "FAKE-acmeflo-",
+    "Fixture-pw-42",
+    " for now"
+   ],
+   "output": "The staging password is [redacted]"
+  },
+  {
+   "id": "github_token",
+   "kind": "text",
+   "input_parts": [
+    "Pushed with ",
+    "gh",
+    "p_",
+    "FAKEacmefloFixture0123456789abcdefgh",
+    " today"
+   ],
+   "output": "Pushed with [redacted] today"
+  },
+  {
+   "id": "slack_token",
+   "kind": "text",
+   "input_parts": [
+    "bot ",
+    "xox",
+    "b-",
+    "000000000000-FAKEfixture0000",
+    " ready"
+   ],
+   "output": "bot [redacted] ready"
+  },
+  {
+   "id": "aws_access_key",
+   "kind": "text",
+   "input_parts": [
+    "aws id ",
+    "AKIA",
+    "FAKEFIXTURE00042",
+    " region eu-west-2"
+   ],
+   "output": "aws id [redacted] region eu-west-2"
+  },
+  {
+   "id": "google_api_key",
+   "kind": "text",
+   "input_parts": [
+    "maps ",
+    "AIza",
+    "FAKEacmefloFixture0123456789abcdefg",
+    " loaded"
+   ],
+   "output": "maps [redacted] loaded"
+  },
+  {
+   "id": "stripe_key",
+   "kind": "text",
+   "input_parts": [
+    "billing ",
+    "sk_",
+    "live_",
+    "FAKEacmefloFixture0123456"
+   ],
+   "output": "billing [redacted]"
+  },
+  {
+   "id": "bearer_header",
+   "kind": "text",
+   "input_parts": [
+    "curl -H 'Authorization: Bearer ",
+    "FAKE.bearer-",
+    "Fixture0042xyz",
+    "' https://api.example.test"
+   ],
+   "output": "curl -H 'Authorization: [redacted]"
+  },
+  {
+   "id": "jwt_token",
+   "kind": "text",
+   "input_parts": [
+    "session ",
+    "eyJ",
+    "hbGciOiJIUzI1NiJ9",
+    ".",
+    "eyJ",
+    "zdWIiOiJmaXh0dXJlIn0",
+    ".",
+    "FAKEsignatureFixture42",
+    " expires soon"
+   ],
+   "output": "session [redacted] expires soon"
+  },
+  {
+   "id": "private_key_block",
+   "kind": "text",
+   "input_parts": [
+    "-----BEGIN ",
+    "OPENSSH PRIVATE KEY-----\n",
+    "FAKEfixture",
+    "KeyMaterial0042",
+    "\n-----END ",
+    "OPENSSH PRIVATE KEY-----"
+   ],
+   "output": null
+  },
+  {
+   "id": "encoded_private_key_header",
+   "kind": "text",
+   "input_parts": [
+    "%2D%2D%2D%2D%2DBEGIN%20PRIVATE%20KEY%2D%2D%2D%2D%2D\n",
+    "FAKEfixture",
+    "KeyMaterial0042"
+   ],
+   "output": null
+  },
+  {
+   "id": "url_userinfo_in_text",
+   "kind": "text",
+   "input_parts": [
+    "connect https://fixture-user:",
+    "FAKE-acmeflo-",
+    "Fixture-pw-42",
+    "@db.example.test/app now"
+   ],
+   "output": "connect https://[redacted]@db.example.test/app now"
+  },
+  {
+   "id": "url_query_in_text",
+   "kind": "text",
+   "input_parts": [
+    "open https://app.example.test/cb?access_token=",
+    "FAKEacmeflo",
+    "Fixture0query42",
+    "&page=2"
+   ],
+   "output": "open https://app.example.test/cb?access_token=[redacted]&page=2"
+  },
+  {
+   "id": "percent_encoded_query",
+   "kind": "text",
+   "input_parts": [
+    "open https://app.example.test/cb?next=%2Fx%3Fapi_key%3D",
+    "FAKEacmeflo",
+    "Fixture0query42",
+    " later"
+   ],
+   "output": "open [redacted] later"
+  },
+  {
+   "id": "split_label_nodes",
+   "kind": "text",
+   "input_parts": [
+    "API key\n",
+    "Fk29xLqPz83Mv",
+    "NcBtRwYs7HdJaKeQm5T",
+    "\nCopy"
+   ],
+   "output": "API key\n[redacted]\nCopy"
+  },
+  {
+   "id": "split_label_unlabelled_value",
+   "kind": "text",
+   "input_parts": [
+    "Password\n",
+    "FAKE-acmeflo-",
+    "Fixture-pw-42",
+    "\nSign in"
+   ],
+   "output": "Password\n[redacted]\nSign in"
+  },
+  {
+   "id": "nbsp_separator",
+   "kind": "text",
+   "input_parts": [
+    "password: ",
+    "FAKE-acmeflo-",
+    "Fixture-pw-42"
+   ],
+   "output": "password: [redacted]"
+  },
+  {
+   "id": "zero_width_label",
+   "kind": "text",
+   "input_parts": [
+    "pass​word=",
+    "FAKE-acmeflo-",
+    "Fixture-pw-42"
+   ],
+   "output": "password=[redacted]"
+  },
+  {
+   "id": "fullwidth_label",
+   "kind": "text",
+   "input_parts": [
+    "ｐａｓｓｗｏｒｄ＝",
+    "FAKE-acmeflo-",
+    "Fixture-pw-42"
+   ],
+   "output": "password=[redacted]"
+  },
+  {
+   "id": "line_separator_label",
+   "kind": "text",
+   "input_parts": [
+    "Token: ",
+    "Fk29xLqPz83Mv",
+    "NcBtRwYs7HdJaKeQm5T"
+   ],
+   "output": "Token:\n[redacted]"
+  },
+  {
+   "id": "unlabelled_high_entropy",
+   "kind": "text",
+   "input_parts": [
+    "id ",
+    "Fk29xLqPz83Mv",
+    "NcBtRwYs7HdJaKeQm5T",
+    " end"
+   ],
+   "output": "id [redacted] end"
+  },
+  {
+   "id": "credential_document_terminal",
+   "kind": "text",
+   "input_parts": [
+    "$ cat .env.production\nDATABASE=fixture"
+   ],
+   "output": null
+  },
+  {
+   "id": "credential_path_aws",
+   "kind": "text",
+   "input_parts": [
+    "vim ~/.aws/credentials"
+   ],
+   "output": null
+  },
+  {
+   "id": "title_credential_document",
+   "kind": "title",
+   "input_parts": [
+    ".env.local - Acmeflo - Cursor"
+   ],
+   "output": null
+  },
+  {
+   "id": "title_private_key_file",
+   "kind": "title",
+   "input_parts": [
+    "id_ed25519 — Edited"
+   ],
+   "output": null
+  },
+  {
+   "id": "title_with_secret",
+   "kind": "title",
+   "input_parts": [
+    "API_KEY=",
+    "sk-",
+    "proj-",
+    "FAKEacmefloFixture0123456789",
+    " - Terminal"
+   ],
+   "output": "API_KEY=[redacted]"
+  },
+  {
+   "id": "aria_label_token",
+   "kind": "text",
+   "input_parts": [
+    "Copy ",
+    "gh",
+    "p_",
+    "FAKEacmefloFixture0123456789abcdefgh"
+   ],
+   "output": "Copy [redacted]"
+  },
+  {
+   "id": "url_strip_userinfo_query_fragment",
+   "kind": "url",
+   "input_parts": [
+    "https://fixture-user:",
+    "FAKE-acmeflo-",
+    "Fixture-pw-42",
+    "@example.test/orders/43?access_token=",
+    "FAKEacmeflo",
+    "Fixture0query42",
+    "#details"
+   ],
+   "output": "https://example.test/orders/43"
+  },
+  {
+   "id": "url_keeps_port",
+   "kind": "url",
+   "input_parts": [
+    "http://127.0.0.1:9000/review?x=1"
+   ],
+   "output": "http://127.0.0.1:9000/review"
+  },
+  {
+   "id": "url_credential_document_path",
+   "kind": "url",
+   "input_parts": [
+    "https://github.com/acme/app/blob/main/.env"
+   ],
+   "output": null
+  },
+  {
+   "id": "url_percent_encoded_document",
+   "kind": "url",
+   "input_parts": [
+    "https://files.example.test/%252Eenv"
+   ],
+   "output": null
+  },
+  {
+   "id": "url_token_in_path",
+   "kind": "url",
+   "input_parts": [
+    "https://app.example.test/magic/",
+    "eyJ",
+    "hbGciOiJIUzI1NiJ9",
+    ".",
+    "eyJ",
+    "zdWIiOiJmaXh0dXJlIn0",
+    ".",
+    "FAKEsignatureFixture42"
+   ],
+   "output": null
+  },
+  {
+   "id": "url_labelled_password_path",
+   "kind": "url",
+   "input_parts": [
+    "https://example.test/password=",
+    "FAKE-acmeflo-",
+    "Fixture-pw-42"
+   ],
+   "output": null
+  },
+  {
+   "id": "url_excess_encoding",
+   "kind": "url",
+   "input_parts": [
+    "https://example.test/%25252Eenv"
+   ],
+   "output": null
+  },
+  {
+   "id": "text_excess_encoding",
+   "kind": "text",
+   "input_parts": [
+    "open %252570assword=",
+    "FAKE-acmeflo-",
+    "Fixture-pw-42",
+    " later"
+   ],
+   "output": "open [redacted] later"
+  },
+  {
+   "id": "url_password_manager",
+   "kind": "url",
+   "input_parts": [
+    "https://my.1password.com/vaults"
+   ],
+   "output": null
+  },
+  {
+   "id": "url_document_id_kept",
+   "kind": "url",
+   "input_parts": [
+    "https://docs.google.com/document/d/1AbCdEfGhIjKlMnOpQrStUvWxYz0123456789ab/edit?usp=sharing"
+   ],
+   "output": "https://docs.google.com/document/d/1AbCdEfGhIjKlMnOpQrStUvWxYz0123456789ab/edit"
+  },
+  {
+   "id": "prose_token_bucket",
+   "kind": "text",
+   "input_parts": [
+    "The token bucket algorithm limits requests per second."
+   ],
+   "output": "The token bucket algorithm limits requests per second."
+  },
+  {
+   "id": "code_type_hint",
+   "kind": "text",
+   "input_parts": [
+    "def login(username: str, password: str) -> bool:"
+   ],
+   "output": "def login(username: str, password: str) -> bool:"
+  },
+  {
+   "id": "code_env_lookup",
+   "kind": "text",
+   "input_parts": [
+    "token = os.environ[\"GITHUB_TOKEN\"]"
+   ],
+   "output": "token = os.environ[\"GITHUB_TOKEN\"]"
+  },
+  {
+   "id": "code_max_tokens",
+   "kind": "text",
+   "input_parts": [
+    "max_tokens = 1024"
+   ],
+   "output": "max_tokens = 1024"
+  },
+  {
+   "id": "code_comparison",
+   "kind": "text",
+   "input_parts": [
+    "if password == confirm_password:"
+   ],
+   "output": "if password == confirm_password:"
+  },
+  {
+   "id": "git_sha",
+   "kind": "text",
+   "input_parts": [
+    "git commit 3f2a9c1e4b5d6a7f8e9d0c1b2a3f4e5d6c7b8a9f"
+   ],
+   "output": "git commit 3f2a9c1e4b5d6a7f8e9d0c1b2a3f4e5d6c7b8a9f"
+  },
+  {
+   "id": "uuid",
+   "kind": "text",
+   "input_parts": [
+    "UUID 550e8400-e29b-41d4-a716-446655440000"
+   ],
+   "output": "UUID 550e8400-e29b-41d4-a716-446655440000"
+  },
+  {
+   "id": "prose_credentials_word",
+   "kind": "text",
+   "input_parts": [
+    "Update your credentials in the account settings."
+   ],
+   "output": "Update your credentials in the account settings."
+  },
+  {
+   "id": "env_template",
+   "kind": "text",
+   "input_parts": [
+    "cp .env.example config/app.yml"
+   ],
+   "output": "cp .env.example config/app.yml"
+  },
+  {
+   "id": "prose_forgot_password",
+   "kind": "text",
+   "input_parts": [
+    "Forgot password? Reset it from the sign-in page."
+   ],
+   "output": "Forgot password? Reset it from the sign-in page."
+  },
+  {
+   "id": "prose_password_strength",
+   "kind": "text",
+   "input_parts": [
+    "Password strength meter shows strong."
+   ],
+   "output": "Password strength meter shows strong."
+  },
+  {
+   "id": "code_fetch",
+   "kind": "text",
+   "input_parts": [
+    "const response = await fetch(url, {method: \"POST\"});"
+   ],
+   "output": "const response = await fetch(url, {method: \"POST\"});"
+  },
+  {
+   "id": "code_token_type",
+   "kind": "text",
+   "input_parts": [
+    "token_type: bearer"
+   ],
+   "output": "token_type: bearer"
+  },
+  {
+   "id": "prose_order",
+   "kind": "text",
+   "input_parts": [
+    "Customer order 43 shipped to Leeds; invoice INV-2026-0042 attached."
+   ],
+   "output": "Customer order 43 shipped to Leeds; invoice INV-2026-0042 attached."
+  },
+  {
+   "id": "title_ordinary",
+   "kind": "title",
+   "input_parts": [
+    "Quarterly plan.docx - Word"
+   ],
+   "output": "Quarterly plan.docx - Word"
+  },
+  {
+   "id": "title_public_key",
+   "kind": "title",
+   "input_parts": [
+    "id_rsa.pub - TextEdit"
+   ],
+   "output": "id_rsa.pub - TextEdit"
+  },
+  {
+   "id": "private_iban_spaced",
+   "kind": "text",
+   "input_parts": [
+    "Pay to IT60 X054 2811 1010 0000 0123 456 please"
+   ],
+   "output": "Pay to IT60 X054 2811 1010 0000 0123 456 please"
+  },
+  {
+   "id": "private_iban_label",
+   "kind": "text",
+   "input_parts": [
+    "IBAN: IT60X0542811101000000123456"
+   ],
+   "output": "IBAN: IT60X0542811101000000123456"
+  },
+  {
+   "id": "private_card_number",
+   "kind": "text",
+   "input_parts": [
+    "Card on file 4111 1111 1111 1111 expires 12/29"
+   ],
+   "output": "Card on file 4111 1111 1111 1111 expires 12/29"
+  },
+  {
+   "id": "private_email_addresses",
+   "kind": "text",
+   "input_parts": [
+    "Contact mario.rossi@acmecorp.it or sara.conti@gmail.com about the approval"
+   ],
+   "output": "Contact mario.rossi@acmecorp.it or sara.conti@gmail.com about the approval"
+  },
+  {
+   "id": "private_phone",
+   "kind": "text",
+   "input_parts": [
+    "Call +39 333 123 4567 after lunch"
+   ],
+   "output": "Call +39 333 123 4567 after lunch"
+  },
+  {
+   "id": "private_tax_ids",
+   "kind": "text",
+   "input_parts": [
+    "CF RSSMRA85T10A562S, supplier IT01234567897"
+   ],
+   "output": "CF RSSMRA85T10A562S, supplier IT01234567897"
+  },
+  {
+   "id": "private_salary",
+   "kind": "text",
+   "input_parts": [
+    "Salary: 54,000 EUR per year"
+   ],
+   "output": "Salary: 54,000 EUR per year"
+  },
+  {
+   "id": "private_invoice_amount_date_file",
+   "kind": "text",
+   "input_parts": [
+    "Invoice INV-2041 total 12,400.00 EUR due 2026-10-30, file Invoice log.xlsx, ticket SUP-118"
+   ],
+   "output": "Invoice INV-2041 total 12,400.00 EUR due 2026-10-30, file Invoice log.xlsx, ticket SUP-118"
+  },
+  {
+   "id": "private_codes_survive",
+   "kind": "text",
+   "input_parts": [
+    "Paid to [IBAN·IT·7c2e] by [CARD·VISA·9a1b], mail [EMAIL·corp·3f0d], call [PHONE·IT·1afa], [TAXID·IT·8032], [PERSON·388a], [SALARY·331e], [IBAN·IT·????]"
+   ],
+   "output": "Paid to [IBAN·IT·7c2e] by [CARD·VISA·9a1b], mail [EMAIL·corp·3f0d], call [PHONE·IT·1afa], [TAXID·IT·8032], [PERSON·388a], [SALARY·331e], [IBAN·IT·????]"
+  },
+  {
+   "id": "private_title_with_address",
+   "kind": "title",
+   "input_parts": [
+    "Payment to mario.rossi@acmecorp.it - Mail"
+   ],
+   "output": "Payment to mario.rossi@acmecorp.it - Mail"
+  }
+ ]
+}

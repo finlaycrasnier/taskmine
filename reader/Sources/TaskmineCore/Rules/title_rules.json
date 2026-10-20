@@ -1,0 +1,40 @@
+{
+ "_comment": "Transcribed from services/discovery/sessions.py (tidy_title, normalize_title). These rules run in the Python core, not on the Mac: the Mac saves titles as read (after secrets and private data are handled). Python regex syntax.",
+ "max_scalars": 240,
+ "zero_width_class": "[​-‏⁠﻿]",
+ "spinner": "^(?:[⠀-⣿◐-◓◴-◷✳✶✻✽·•●*]+|[|/\\\\-])\\s+",
+ "unread_prefix": "^(?:\\(\\d{1,5}\\+?\\)|\\[\\d{1,5}\\+?\\])\\s*",
+ "unread_tail": "(?i)\\s*(?:\\(\\d{1,5}\\+? (?:unread|new)\\)|\\(\\d{1,5}\\+?\\))$",
+ "edited": "(?i)\\s*(?:[—–-]\\s*Edited|\\(Edited\\)|•\\s*Edited)\\s*$",
+ "clock": "\\b\\d{1,2}:\\d{2}(?::\\d{2})?(?:\\s*[AaPp]\\.?[Mm]\\.?)?(?![\\d:])",
+ "iso_datetime": "\\b\\d{4}-\\d{2}-\\d{2}[T ]\\d{2}:\\d{2}(?::\\d{2})?(?:\\.\\d+)?(?:Z|[+-]\\d{2}:?\\d{2})?",
+ "ago": "(?i)\\b\\d{1,3}\\s+(?:seconds?|minutes?|mins?|hours?|hrs?|days?)\\s+ago\\b",
+ "separators_trimmed": " -–—|:·•",
+ "markers": {
+  "invisible": "⟨invisible⟩",
+  "busy": "⟨busy⟩",
+  "count": "⟨count⟩",
+  "edited": "⟨edited⟩",
+  "clock": "⟨clock⟩"
+ },
+ "tidy_title_order": [
+  "NFC; replace each zero-width run with the invisible marker",
+  "collapse whitespace",
+  "spinner prefix -> busy marker + space (once)",
+  "unread prefix -> count marker + space (once)",
+  "unread tail -> space + count marker (once)",
+  "edited tail -> space + edited marker (once)",
+  "iso_datetime, then clock, then ago -> clock marker",
+  "collapse whitespace; clip to 240"
+ ],
+ "normalize_title_order": [
+  "strip all markers: ⟨(clock|count|busy|edited|tracking|fragment|invisible|repeat×N...)⟩",
+  "NFC, delete zero-width",
+  "collapse whitespace",
+  "up to 3 passes of: spinner, unread prefix, unread tail, edited tail (all removed)",
+  "remove iso_datetime, clock, ago",
+  "remove an app suffix: \\s*[–—|-]\\s*<app name>$ (case-insensitive)",
+  "collapse whitespace; trim separators; clip to 240"
+ ],
+ "session_gap_seconds": 120
+}
