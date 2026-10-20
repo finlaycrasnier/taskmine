@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://taskmine.local/contracts/ack.schema.json",
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "taskmine.ack/1"
+    },
+    "batch_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+    },
+    "accepted": {
+      "type": "array",
+      "maxItems": 100,
+      "items": {
+        "type": "object",
+        "properties": {
+          "event_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+          },
+          "revision": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "status": {
+            "enum": [
+              "stored",
+              "duplicate",
+              "stale"
+            ]
+          }
+        },
+        "required": [
+          "event_id",
+          "revision",
+          "status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "rejected": {
+      "type": "array",
+      "maxItems": 100,
+      "items": {
+        "type": "object",
+        "properties": {
+          "event_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+          },
+          "revision": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "code": {
+            "enum": [
+              "invalid_event",
+              "credential_detected",
+              "policy_denied",
+              "event_expired"
+            ]
+          },
+          "reason": {
+            "type": "string",
+            "maxLength": 200
+          }
+        },
+        "required": [
+          "event_id",
+          "revision",
+          "code"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "schema",
+    "batch_id",
+    "accepted",
+    "rejected"
+  ],
+  "additionalProperties": false
+}
