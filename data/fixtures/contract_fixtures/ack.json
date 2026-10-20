@@ -1,0 +1,12 @@
+{
+  "schema": "taskmine.ack/1",
+  "batch_id": "fixture-batch-1",
+  "accepted": [
+    {
+      "event_id": "desktop-invoice-1042-1",
+      "revision": 1,
+      "status": "stored"
+    }
+  ],
+  "rejected": []
+}

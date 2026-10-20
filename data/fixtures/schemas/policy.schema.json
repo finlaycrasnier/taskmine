@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://taskmine.local/contracts/policy.schema.json",
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "taskmine.policy/1"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "state": {
+      "enum": [
+        "active",
+        "paused"
+      ]
+    },
+    "allowed_apps": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "maxLength": 256
+      },
+      "uniqueItems": true,
+      "maxItems": 100
+    },
+    "excluded_domains": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9](?:[a-z0-9.-]*[a-z0-9])?$",
+        "maxLength": 253
+      },
+      "uniqueItems": true,
+      "maxItems": 100
+    },
+    "allowed_provenance": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "native_accessibility",
+          "native_interaction",
+          "screen_ocr",
+          "app_reader",
+          "synthetic"
+        ]
+      },
+      "uniqueItems": true,
+      "maxItems": 5
+    },
+    "retention_days": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 365
+    }
+  },
+  "required": [
+    "schema",
+    "version",
+    "state",
+    "allowed_apps",
+    "excluded_domains",
+    "allowed_provenance",
+    "retention_days"
+  ],
+  "additionalProperties": false
+}

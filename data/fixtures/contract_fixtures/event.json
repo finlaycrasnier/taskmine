@@ -1,0 +1,21 @@
+{
+  "schema": "taskmine.event/1",
+  "event_id": "desktop-invoice-1042-1",
+  "revision": 1,
+  "source_id": "mac-fixture",
+  "observed_at": "2026-09-22T10:00:00Z",
+  "first_seen_at": "2026-09-22T10:00:00Z",
+  "last_seen_at": "2026-09-22T10:00:00Z",
+  "provenance": "synthetic",
+  "content": {
+    "type": "screen_text",
+    "text": "Invoice INV-1042: \u00a31,200. Purchase order PO-1042: \u00a31,000. Approval is required before payment.",
+    "text_sha256": "2cbc652ee6faa4f9ced4d6289c877a52e50dbe852a24e4c5d8770e39bb1e1260",
+    "metadata": {
+      "app_bundle_id": "com.apple.TextEdit",
+      "app_name": "TextEdit",
+      "window_title": "Fictional invoice review",
+      "case_ref": "invoice-1042"
+    }
+  }
+}

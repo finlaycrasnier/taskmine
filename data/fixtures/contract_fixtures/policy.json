@@ -1,0 +1,19 @@
+{
+  "schema": "taskmine.policy/1",
+  "version": 1,
+  "state": "active",
+  "allowed_apps": [
+    "*"
+  ],
+  "excluded_domains": [
+    "example-bank.test"
+  ],
+  "allowed_provenance": [
+    "native_accessibility",
+    "native_interaction",
+    "screen_ocr",
+    "app_reader",
+    "synthetic"
+  ],
+  "retention_days": 30
+}

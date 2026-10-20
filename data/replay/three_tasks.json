@@ -1,0 +1,715 @@
+{
+ "description": "Transcribed from scripts/capture_session.py (three_task_batch, three_task_fields, second_ticket_batch, second_ticket_fields, unclear_batch). Times are anchored to end=2026-10-20T10:00:00Z; the original shifts them to now. All data fictional.",
+ "documents": {
+  "invoice-a": "Invoice INV-4827 Acme Supplies.rtf",
+  "invoice-b": "Approval INV-4827.rtf",
+  "ticket": "Ticket SUP-1187 reply.rtf",
+  "personal": "Lofi study beats - YouTube.rtf"
+ },
+ "ground_truth_task_of_document": {
+  "invoice-a": "invoice approval",
+  "invoice-b": "invoice approval",
+  "ticket": "ticket reply",
+  "personal": "personal browse",
+  "ticket-2": "second ticket reply"
+ },
+ "step_order": [
+  [
+   "invoice-a",
+   2
+  ],
+  [
+   "invoice-a",
+   4
+  ],
+  [
+   "invoice-a",
+   5
+  ],
+  [
+   "invoice-b",
+   2
+  ],
+  [
+   "invoice-b",
+   3
+  ],
+  [
+   "ticket",
+   2
+  ],
+  [
+   "ticket",
+   3
+  ],
+  [
+   "ticket",
+   4
+  ],
+  [
+   "save",
+   "ticket"
+  ],
+  [
+   "invoice-b",
+   4
+  ],
+  [
+   "save",
+   "invoice-b"
+  ],
+  [
+   "invoice-a",
+   6
+  ],
+  [
+   "save",
+   "invoice-a"
+  ]
+ ],
+ "personal_seconds": 75,
+ "scenarios": {
+  "three_tasks": {
+   "events": [
+    {
+     "event_id": "desktop-4d716d1c-47dd-554d-ad3c-06e28d06b1d7",
+     "observed_at": "2026-10-20T09:58:00Z",
+     "first_seen_at": "2026-10-20T09:58:00Z",
+     "last_seen_at": "2026-10-20T09:58:03Z",
+     "source_type": "desktop",
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "window_title": "Invoice INV-4827 Acme Supplies.rtf",
+     "window_ref": "window:8fa5db4e-3fa8-5f49-9769-ee69e959e5b9",
+     "document_id": "document:8f450d7549071934e8926b89d40a17389d9894dee506055e237d063e90f84a33",
+     "furniture_lines": null,
+     "interaction": "screen_text (trigger accessibility_event)",
+     "text": "Invoice INV-4827 Acme Supplies.rtf\nInvoice INV-4827\nSupplier: Acme Supplies SpA (fictional)\nbold\nitalic\nunderline\nstrikethrough\ntext colour\nrgb 0 0 0 1\ntext background colour\nrgb 1 1 1 1\ntypeface\nHelvetica\nstyle\nRegular\nfont size\n12\nfont size\nalign left\nalign centre\nalign right\nfully justify\nlist style\nline spacing\n1.0\ndocument actions\nInvoice INV-4827 Acme Supplies.rtf"
+    },
+    {
+     "event_id": "desktop-9b9e8568-a346-5024-b880-6bea25ed4299",
+     "observed_at": "2026-10-20T09:58:05Z",
+     "first_seen_at": "2026-10-20T09:58:05Z",
+     "last_seen_at": "2026-10-20T09:58:08Z",
+     "source_type": "desktop",
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "window_title": "Invoice INV-4827 Acme Supplies.rtf",
+     "window_ref": "window:8fa5db4e-3fa8-5f49-9769-ee69e959e5b9",
+     "document_id": "document:8f450d7549071934e8926b89d40a17389d9894dee506055e237d063e90f84a33",
+     "furniture_lines": null,
+     "interaction": "screen_text (trigger accessibility_event)",
+     "text": "Invoice INV-4827 Acme Supplies.rtf\nInvoice INV-4827\nSupplier: Acme Supplies SpA (fictional)\nAmount: 1,240.00 EUR\nDue date: 15/10/2026\nbold\nitalic\nunderline\nstrikethrough\ntext colour\nrgb 0 0 0 1\ntext background colour\nrgb 1 1 1 1\ntypeface\nHelvetica\nstyle\nRegular\nfont size\n12\nfont size\nalign left\nalign centre\nalign right\nfully justify\nlist style\nline spacing\n1.0\ndocument actions\nInvoice INV-4827 Acme Supplies.rtf"
+    },
+    {
+     "event_id": "desktop-b718c475-ebdb-5fbc-b672-b17fc3f35f27",
+     "observed_at": "2026-10-20T09:58:10Z",
+     "first_seen_at": "2026-10-20T09:58:10Z",
+     "last_seen_at": "2026-10-20T09:58:13Z",
+     "source_type": "desktop",
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "window_title": "Invoice INV-4827 Acme Supplies.rtf",
+     "window_ref": "window:8fa5db4e-3fa8-5f49-9769-ee69e959e5b9",
+     "document_id": "document:8f450d7549071934e8926b89d40a17389d9894dee506055e237d063e90f84a33",
+     "furniture_lines": null,
+     "interaction": "screen_text (trigger accessibility_event)",
+     "text": "Invoice INV-4827 Acme Supplies.rtf\nInvoice INV-4827\nSupplier: Acme Supplies SpA (fictional)\nAmount: 1,240.00 EUR\nDue date: 15/10/2026\nStatus: awaiting approval\nbold\nitalic\nunderline\nstrikethrough\ntext colour\nrgb 0 0 0 1\ntext background colour\nrgb 1 1 1 1\ntypeface\nHelvetica\nstyle\nRegular\nfont size\n12\nfont size\nalign left\nalign centre\nalign right\nfully justify\nlist style\nline spacing\n1.0\ndocument actions\nInvoice INV-4827 Acme Supplies.rtf"
+    },
+    {
+     "event_id": "desktop-b643521e-488d-5bdf-baa8-91327a2499cd",
+     "observed_at": "2026-10-20T09:58:15Z",
+     "first_seen_at": "2026-10-20T09:58:15Z",
+     "last_seen_at": "2026-10-20T09:58:18Z",
+     "source_type": "desktop",
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "window_title": "Approval INV-4827.rtf",
+     "window_ref": "window:88318aae-7875-5717-ade0-0f607feb9f81",
+     "document_id": "document:42a2b70e6fb558d1ded865ea718f20301a0c15e7aa7abb73e173dbb28513131d",
+     "furniture_lines": null,
+     "interaction": "screen_text (trigger accessibility_event)",
+     "text": "Approval INV-4827.rtf\nApproval note for INV-4827\nChecked against purchase order 5512: quantities match.\nbold\nitalic\nunderline\nstrikethrough\ntext colour\nrgb 0 0 0 1\ntext background colour\nrgb 1 1 1 1\ntypeface\nHelvetica\nstyle\nRegular\nfont size\n12\nfont size\nalign left\nalign centre\nalign right\nfully justify\nlist style\nline spacing\n1.0\ndocument actions\nApproval INV-4827.rtf"
+    },
+    {
+     "event_id": "desktop-5a5e44ad-0999-5f56-888e-d99814c5b215",
+     "observed_at": "2026-10-20T09:58:20Z",
+     "first_seen_at": "2026-10-20T09:58:20Z",
+     "last_seen_at": "2026-10-20T09:58:23Z",
+     "source_type": "desktop",
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "window_title": "Approval INV-4827.rtf",
+     "window_ref": "window:88318aae-7875-5717-ade0-0f607feb9f81",
+     "document_id": "document:42a2b70e6fb558d1ded865ea718f20301a0c15e7aa7abb73e173dbb28513131d",
+     "furniture_lines": null,
+     "interaction": "screen_text (trigger accessibility_event)",
+     "text": "Approval INV-4827.rtf\nApproval note for INV-4827\nChecked against purchase order 5512: quantities match.\nAmount matches the order: 1,240.00 EUR.\nbold\nitalic\nunderline\nstrikethrough\ntext colour\nrgb 0 0 0 1\ntext background colour\nrgb 1 1 1 1\ntypeface\nHelvetica\nstyle\nRegular\nfont size\n12\nfont size\nalign left\nalign centre\nalign right\nfully justify\nlist style\nline spacing\n1.0\ndocument actions\nApproval INV-4827.rtf"
+    },
+    {
+     "event_id": "desktop-48b40d6d-5af4-578f-9d3e-abddffab5138",
+     "observed_at": "2026-10-20T09:58:25Z",
+     "first_seen_at": "2026-10-20T09:58:25Z",
+     "last_seen_at": "2026-10-20T09:58:28Z",
+     "source_type": "desktop",
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "window_title": "Ticket SUP-1187 reply.rtf",
+     "window_ref": "window:006f9ed6-5285-5a1b-8d2d-0d3f93216701",
+     "document_id": "document:2517aec77e83942160a145afe850b1d898e43f94156aa4ca60e0a88e5d2d2fcf",
+     "furniture_lines": "3-25",
+     "interaction": "screen_text (trigger accessibility_event)",
+     "text": "Ticket SUP-1187 reply.rtf\nTicket SUP-1187\nCustomer: Bluebird Bakery (fictional)\nbold\nitalic\nunderline\nstrikethrough\ntext colour\nrgb 0 0 0 1\ntext background colour\nrgb 1 1 1 1\ntypeface\nHelvetica\nstyle\nRegular\nfont size\n12\nfont size\nalign left\nalign centre\nalign right\nfully justify\nlist style\nline spacing\n1.0\ndocument actions\nTicket SUP-1187 reply.rtf"
+    },
+    {
+     "event_id": "desktop-377fae20-5396-510d-a135-e6f8140fbc63",
+     "observed_at": "2026-10-20T09:58:30Z",
+     "first_seen_at": "2026-10-20T09:58:30Z",
+     "last_seen_at": "2026-10-20T09:58:33Z",
+     "source_type": "desktop",
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "window_title": "Ticket SUP-1187 reply.rtf",
+     "window_ref": "window:006f9ed6-5285-5a1b-8d2d-0d3f93216701",
+     "document_id": "document:2517aec77e83942160a145afe850b1d898e43f94156aa4ca60e0a88e5d2d2fcf",
+     "furniture_lines": "4-26",
+     "interaction": "screen_text (trigger accessibility_event)",
+     "text": "Ticket SUP-1187 reply.rtf\nTicket SUP-1187\nCustomer: Bluebird Bakery (fictional)\nProblem: the delivery note for order 7731 is missing.\nbold\nitalic\nunderline\nstrikethrough\ntext colour\nrgb 0 0 0 1\ntext background colour\nrgb 1 1 1 1\ntypeface\nHelvetica\nstyle\nRegular\nfont size\n12\nfont size\nalign left\nalign centre\nalign right\nfully justify\nlist style\nline spacing\n1.0\ndocument actions\nTicket SUP-1187 reply.rtf"
+    },
+    {
+     "event_id": "desktop-a3b02a37-0dea-50ec-b9af-3fa9e97f3962",
+     "observed_at": "2026-10-20T09:58:35Z",
+     "first_seen_at": "2026-10-20T09:58:35Z",
+     "last_seen_at": "2026-10-20T09:58:38Z",
+     "source_type": "desktop",
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "window_title": "Ticket SUP-1187 reply.rtf",
+     "window_ref": "window:006f9ed6-5285-5a1b-8d2d-0d3f93216701",
+     "document_id": "document:2517aec77e83942160a145afe850b1d898e43f94156aa4ca60e0a88e5d2d2fcf",
+     "furniture_lines": "5-27",
+     "interaction": "screen_text (trigger accessibility_event)",
+     "text": "Ticket SUP-1187 reply.rtf\nTicket SUP-1187\nCustomer: Bluebird Bakery (fictional)\nProblem: the delivery note for order 7731 is missing.\nReply: We have sent the delivery note again. Sorry for the delay.\nbold\nitalic\nunderline\nstrikethrough\ntext colour\nrgb 0 0 0 1\ntext background colour\nrgb 1 1 1 1\ntypeface\nHelvetica\nstyle\nRegular\nfont size\n12\nfont size\nalign left\nalign centre\nalign right\nfully justify\nlist style\nline spacing\n1.0\ndocument actions\nTicket SUP-1187 reply.rtf"
+    },
+    {
+     "event_id": "desktop-54c855ac-9b73-5dee-b932-aa6bce0d4fb7",
+     "observed_at": "2026-10-20T09:58:40Z",
+     "first_seen_at": "2026-10-20T09:58:40Z",
+     "last_seen_at": "2026-10-20T09:58:43Z",
+     "source_type": "desktop",
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "window_title": "Approval INV-4827.rtf",
+     "window_ref": "window:88318aae-7875-5717-ade0-0f607feb9f81",
+     "document_id": "document:42a2b70e6fb558d1ded865ea718f20301a0c15e7aa7abb73e173dbb28513131d",
+     "furniture_lines": "5-27",
+     "interaction": "screen_text (trigger accessibility_event)",
+     "text": "Approval INV-4827.rtf\nApproval note for INV-4827\nChecked against purchase order 5512: quantities match.\nAmount matches the order: 1,240.00 EUR.\nApproved by finance. Pay in the next payment run.\nbold\nitalic\nunderline\nstrikethrough\ntext colour\nrgb 0 0 0 1\ntext background colour\nrgb 1 1 1 1\ntypeface\nHelvetica\nstyle\nRegular\nfont size\n12\nfont size\nalign left\nalign centre\nalign right\nfully justify\nlist style\nline spacing\n1.0\ndocument actions\nApproval INV-4827.rtf"
+    },
+    {
+     "event_id": "desktop-e44d0fa6-27d6-5203-8948-93a4f50275dc",
+     "observed_at": "2026-10-20T09:58:45Z",
+     "first_seen_at": "2026-10-20T09:58:45Z",
+     "last_seen_at": "2026-10-20T09:58:48Z",
+     "source_type": "desktop",
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "window_title": "Invoice INV-4827 Acme Supplies.rtf",
+     "window_ref": "window:8fa5db4e-3fa8-5f49-9769-ee69e959e5b9",
+     "document_id": "document:8f450d7549071934e8926b89d40a17389d9894dee506055e237d063e90f84a33",
+     "furniture_lines": "7-29",
+     "interaction": "screen_text (trigger accessibility_event)",
+     "text": "Invoice INV-4827 Acme Supplies.rtf\nInvoice INV-4827\nSupplier: Acme Supplies SpA (fictional)\nAmount: 1,240.00 EUR\nDue date: 15/10/2026\nStatus: awaiting approval\nStatus: approved for payment\nbold\nitalic\nunderline\nstrikethrough\ntext colour\nrgb 0 0 0 1\ntext background colour\nrgb 1 1 1 1\ntypeface\nHelvetica\nstyle\nRegular\nfont size\n12\nfont size\nalign left\nalign centre\nalign right\nfully justify\nlist style\nline spacing\n1.0\ndocument actions\nInvoice INV-4827 Acme Supplies.rtf"
+    },
+    {
+     "event_id": "desktop-2a8ecf62-1f19-5a48-b6ca-c34453285784",
+     "observed_at": "2026-10-20T09:58:50Z",
+     "first_seen_at": "2026-10-20T09:58:50Z",
+     "last_seen_at": "2026-10-20T09:58:53Z",
+     "source_type": "desktop",
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "window_title": "Lofi study beats - YouTube.rtf",
+     "window_ref": "window:5bd91b1e-5b58-5b90-816d-4b7f9d0ba07d",
+     "document_id": "document:6087abce07d9e0db89f0ea572b7f4b8556cc8efa28a9471ab985d5b16d07a470",
+     "furniture_lines": "7-29",
+     "interaction": "screen_text (trigger accessibility_event)",
+     "text": "Lofi study beats - YouTube.rtf\nYouTube\nLofi study beats to relax\n2:14:00\nUp next: Jazz cafe ambience\nSubscribe\nRainy night jazz\nbold\nitalic\nunderline\nstrikethrough\ntext colour\nrgb 0 0 0 1\ntext background colour\nrgb 1 1 1 1\ntypeface\nHelvetica\nstyle\nRegular\nfont size\n12\nfont size\nalign left\nalign centre\nalign right\nfully justify\nlist style\nline spacing\n1.0\ndocument actions\nLofi study beats - YouTube.rtf"
+    },
+    {
+     "event_id": "desktop-c5dd03f5-ccfb-5032-983c-abe544d8b1e6",
+     "observed_at": "2026-10-20T09:59:00Z",
+     "first_seen_at": "2026-10-20T09:59:00Z",
+     "last_seen_at": "2026-10-20T09:59:03Z",
+     "source_type": "desktop",
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "window_title": "Lofi study beats - YouTube.rtf",
+     "window_ref": "window:5bd91b1e-5b58-5b90-816d-4b7f9d0ba07d",
+     "document_id": "document:6087abce07d9e0db89f0ea572b7f4b8556cc8efa28a9471ab985d5b16d07a470",
+     "furniture_lines": "8-30",
+     "interaction": "screen_text (trigger accessibility_event)",
+     "text": "Lofi study beats - YouTube.rtf\nYouTube\nLofi study beats to relax\n2:14:10\nUp next: Jazz cafe ambience\nSubscribe\nRainy night jazz\nPiano for reading\nbold\nitalic\nunderline\nstrikethrough\ntext colour\nrgb 0 0 0 1\ntext background colour\nrgb 1 1 1 1\ntypeface\nHelvetica\nstyle\nRegular\nfont size\n12\nfont size\nalign left\nalign centre\nalign right\nfully justify\nlist style\nline spacing\n1.0\ndocument actions\nLofi study beats - YouTube.rtf"
+    },
+    {
+     "event_id": "desktop-832d360b-7671-5e9f-ab4b-c376aae47768",
+     "observed_at": "2026-10-20T09:59:10Z",
+     "first_seen_at": "2026-10-20T09:59:10Z",
+     "last_seen_at": "2026-10-20T09:59:13Z",
+     "source_type": "desktop",
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "window_title": "Lofi study beats - YouTube.rtf",
+     "window_ref": "window:5bd91b1e-5b58-5b90-816d-4b7f9d0ba07d",
+     "document_id": "document:6087abce07d9e0db89f0ea572b7f4b8556cc8efa28a9471ab985d5b16d07a470",
+     "furniture_lines": "9-31",
+     "interaction": "screen_text (trigger accessibility_event)",
+     "text": "Lofi study beats - YouTube.rtf\nYouTube\nLofi study beats to relax\n2:14:20\nUp next: Jazz cafe ambience\nSubscribe\nRainy night jazz\nPiano for reading\nCafe sounds, three hours\nbold\nitalic\nunderline\nstrikethrough\ntext colour\nrgb 0 0 0 1\ntext background colour\nrgb 1 1 1 1\ntypeface\nHelvetica\nstyle\nRegular\nfont size\n12\nfont size\nalign left\nalign centre\nalign right\nfully justify\nlist style\nline spacing\n1.0\ndocument actions\nLofi study beats - YouTube.rtf"
+    },
+    {
+     "event_id": "desktop-8b549465-a752-5cad-a2be-bf5963cb3fb3",
+     "observed_at": "2026-10-20T09:59:20Z",
+     "first_seen_at": "2026-10-20T09:59:20Z",
+     "last_seen_at": "2026-10-20T09:59:23Z",
+     "source_type": "desktop",
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "window_title": "Lofi study beats - YouTube.rtf",
+     "window_ref": "window:5bd91b1e-5b58-5b90-816d-4b7f9d0ba07d",
+     "document_id": "document:6087abce07d9e0db89f0ea572b7f4b8556cc8efa28a9471ab985d5b16d07a470",
+     "furniture_lines": "10-32",
+     "interaction": "screen_text (trigger accessibility_event)",
+     "text": "Lofi study beats - YouTube.rtf\nYouTube\nLofi study beats to relax\n2:14:30\nUp next: Jazz cafe ambience\nSubscribe\nRainy night jazz\nPiano for reading\nCafe sounds, three hours\nLofi beats volume two\nbold\nitalic\nunderline\nstrikethrough\ntext colour\nrgb 0 0 0 1\ntext background colour\nrgb 1 1 1 1\ntypeface\nHelvetica\nstyle\nRegular\nfont size\n12\nfont size\nalign left\nalign centre\nalign right\nfully justify\nlist style\nline spacing\n1.0\ndocument actions\nLofi study beats - YouTube.rtf"
+    },
+    {
+     "event_id": "desktop-22470da4-e9a2-5f78-b9b5-39656e6ea013",
+     "observed_at": "2026-10-20T09:59:30Z",
+     "first_seen_at": "2026-10-20T09:59:30Z",
+     "last_seen_at": "2026-10-20T09:59:33Z",
+     "source_type": "desktop",
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "window_title": "Lofi study beats - YouTube.rtf",
+     "window_ref": "window:5bd91b1e-5b58-5b90-816d-4b7f9d0ba07d",
+     "document_id": "document:6087abce07d9e0db89f0ea572b7f4b8556cc8efa28a9471ab985d5b16d07a470",
+     "furniture_lines": "11-33",
+     "interaction": "screen_text (trigger accessibility_event)",
+     "text": "Lofi study beats - YouTube.rtf\nYouTube\nLofi study beats to relax\n2:14:40\nUp next: Jazz cafe ambience\nSubscribe\nRainy night jazz\nPiano for reading\nCafe sounds, three hours\nLofi beats volume two\nSoft guitar for studying\nbold\nitalic\nunderline\nstrikethrough\ntext colour\nrgb 0 0 0 1\ntext background colour\nrgb 1 1 1 1\ntypeface\nHelvetica\nstyle\nRegular\nfont size\n12\nfont size\nalign left\nalign centre\nalign right\nfully justify\nlist style\nline spacing\n1.0\ndocument actions\nLofi study beats - YouTube.rtf"
+    },
+    {
+     "event_id": "desktop-b3989f4e-acc1-51e0-a92b-dab43586a6bc",
+     "observed_at": "2026-10-20T09:59:40Z",
+     "first_seen_at": "2026-10-20T09:59:40Z",
+     "last_seen_at": "2026-10-20T09:59:43Z",
+     "source_type": "desktop",
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "window_title": "Lofi study beats - YouTube.rtf",
+     "window_ref": "window:5bd91b1e-5b58-5b90-816d-4b7f9d0ba07d",
+     "document_id": "document:6087abce07d9e0db89f0ea572b7f4b8556cc8efa28a9471ab985d5b16d07a470",
+     "furniture_lines": "12-34",
+     "interaction": "screen_text (trigger accessibility_event)",
+     "text": "Lofi study beats - YouTube.rtf\nYouTube\nLofi study beats to relax\n2:14:50\nUp next: Jazz cafe ambience\nSubscribe\nRainy night jazz\nPiano for reading\nCafe sounds, three hours\nLofi beats volume two\nSoft guitar for studying\nOcean waves and piano\nbold\nitalic\nunderline\nstrikethrough\ntext colour\nrgb 0 0 0 1\ntext background colour\nrgb 1 1 1 1\ntypeface\nHelvetica\nstyle\nRegular\nfont size\n12\nfont size\nalign left\nalign centre\nalign right\nfully justify\nlist style\nline spacing\n1.0\ndocument actions\nLofi study beats - YouTube.rtf"
+    },
+    {
+     "event_id": "desktop-5abd8e65-a181-53d6-9812-254a41e5c5a8",
+     "observed_at": "2026-10-20T09:59:50Z",
+     "first_seen_at": "2026-10-20T09:59:50Z",
+     "last_seen_at": "2026-10-20T09:59:53Z",
+     "source_type": "desktop",
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "window_title": "Lofi study beats - YouTube.rtf",
+     "window_ref": "window:5bd91b1e-5b58-5b90-816d-4b7f9d0ba07d",
+     "document_id": "document:6087abce07d9e0db89f0ea572b7f4b8556cc8efa28a9471ab985d5b16d07a470",
+     "furniture_lines": "13-35",
+     "interaction": "screen_text (trigger accessibility_event)",
+     "text": "Lofi study beats - YouTube.rtf\nYouTube\nLofi study beats to relax\n2:15:00\nUp next: Jazz cafe ambience\nSubscribe\nRainy night jazz\nPiano for reading\nCafe sounds, three hours\nLofi beats volume two\nSoft guitar for studying\nOcean waves and piano\nLate night lofi radio\nbold\nitalic\nunderline\nstrikethrough\ntext colour\nrgb 0 0 0 1\ntext background colour\nrgb 1 1 1 1\ntypeface\nHelvetica\nstyle\nRegular\nfont size\n12\nfont size\nalign left\nalign centre\nalign right\nfully justify\nlist style\nline spacing\n1.0\ndocument actions\nLofi study beats - YouTube.rtf"
+    },
+    {
+     "event_id": "desktop-09861f99-4d17-50ae-8fa1-1fe73b34aeef",
+     "observed_at": "2026-10-20T10:00:00Z",
+     "first_seen_at": "2026-10-20T10:00:00Z",
+     "last_seen_at": "2026-10-20T10:00:03Z",
+     "source_type": "desktop",
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "window_title": "Lofi study beats - YouTube.rtf",
+     "window_ref": "window:5bd91b1e-5b58-5b90-816d-4b7f9d0ba07d",
+     "document_id": "document:6087abce07d9e0db89f0ea572b7f4b8556cc8efa28a9471ab985d5b16d07a470",
+     "furniture_lines": "14-36",
+     "interaction": "screen_text (trigger accessibility_event)",
+     "text": "Lofi study beats - YouTube.rtf\nYouTube\nLofi study beats to relax\n2:15:10\nUp next: Jazz cafe ambience\nSubscribe\nRainy night jazz\nPiano for reading\nCafe sounds, three hours\nLofi beats volume two\nSoft guitar for studying\nOcean waves and piano\nLate night lofi radio\nMorning coffee jazz\nbold\nitalic\nunderline\nstrikethrough\ntext colour\nrgb 0 0 0 1\ntext background colour\nrgb 1 1 1 1\ntypeface\nHelvetica\nstyle\nRegular\nfont size\n12\nfont size\nalign left\nalign centre\nalign right\nfully justify\nlist style\nline spacing\n1.0\ndocument actions\nLofi study beats - YouTube.rtf"
+    }
+   ],
+   "field_changes": [
+    {
+     "at": "2026-10-20T09:58:11Z",
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "window_title": "Invoice INV-4827 Acme Supplies.rtf",
+     "window_ref": "window:8fa5db4e-3fa8-5f49-9769-ee69e959e5b9",
+     "document_id": "document:8f450d7549071934e8926b89d40a17389d9894dee506055e237d063e90f84a33",
+     "role": "AXTextField",
+     "label": "Invoice number",
+     "value": "INV-4827",
+     "edits": 8,
+     "seconds": 1,
+     "identifier": "invoice_number"
+    },
+    {
+     "at": "2026-10-20T09:58:12Z",
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "window_title": "Invoice INV-4827 Acme Supplies.rtf",
+     "window_ref": "window:8fa5db4e-3fa8-5f49-9769-ee69e959e5b9",
+     "document_id": "document:8f450d7549071934e8926b89d40a17389d9894dee506055e237d063e90f84a33",
+     "role": "AXTextField",
+     "label": "Amount",
+     "value": "1,240.00 EUR",
+     "edits": 9,
+     "seconds": 1,
+     "identifier": "amount"
+    },
+    {
+     "at": "2026-10-20T09:58:13Z",
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "window_title": "Invoice INV-4827 Acme Supplies.rtf",
+     "window_ref": "window:8fa5db4e-3fa8-5f49-9769-ee69e959e5b9",
+     "document_id": "document:8f450d7549071934e8926b89d40a17389d9894dee506055e237d063e90f84a33",
+     "role": "AXTextField",
+     "label": "IBAN",
+     "value": "IT60 X054 2811 1010 0000 0123 456",
+     "edits": 20,
+     "seconds": 1,
+     "identifier": "iban"
+    },
+    {
+     "at": "2026-10-20T09:58:14Z",
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "window_title": "Invoice INV-4827 Acme Supplies.rtf",
+     "window_ref": "window:8fa5db4e-3fa8-5f49-9769-ee69e959e5b9",
+     "document_id": "document:8f450d7549071934e8926b89d40a17389d9894dee506055e237d063e90f84a33",
+     "role": "AXTextField",
+     "label": "Password",
+     "value": "[test secret omitted]",
+     "edits": 9,
+     "seconds": 1,
+     "subrole": "AXSecureTextField"
+    },
+    {
+     "at": "2026-10-20T09:58:14Z",
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "window_title": "Invoice INV-4827 Acme Supplies.rtf",
+     "window_ref": "window:8fa5db4e-3fa8-5f49-9769-ee69e959e5b9",
+     "document_id": "document:8f450d7549071934e8926b89d40a17389d9894dee506055e237d063e90f84a33",
+     "role": "AXTextField",
+     "label": "Reference",
+     "value": "[test secret omitted]",
+     "edits": 4,
+     "seconds": 1,
+     "secure_input": true
+    },
+    {
+     "at": "2026-10-20T09:58:15Z",
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "window_title": "Invoice INV-4827 Acme Supplies.rtf",
+     "window_ref": "window:8fa5db4e-3fa8-5f49-9769-ee69e959e5b9",
+     "document_id": "document:8f450d7549071934e8926b89d40a17389d9894dee506055e237d063e90f84a33",
+     "role": "AXTextField",
+     "label": "Remark",
+     "value": "Late fee waived. ",
+     "edits": 6,
+     "seconds": 1,
+     "identifier": "remark",
+     "value_repeat": 3600,
+     "value_note": "value is 'Late fee waived. ' repeated 3600 times (61,200 chars)"
+    },
+    {
+     "at": "2026-10-20T09:58:36Z",
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "window_title": "Ticket SUP-1187 reply.rtf",
+     "window_ref": "window:006f9ed6-5285-5a1b-8d2d-0d3f93216701",
+     "document_id": "document:2517aec77e83942160a145afe850b1d898e43f94156aa4ca60e0a88e5d2d2fcf",
+     "role": "AXTextField",
+     "label": "Ticket number",
+     "value": "SUP-1187",
+     "edits": 8,
+     "seconds": 1,
+     "identifier": "ticket_number"
+    },
+    {
+     "at": "2026-10-20T09:58:37Z",
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "window_title": "Ticket SUP-1187 reply.rtf",
+     "window_ref": "window:006f9ed6-5285-5a1b-8d2d-0d3f93216701",
+     "document_id": "document:2517aec77e83942160a145afe850b1d898e43f94156aa4ca60e0a88e5d2d2fcf",
+     "role": "AXTextField",
+     "label": "Customer",
+     "value": "Bluebird Bakery (fictional)",
+     "edits": 12,
+     "seconds": 1,
+     "identifier": "customer"
+    }
+   ],
+   "labels": {
+    "document_to_task": {
+     "invoice-a": "invoice approval",
+     "invoice-b": "invoice approval",
+     "ticket": "ticket reply",
+     "personal": "personal browse"
+    },
+    "rule": "For each stored relation decision (left action, right action), label 'same' if both windows' documents map to the same task, else 'break'."
+   },
+   "expected_rules_output": {
+    "note": "Produced by running the reference rules on these events with the format-bar lines removed (noise scoring not applied). A faithful rebuild must reach the same result with noise weighting applied to the format-bar lines.",
+    "sessions": [
+     {
+      "i": 0,
+      "doc": "invoice-a",
+      "first_seen": "09:58:00",
+      "last_seen": "09:58:13"
+     },
+     {
+      "i": 1,
+      "doc": "invoice-b",
+      "first_seen": "09:58:15",
+      "last_seen": "09:58:23",
+      "switch": "same 0.95 shared_anchor hard"
+     },
+     {
+      "i": 2,
+      "doc": "ticket",
+      "first_seen": "09:58:25",
+      "last_seen": "09:58:38",
+      "switch": "break 1.00 case_conflict hard (gap 2 s: interruption episode)"
+     },
+     {
+      "i": 3,
+      "doc": "invoice-b",
+      "first_seen": "09:58:40",
+      "last_seen": "09:58:43",
+      "switch": "case_conflict; resumes suspended invoice episode (ticket span 13 s <= 120, returns to earlier case)"
+     },
+     {
+      "i": 4,
+      "doc": "invoice-a",
+      "first_seen": "09:58:45",
+      "last_seen": "09:58:48",
+      "switch": "same 0.95 shared_anchor hard"
+     },
+     {
+      "i": 5,
+      "doc": "personal",
+      "first_seen": "09:58:50",
+      "last_seen": "10:00:03",
+      "switch": "diversion 0.60 switch (signals recent, same_app; not hard)"
+     }
+    ],
+    "episodes": [
+     {
+      "sessions": [
+       0,
+       1,
+       3,
+       4
+      ],
+      "task": "invoice approval"
+     },
+     {
+      "sessions": [
+       2
+      ],
+      "task": "ticket reply",
+      "close_reason": "break"
+     },
+     {
+      "sessions": [
+       5
+      ],
+      "task": "personal browse",
+      "diversion": true
+     }
+    ],
+    "journey_assertions": [
+     "invoice approval is one task holding both invoice documents",
+     "ticket reply is its own task",
+     "personal browse is its own task, marked possibly personal (title names YouTube, no web address), not deleted until the employee says so",
+     "2 work tasks remain after 'This was personal'",
+     "object of invoice task = invoice; object of ticket task = ticket",
+     "task names match verb + object + system",
+     "no digit in a task name"
+    ],
+    "scripted_label_counts": "every stored relation decision between two windows is labelled same when THREE_TASK_OF agrees, else break; exact count not recorded in the source"
+   }
+  },
+  "second_ticket": {
+   "events": [
+    {
+     "event_id": "desktop-74ad1fa0-d38d-5d5f-990c-74237b8f36a5",
+     "observed_at": "2026-10-20T09:59:50Z",
+     "first_seen_at": "2026-10-20T09:59:50Z",
+     "last_seen_at": "2026-10-20T09:59:53Z",
+     "source_type": "desktop",
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "window_title": "Ticket SUP-1188 reply.rtf",
+     "window_ref": "window:7d46a07c-99ef-5ebd-a8fe-4326027e9e32",
+     "document_id": "document:fba274696ba8a855a158266e857e5d798b385acefaa23e4952c1143c724e1821",
+     "furniture_lines": "3-25",
+     "interaction": "screen_text (trigger accessibility_event)",
+     "text": "Ticket SUP-1188 reply.rtf\nTicket SUP-1188\nCustomer: Harbour Florist (fictional)\nbold\nitalic\nunderline\nstrikethrough\ntext colour\nrgb 0 0 0 1\ntext background colour\nrgb 1 1 1 1\ntypeface\nHelvetica\nstyle\nRegular\nfont size\n12\nfont size\nalign left\nalign centre\nalign right\nfully justify\nlist style\nline spacing\n1.0\ndocument actions\nTicket SUP-1188 reply.rtf"
+    },
+    {
+     "event_id": "desktop-66238b27-cb95-5097-8633-0ff659d19beb",
+     "observed_at": "2026-10-20T09:59:55Z",
+     "first_seen_at": "2026-10-20T09:59:55Z",
+     "last_seen_at": "2026-10-20T09:59:58Z",
+     "source_type": "desktop",
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "window_title": "Ticket SUP-1188 reply.rtf",
+     "window_ref": "window:7d46a07c-99ef-5ebd-a8fe-4326027e9e32",
+     "document_id": "document:fba274696ba8a855a158266e857e5d798b385acefaa23e4952c1143c724e1821",
+     "furniture_lines": "4-26",
+     "interaction": "screen_text (trigger accessibility_event)",
+     "text": "Ticket SUP-1188 reply.rtf\nTicket SUP-1188\nCustomer: Harbour Florist (fictional)\nProblem: the invoice copy for order 7790 is missing.\nbold\nitalic\nunderline\nstrikethrough\ntext colour\nrgb 0 0 0 1\ntext background colour\nrgb 1 1 1 1\ntypeface\nHelvetica\nstyle\nRegular\nfont size\n12\nfont size\nalign left\nalign centre\nalign right\nfully justify\nlist style\nline spacing\n1.0\ndocument actions\nTicket SUP-1188 reply.rtf"
+    },
+    {
+     "event_id": "desktop-0f6e085f-513f-53c0-a904-df263bb87776",
+     "observed_at": "2026-10-20T10:00:00Z",
+     "first_seen_at": "2026-10-20T10:00:00Z",
+     "last_seen_at": "2026-10-20T10:00:03Z",
+     "source_type": "desktop",
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "window_title": "Ticket SUP-1188 reply.rtf",
+     "window_ref": "window:7d46a07c-99ef-5ebd-a8fe-4326027e9e32",
+     "document_id": "document:fba274696ba8a855a158266e857e5d798b385acefaa23e4952c1143c724e1821",
+     "furniture_lines": "5-27",
+     "interaction": "screen_text (trigger accessibility_event)",
+     "text": "Ticket SUP-1188 reply.rtf\nTicket SUP-1188\nCustomer: Harbour Florist (fictional)\nProblem: the invoice copy for order 7790 is missing.\nReply: We have sent the invoice copy again. Sorry for the delay.\nbold\nitalic\nunderline\nstrikethrough\ntext colour\nrgb 0 0 0 1\ntext background colour\nrgb 1 1 1 1\ntypeface\nHelvetica\nstyle\nRegular\nfont size\n12\nfont size\nalign left\nalign centre\nalign right\nfully justify\nlist style\nline spacing\n1.0\ndocument actions\nTicket SUP-1188 reply.rtf"
+    }
+   ],
+   "field_changes": [
+    {
+     "at": "2026-10-20T10:00:01Z",
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "window_title": "Ticket SUP-1188 reply.rtf",
+     "window_ref": "window:7d46a07c-99ef-5ebd-a8fe-4326027e9e32",
+     "document_id": "document:fba274696ba8a855a158266e857e5d798b385acefaa23e4952c1143c724e1821",
+     "role": "AXTextField",
+     "label": "Ticket number",
+     "value": "SUP-1188",
+     "edits": 8,
+     "seconds": 1,
+     "identifier": "ticket_number"
+    },
+    {
+     "at": "2026-10-20T10:00:02Z",
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "window_title": "Ticket SUP-1188 reply.rtf",
+     "window_ref": "window:7d46a07c-99ef-5ebd-a8fe-4326027e9e32",
+     "document_id": "document:fba274696ba8a855a158266e857e5d798b385acefaa23e4952c1143c724e1821",
+     "role": "AXTextField",
+     "label": "Customer",
+     "value": "Harbour Florist (fictional)",
+     "edits": 12,
+     "seconds": 1,
+     "identifier": "customer"
+    }
+   ],
+   "label": {
+    "ticket-2": "second ticket reply"
+   },
+   "renamed_first_ticket": "Reply to customer ticket in TextEdit"
+  },
+  "unclear_pair": {
+   "events": [
+    {
+     "event_id": "desktop-530960cd-c24f-5add-93d4-515e6d2c8dd1",
+     "observed_at": "2026-10-20T09:59:30Z",
+     "first_seen_at": "2026-10-20T09:59:30Z",
+     "last_seen_at": "2026-10-20T09:59:33Z",
+     "source_type": "desktop",
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "window_title": "Supplier list.rtf",
+     "window_ref": "window:929a145d-f588-5434-a6db-a32e9f144e0d",
+     "document_id": "document:6ad0aead68c8d1222a47726932196fba90746987811d37b0d3fcbe071d2483ef",
+     "furniture_lines": "3-25",
+     "interaction": "screen_text (trigger accessibility_event)",
+     "text": "Supplier list.rtf\nSupplier list\nAcme Supplies SpA (fictional)\nbold\nitalic\nunderline\nstrikethrough\ntext colour\nrgb 0 0 0 1\ntext background colour\nrgb 1 1 1 1\ntypeface\nHelvetica\nstyle\nRegular\nfont size\n12\nfont size\nalign left\nalign centre\nalign right\nfully justify\nlist style\nline spacing\n1.0\ndocument actions\nSupplier list.rtf"
+    },
+    {
+     "event_id": "desktop-1071b422-302d-5f13-9d41-10488283b342",
+     "observed_at": "2026-10-20T09:59:40Z",
+     "first_seen_at": "2026-10-20T09:59:40Z",
+     "last_seen_at": "2026-10-20T09:59:43Z",
+     "source_type": "desktop",
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "window_title": "Supplier list.rtf",
+     "window_ref": "window:929a145d-f588-5434-a6db-a32e9f144e0d",
+     "document_id": "document:6ad0aead68c8d1222a47726932196fba90746987811d37b0d3fcbe071d2483ef",
+     "furniture_lines": "5-27",
+     "interaction": "screen_text (trigger accessibility_event)",
+     "text": "Supplier list.rtf\nSupplier list\nAcme Supplies SpA (fictional)\nGreenleaf Paper (fictional)\nNorthwind Packaging (fictional)\nbold\nitalic\nunderline\nstrikethrough\ntext colour\nrgb 0 0 0 1\ntext background colour\nrgb 1 1 1 1\ntypeface\nHelvetica\nstyle\nRegular\nfont size\n12\nfont size\nalign left\nalign centre\nalign right\nfully justify\nlist style\nline spacing\n1.0\ndocument actions\nSupplier list.rtf"
+    },
+    {
+     "event_id": "desktop-f17cb814-29f6-5b7c-bc32-92ca101e115f",
+     "observed_at": "2026-10-20T09:59:50Z",
+     "first_seen_at": "2026-10-20T09:59:50Z",
+     "last_seen_at": "2026-10-20T09:59:53Z",
+     "source_type": "desktop",
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "window_title": "Delivery notes.rtf",
+     "window_ref": "window:0f3d902a-a59a-5fed-8677-0a63542c56ab",
+     "document_id": "document:62da67894afb863e23f701549621443eb4a796e5d4b2bfe79ba63d7a2f355b6e",
+     "furniture_lines": "3-25",
+     "interaction": "screen_text (trigger accessibility_event)",
+     "text": "Delivery notes.rtf\nDelivery notes\nMonday: pallets to the north depot\nbold\nitalic\nunderline\nstrikethrough\ntext colour\nrgb 0 0 0 1\ntext background colour\nrgb 1 1 1 1\ntypeface\nHelvetica\nstyle\nRegular\nfont size\n12\nfont size\nalign left\nalign centre\nalign right\nfully justify\nlist style\nline spacing\n1.0\ndocument actions\nDelivery notes.rtf"
+    },
+    {
+     "event_id": "desktop-24fcd58f-0ba0-570a-a56c-14f40a7187e5",
+     "observed_at": "2026-10-20T10:00:00Z",
+     "first_seen_at": "2026-10-20T10:00:00Z",
+     "last_seen_at": "2026-10-20T10:00:03Z",
+     "source_type": "desktop",
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "window_title": "Delivery notes.rtf",
+     "window_ref": "window:0f3d902a-a59a-5fed-8677-0a63542c56ab",
+     "document_id": "document:62da67894afb863e23f701549621443eb4a796e5d4b2bfe79ba63d7a2f355b6e",
+     "furniture_lines": "5-27",
+     "interaction": "screen_text (trigger accessibility_event)",
+     "text": "Delivery notes.rtf\nDelivery notes\nMonday: pallets to the north depot\nTuesday: paper rolls to the print room\nWednesday: packaging samples\nbold\nitalic\nunderline\nstrikethrough\ntext colour\nrgb 0 0 0 1\ntext background colour\nrgb 1 1 1 1\ntypeface\nHelvetica\nstyle\nRegular\nfont size\n12\nfont size\nalign left\nalign centre\nalign right\nfully justify\nlist style\nline spacing\n1.0\ndocument actions\nDelivery notes.rtf"
+    }
+   ],
+   "expected": {
+    "sessions": 2,
+    "switch": {
+     "gap_seconds": 7,
+     "signals_true": [
+      "recent",
+      "same_app"
+     ],
+     "rule_class": "switch",
+     "choice": "diversion",
+     "confidence": 0.6,
+     "hard": false
+    },
+    "outcome": "non-hard, both sessions non-trivial: asked up the ladder; if unanswered becomes a 'one task or two?' question. Employee answer 'one' => label same + merge; 'two' => label break + split."
+   }
+  }
+ }
+}

@@ -1,0 +1,1411 @@
+[
+  {
+    "name": "title_churn_one_window",
+    "steps": [
+      {
+        "op": "observe",
+        "id": "e0",
+        "at_seconds": 0,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 0"
+      },
+      {
+        "op": "observe",
+        "id": "e1",
+        "at_seconds": 1,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 1"
+      },
+      {
+        "op": "observe",
+        "id": "e2",
+        "at_seconds": 2,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 2"
+      },
+      {
+        "op": "observe",
+        "id": "e3",
+        "at_seconds": 3,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 3"
+      },
+      {
+        "op": "observe",
+        "id": "e4",
+        "at_seconds": 4,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 4"
+      },
+      {
+        "op": "observe",
+        "id": "e5",
+        "at_seconds": 5,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 5"
+      },
+      {
+        "op": "observe",
+        "id": "e6",
+        "at_seconds": 6,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 6"
+      },
+      {
+        "op": "observe",
+        "id": "e7",
+        "at_seconds": 7,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 7"
+      },
+      {
+        "op": "observe",
+        "id": "e8",
+        "at_seconds": 8,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 8"
+      },
+      {
+        "op": "observe",
+        "id": "e9",
+        "at_seconds": 9,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 9"
+      },
+      {
+        "op": "observe",
+        "id": "e10",
+        "at_seconds": 10,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 10"
+      },
+      {
+        "op": "observe",
+        "id": "e11",
+        "at_seconds": 11,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 11"
+      },
+      {
+        "op": "observe",
+        "id": "e12",
+        "at_seconds": 12,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 12"
+      },
+      {
+        "op": "observe",
+        "id": "e13",
+        "at_seconds": 13,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 13"
+      },
+      {
+        "op": "observe",
+        "id": "e14",
+        "at_seconds": 14,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 14"
+      },
+      {
+        "op": "observe",
+        "id": "e15",
+        "at_seconds": 15,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 15"
+      },
+      {
+        "op": "observe",
+        "id": "e16",
+        "at_seconds": 16,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 16"
+      },
+      {
+        "op": "observe",
+        "id": "e17",
+        "at_seconds": 17,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 17"
+      },
+      {
+        "op": "observe",
+        "id": "e18",
+        "at_seconds": 18,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 18"
+      },
+      {
+        "op": "observe",
+        "id": "e19",
+        "at_seconds": 19,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 19"
+      },
+      {
+        "op": "observe",
+        "id": "e20",
+        "at_seconds": 20,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 20"
+      },
+      {
+        "op": "observe",
+        "id": "e21",
+        "at_seconds": 21,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 21"
+      },
+      {
+        "op": "observe",
+        "id": "e22",
+        "at_seconds": 22,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 22"
+      },
+      {
+        "op": "observe",
+        "id": "e23",
+        "at_seconds": 23,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 23"
+      },
+      {
+        "op": "observe",
+        "id": "e24",
+        "at_seconds": 24,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 24"
+      },
+      {
+        "op": "observe",
+        "id": "e25",
+        "at_seconds": 25,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 25"
+      },
+      {
+        "op": "observe",
+        "id": "e26",
+        "at_seconds": 26,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 26"
+      },
+      {
+        "op": "observe",
+        "id": "e27",
+        "at_seconds": 27,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 27"
+      },
+      {
+        "op": "observe",
+        "id": "e28",
+        "at_seconds": 28,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 28"
+      },
+      {
+        "op": "observe",
+        "id": "e29",
+        "at_seconds": 29,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 29"
+      },
+      {
+        "op": "observe",
+        "id": "e30",
+        "at_seconds": 30,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 30"
+      },
+      {
+        "op": "observe",
+        "id": "e31",
+        "at_seconds": 31,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 31"
+      },
+      {
+        "op": "observe",
+        "id": "e32",
+        "at_seconds": 32,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 32"
+      },
+      {
+        "op": "observe",
+        "id": "e33",
+        "at_seconds": 33,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 33"
+      },
+      {
+        "op": "observe",
+        "id": "e34",
+        "at_seconds": 34,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 34"
+      },
+      {
+        "op": "observe",
+        "id": "e35",
+        "at_seconds": 35,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 35"
+      },
+      {
+        "op": "observe",
+        "id": "e36",
+        "at_seconds": 36,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 36"
+      },
+      {
+        "op": "observe",
+        "id": "e37",
+        "at_seconds": 37,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 37"
+      },
+      {
+        "op": "observe",
+        "id": "e38",
+        "at_seconds": 38,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 38"
+      },
+      {
+        "op": "observe",
+        "id": "e39",
+        "at_seconds": 39,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 39"
+      },
+      {
+        "op": "observe",
+        "id": "e40",
+        "at_seconds": 40,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 40"
+      },
+      {
+        "op": "observe",
+        "id": "e41",
+        "at_seconds": 41,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 41"
+      },
+      {
+        "op": "observe",
+        "id": "e42",
+        "at_seconds": 42,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 42"
+      },
+      {
+        "op": "observe",
+        "id": "e43",
+        "at_seconds": 43,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 43"
+      },
+      {
+        "op": "observe",
+        "id": "e44",
+        "at_seconds": 44,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 44"
+      },
+      {
+        "op": "observe",
+        "id": "e45",
+        "at_seconds": 45,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 45"
+      },
+      {
+        "op": "observe",
+        "id": "e46",
+        "at_seconds": 46,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 46"
+      },
+      {
+        "op": "observe",
+        "id": "e47",
+        "at_seconds": 47,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 47"
+      },
+      {
+        "op": "observe",
+        "id": "e48",
+        "at_seconds": 48,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 48"
+      },
+      {
+        "op": "observe",
+        "id": "e49",
+        "at_seconds": 49,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 49"
+      },
+      {
+        "op": "observe",
+        "id": "e50",
+        "at_seconds": 50,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 50"
+      },
+      {
+        "op": "observe",
+        "id": "e51",
+        "at_seconds": 51,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 51"
+      },
+      {
+        "op": "observe",
+        "id": "e52",
+        "at_seconds": 52,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 52"
+      },
+      {
+        "op": "observe",
+        "id": "e53",
+        "at_seconds": 53,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 53"
+      },
+      {
+        "op": "observe",
+        "id": "e54",
+        "at_seconds": 54,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 54"
+      },
+      {
+        "op": "observe",
+        "id": "e55",
+        "at_seconds": 55,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 55"
+      },
+      {
+        "op": "observe",
+        "id": "e56",
+        "at_seconds": 56,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 56"
+      },
+      {
+        "op": "observe",
+        "id": "e57",
+        "at_seconds": 57,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 57"
+      },
+      {
+        "op": "observe",
+        "id": "e58",
+        "at_seconds": 58,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 58"
+      },
+      {
+        "op": "observe",
+        "id": "e59",
+        "at_seconds": 59,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 59"
+      },
+      {
+        "op": "observe",
+        "id": "e60",
+        "at_seconds": 60,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 60"
+      },
+      {
+        "op": "observe",
+        "id": "e61",
+        "at_seconds": 61,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 61"
+      },
+      {
+        "op": "observe",
+        "id": "e62",
+        "at_seconds": 62,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 62"
+      },
+      {
+        "op": "observe",
+        "id": "e63",
+        "at_seconds": 63,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 63"
+      },
+      {
+        "op": "observe",
+        "id": "e64",
+        "at_seconds": 64,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 64"
+      },
+      {
+        "op": "observe",
+        "id": "e65",
+        "at_seconds": 65,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 65"
+      },
+      {
+        "op": "observe",
+        "id": "e66",
+        "at_seconds": 66,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 66"
+      },
+      {
+        "op": "observe",
+        "id": "e67",
+        "at_seconds": 67,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 67"
+      },
+      {
+        "op": "observe",
+        "id": "e68",
+        "at_seconds": 68,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 68"
+      },
+      {
+        "op": "observe",
+        "id": "e69",
+        "at_seconds": 69,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 69"
+      },
+      {
+        "op": "observe",
+        "id": "e70",
+        "at_seconds": 70,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 70"
+      },
+      {
+        "op": "observe",
+        "id": "e71",
+        "at_seconds": 71,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 71"
+      },
+      {
+        "op": "observe",
+        "id": "e72",
+        "at_seconds": 72,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 72"
+      },
+      {
+        "op": "observe",
+        "id": "e73",
+        "at_seconds": 73,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 73"
+      },
+      {
+        "op": "observe",
+        "id": "e74",
+        "at_seconds": 74,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 74"
+      },
+      {
+        "op": "observe",
+        "id": "e75",
+        "at_seconds": 75,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 75"
+      },
+      {
+        "op": "observe",
+        "id": "e76",
+        "at_seconds": 76,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 76"
+      },
+      {
+        "op": "observe",
+        "id": "e77",
+        "at_seconds": 77,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 77"
+      },
+      {
+        "op": "observe",
+        "id": "e78",
+        "at_seconds": 78,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 78"
+      },
+      {
+        "op": "observe",
+        "id": "e79",
+        "at_seconds": 79,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Document progress 79"
+      }
+    ],
+    "expected_groups": [
+      [
+        "e0",
+        "e1",
+        "e2",
+        "e3",
+        "e4",
+        "e5",
+        "e6",
+        "e7",
+        "e8",
+        "e9",
+        "e10",
+        "e11",
+        "e12",
+        "e13",
+        "e14",
+        "e15",
+        "e16",
+        "e17",
+        "e18",
+        "e19",
+        "e20",
+        "e21",
+        "e22",
+        "e23",
+        "e24",
+        "e25",
+        "e26",
+        "e27",
+        "e28",
+        "e29",
+        "e30",
+        "e31",
+        "e32",
+        "e33",
+        "e34",
+        "e35",
+        "e36",
+        "e37",
+        "e38",
+        "e39",
+        "e40",
+        "e41",
+        "e42",
+        "e43",
+        "e44",
+        "e45",
+        "e46",
+        "e47",
+        "e48",
+        "e49",
+        "e50",
+        "e51",
+        "e52",
+        "e53",
+        "e54",
+        "e55",
+        "e56",
+        "e57",
+        "e58",
+        "e59",
+        "e60",
+        "e61",
+        "e62",
+        "e63",
+        "e64",
+        "e65",
+        "e66",
+        "e67",
+        "e68",
+        "e69",
+        "e70",
+        "e71",
+        "e72",
+        "e73",
+        "e74",
+        "e75",
+        "e76",
+        "e77",
+        "e78",
+        "e79"
+      ]
+    ],
+    "note": "One provisional task; bounded episodes; window_ref is a proposed opaque native signal, not currently consumed by ff17."
+  },
+  {
+    "name": "different_terminal_windows",
+    "steps": [
+      {
+        "op": "observe",
+        "id": "g1",
+        "at_seconds": 0,
+        "app": "Ghostty",
+        "window_ref": "terminal-a",
+        "title": "Onboarding checklist"
+      },
+      {
+        "op": "observe",
+        "id": "g2",
+        "at_seconds": 1,
+        "app": "Ghostty",
+        "window_ref": "terminal-b",
+        "title": "Onboarding checklist"
+      },
+      {
+        "op": "observe",
+        "id": "g3",
+        "at_seconds": 2,
+        "app": "Ghostty",
+        "window_ref": "terminal-a",
+        "title": "Onboarding checklist"
+      }
+    ],
+    "expected_groups": [
+      [
+        "g1",
+        "g3"
+      ],
+      [
+        "g2"
+      ]
+    ],
+    "note": "Same app/title and short time do not merge distinct windows. Return to a recent known window may resume its provisional group."
+  },
+  {
+    "name": "finder_textedit_shared_document",
+    "steps": [
+      {
+        "op": "observe",
+        "id": "f",
+        "at_seconds": 0,
+        "app": "Finder",
+        "window_ref": "finder-window",
+        "title": "Documents",
+        "document_id": "opaque-doc-a"
+      },
+      {
+        "op": "observe",
+        "id": "t",
+        "at_seconds": 3,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Onboarding checklist",
+        "document_id": "opaque-doc-a"
+      }
+    ],
+    "expected_groups": [
+      [
+        "f",
+        "t"
+      ]
+    ],
+    "note": "Finder must reference the same selected document. Merely viewing its folder is not evidence of the same document."
+  },
+  {
+    "name": "finder_textedit_no_relationship",
+    "steps": [
+      {
+        "op": "observe",
+        "id": "f",
+        "at_seconds": 0,
+        "app": "Finder",
+        "window_ref": "finder-window",
+        "title": "Documents"
+      },
+      {
+        "op": "observe",
+        "id": "t",
+        "at_seconds": 3,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Onboarding checklist"
+      }
+    ],
+    "expected_groups": [
+      [
+        "f"
+      ],
+      [
+        "t"
+      ]
+    ],
+    "note": "May suggest connection or show adjacent segments. Do not silently claim one case without a shared signal or employee correction."
+  },
+  {
+    "name": "terminal_interruption",
+    "steps": [
+      {
+        "op": "observe",
+        "id": "f",
+        "at_seconds": 0,
+        "app": "Finder",
+        "window_ref": "finder-window",
+        "title": "Onboarding checklist",
+        "document_id": "opaque-doc-a"
+      },
+      {
+        "op": "observe",
+        "id": "g",
+        "at_seconds": 2,
+        "app": "Ghostty",
+        "window_ref": "terminal-a",
+        "title": "Unrelated build"
+      },
+      {
+        "op": "observe",
+        "id": "t",
+        "at_seconds": 5,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Onboarding checklist",
+        "document_id": "opaque-doc-a"
+      }
+    ],
+    "expected_groups": [
+      [
+        "f",
+        "t"
+      ],
+      [
+        "g"
+      ]
+    ],
+    "note": "Cross-app document continuation must not absorb the intervening terminal action."
+  },
+  {
+    "name": "case_conflict_overrides_document",
+    "steps": [
+      {
+        "op": "observe",
+        "id": "a",
+        "at_seconds": 0,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Onboarding checklist",
+        "document_id": "shared-doc",
+        "case_ref": "case-a"
+      },
+      {
+        "op": "observe",
+        "id": "b",
+        "at_seconds": 1,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Onboarding checklist",
+        "document_id": "shared-doc",
+        "case_ref": "case-b"
+      }
+    ],
+    "expected_groups": [
+      [
+        "a"
+      ],
+      [
+        "b"
+      ]
+    ],
+    "note": "Different explicit cases remain separate even in one window/document."
+  },
+  {
+    "name": "different_documents_same_window",
+    "steps": [
+      {
+        "op": "observe",
+        "id": "a",
+        "at_seconds": 0,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Onboarding checklist",
+        "document_id": "doc-a"
+      },
+      {
+        "op": "observe",
+        "id": "b",
+        "at_seconds": 1,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Onboarding checklist",
+        "document_id": "doc-b"
+      },
+      {
+        "op": "observe",
+        "id": "a2",
+        "at_seconds": 2,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Onboarding checklist",
+        "document_id": "doc-a"
+      }
+    ],
+    "expected_groups": [
+      [
+        "a",
+        "a2"
+      ],
+      [
+        "b"
+      ]
+    ],
+    "note": "Document evidence overrides weak window continuity; interrupted document resumes its own group."
+  },
+  {
+    "name": "same_case_different_documents",
+    "steps": [
+      {
+        "op": "observe",
+        "id": "a",
+        "at_seconds": 0,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Onboarding checklist",
+        "document_id": "doc-a",
+        "case_ref": "case-a"
+      },
+      {
+        "op": "observe",
+        "id": "b",
+        "at_seconds": 1,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Onboarding checklist",
+        "document_id": "doc-b",
+        "case_ref": "case-a"
+      }
+    ],
+    "expected_groups": [
+      [
+        "a",
+        "b"
+      ]
+    ],
+    "note": "A shared explicit case is stronger than different artifact IDs; retain distinct evidence episodes."
+  },
+  {
+    "name": "unanchored_event_does_not_inherit_case",
+    "steps": [
+      {
+        "op": "observe",
+        "id": "a",
+        "at_seconds": 0,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Onboarding checklist",
+        "case_ref": "case-a"
+      },
+      {
+        "op": "observe",
+        "id": "g",
+        "at_seconds": 1,
+        "app": "Ghostty",
+        "window_ref": "terminal-a",
+        "title": ""
+      }
+    ],
+    "expected_groups": [
+      [
+        "a"
+      ],
+      [
+        "g"
+      ]
+    ],
+    "note": "Missing title or anchor must not act as a wildcard attaching unrelated terminal activity to an anchored case."
+  },
+  {
+    "name": "pause_resume_weak_continuity",
+    "steps": [
+      {
+        "op": "observe",
+        "id": "a",
+        "at_seconds": 0,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Onboarding checklist"
+      },
+      {
+        "op": "pause",
+        "at_seconds": 1
+      },
+      {
+        "op": "resume",
+        "at_seconds": 2
+      },
+      {
+        "op": "observe",
+        "id": "b",
+        "at_seconds": 3,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Onboarding checklist"
+      }
+    ],
+    "expected_groups": [
+      [
+        "a"
+      ],
+      [
+        "b"
+      ]
+    ],
+    "note": "A policy boundary breaks weak/provisional continuation, even within the short time window. No paused time becomes active work."
+  },
+  {
+    "name": "same_window_gap_boundary",
+    "steps": [
+      {
+        "op": "observe",
+        "id": "a",
+        "at_seconds": 0,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Onboarding checklist"
+      },
+      {
+        "op": "observe",
+        "id": "b",
+        "at_seconds": 120,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Onboarding checklist"
+      },
+      {
+        "op": "observe",
+        "id": "c",
+        "at_seconds": 241,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Onboarding checklist"
+      }
+    ],
+    "expected_groups": [
+      [
+        "a",
+        "b"
+      ],
+      [
+        "c"
+      ]
+    ],
+    "note": "Use existing 120-second temporal boundary inclusively; 121 seconds starts a new provisional group. Also test 900/901-second total-span boundary."
+  },
+  {
+    "name": "completed_case_repeats",
+    "steps": [
+      {
+        "op": "observe",
+        "id": "a",
+        "at_seconds": 0,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Onboarding checklist",
+        "case_ref": "case-a"
+      },
+      {
+        "op": "complete_group_containing",
+        "id": "a",
+        "at_seconds": 1
+      },
+      {
+        "op": "observe",
+        "id": "b",
+        "at_seconds": 2,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Onboarding checklist",
+        "case_ref": "case-a"
+      }
+    ],
+    "expected_groups": [
+      [
+        "a"
+      ],
+      [
+        "b"
+      ]
+    ],
+    "note": "Completion is a hard case boundary. Optional related-case link preserves history; do not reopen automatically."
+  },
+  {
+    "name": "corrected_assignment",
+    "steps": [
+      {
+        "op": "observe",
+        "id": "a",
+        "at_seconds": 0,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Onboarding checklist"
+      },
+      {
+        "op": "observe",
+        "id": "b",
+        "at_seconds": 1,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Onboarding checklist"
+      },
+      {
+        "op": "split",
+        "ids": [
+          "b"
+        ],
+        "at_seconds": 2
+      },
+      {
+        "op": "observe",
+        "id": "c",
+        "at_seconds": 3,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Onboarding checklist"
+      }
+    ],
+    "expected_groups": [
+      [
+        "a"
+      ],
+      [
+        "b"
+      ],
+      [
+        "c"
+      ]
+    ],
+    "note": "Never undo the employee split or move its past members; weak continuation must not attach to either locked result."
+  },
+  {
+    "name": "generation_change",
+    "steps": [
+      {
+        "op": "observe",
+        "id": "a",
+        "at_seconds": 0,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Onboarding checklist"
+      },
+      {
+        "op": "change_generation",
+        "generation": "g2",
+        "at_seconds": 1
+      },
+      {
+        "op": "observe",
+        "id": "b",
+        "at_seconds": 2,
+        "app": "TextEdit",
+        "window_ref": "window-a",
+        "title": "Onboarding checklist"
+      }
+    ],
+    "expected_groups": [
+      [
+        "b"
+      ]
+    ],
+    "note": "Generation reset may purge prior scope according to existing lifecycle; no cross-generation membership or resurrected action."
+  },
+  {
+    "name": "related_terminal_is_not_blacklisted",
+    "steps": [
+      {
+        "op": "observe",
+        "id": "t",
+        "at_seconds": 0,
+        "app": "TextEdit",
+        "window_ref": "editor",
+        "title": "Checklist",
+        "case_ref": "case-a"
+      },
+      {
+        "op": "observe",
+        "id": "g",
+        "at_seconds": 2,
+        "app": "Ghostty",
+        "window_ref": "terminal",
+        "title": "Release checks",
+        "case_ref": "case-a"
+      }
+    ],
+    "expected_groups": [
+      [
+        "t",
+        "g"
+      ]
+    ],
+    "note": "Explicit shared case may span a terminal. App-name exclusions are not a grouping rule."
+  },
+  {
+    "name": "sparse_interaction_known_window",
+    "steps": [
+      {
+        "op": "observe",
+        "id": "a",
+        "at_seconds": 0,
+        "app": "TextEdit",
+        "window_ref": "editor-a",
+        "source": "accessibility",
+        "title": "Checklist",
+        "document_id": "doc-a"
+      },
+      {
+        "op": "observe",
+        "id": "click",
+        "at_seconds": 1,
+        "app": "TextEdit",
+        "window_ref": "editor-a",
+        "source": "interaction",
+        "interaction": "click"
+      },
+      {
+        "op": "observe",
+        "id": "focus",
+        "at_seconds": 2,
+        "app": "TextEdit",
+        "window_ref": "editor-a",
+        "source": "interaction",
+        "title": "",
+        "url": "",
+        "interaction": "focus"
+      },
+      {
+        "op": "observe",
+        "id": "a2",
+        "at_seconds": 3,
+        "app": "TextEdit",
+        "window_ref": "editor-a",
+        "source": "accessibility",
+        "title": "Checklist",
+        "document_id": "doc-a"
+      }
+    ],
+    "expected_groups": [
+      [
+        "a",
+        "click",
+        "focus",
+        "a2"
+      ]
+    ],
+    "note": "Missing/empty title and URL mean unknown, not a changed surface. Reuse only verified same-window context; retain observed vs inherited provenance."
+  },
+  {
+    "name": "explicit_conflict_with_sparse_interactions",
+    "steps": [
+      {
+        "op": "observe",
+        "id": "a",
+        "at_seconds": 0,
+        "app": "TextEdit",
+        "window_ref": "editor-a",
+        "source": "accessibility",
+        "title": "Checklist",
+        "document_id": "doc-a",
+        "case_ref": "case-a"
+      },
+      {
+        "op": "observe",
+        "id": "click-a",
+        "at_seconds": 1,
+        "app": "TextEdit",
+        "window_ref": "editor-a",
+        "source": "interaction",
+        "interaction": "click"
+      },
+      {
+        "op": "observe",
+        "id": "b",
+        "at_seconds": 2,
+        "app": "TextEdit",
+        "window_ref": "editor-a",
+        "source": "accessibility",
+        "title": "Checklist",
+        "document_id": "doc-b",
+        "case_ref": "case-b"
+      },
+      {
+        "op": "observe",
+        "id": "click-b",
+        "at_seconds": 3,
+        "app": "TextEdit",
+        "window_ref": "editor-a",
+        "source": "interaction",
+        "interaction": "click"
+      }
+    ],
+    "expected_groups": [
+      [
+        "a",
+        "click-a"
+      ],
+      [
+        "b",
+        "click-b"
+      ]
+    ],
+    "note": "Actual new case/document evidence overrides remembered context. Sparse events cannot bridge the explicit conflict."
+  },
+  {
+    "name": "metadata_representation_normalization",
+    "steps": [
+      {
+        "op": "observe",
+        "id": "a",
+        "at_seconds": 0,
+        "app": "TextEdit",
+        "window_ref": "editor-a",
+        "source": "accessibility",
+        "title": "Checklist",
+        "url": "https://example.test/docs/item1?view=full",
+        "document_id": "doc-a"
+      },
+      {
+        "op": "observe",
+        "id": "a2",
+        "at_seconds": 1,
+        "app": "TextEdit",
+        "window_ref": "editor-a",
+        "source": "interaction",
+        "title": " Checklist ",
+        "url": "https://EXAMPLE.test/docs/item1?view=compact",
+        "document_id": "doc-a"
+      }
+    ],
+    "expected_groups": [
+      [
+        "a",
+        "a2"
+      ]
+    ],
+    "note": "A stable document/window signal and harmless display/URL representation differences must not split a group. Do not collapse genuinely distinct path/case/document IDs."
+  },
+  {
+    "name": "missing_window_identity_not_wildcard",
+    "steps": [
+      {
+        "op": "observe",
+        "id": "a",
+        "at_seconds": 0,
+        "app": "TextEdit",
+        "window_ref": "editor-a",
+        "source": "accessibility",
+        "title": "Checklist",
+        "document_id": "doc-a"
+      },
+      {
+        "op": "observe",
+        "id": "unknown-click",
+        "at_seconds": 1,
+        "app": "TextEdit",
+        "source": "interaction",
+        "interaction": "click"
+      }
+    ],
+    "expected_groups": [
+      [
+        "a"
+      ],
+      [
+        "unknown-click"
+      ]
+    ],
+    "note": "Without verified window identity or another shared signal, sparse metadata alone cannot borrow the previous context."
+  }
+]

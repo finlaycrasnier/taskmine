@@ -1,0 +1,178 @@
+{
+ "schema": "acmeflo.capture_normalization.v2",
+ "note": "Shared cases for CaptureNormalization.swift and services/observation/capture_normalization.py. Version 2 replaces what version 1 deleted with markers (clock, repeat, tracking, fragment, invisible).",
+ "texts": [
+  {
+   "input": "Hello​world﻿  and\t\tmore",
+   "expect": "Hello⟨invisible⟩world⟨invisible⟩ and more"
+  },
+  {
+   "input": "  Line one  \r\nLine one\r\n\r\nLine two Line two Line three",
+   "expect": "Line one\n⟨repeat×2⟩\nLine two\n⟨repeat×2⟩\nLine three"
+  },
+  {
+   "input": "Inbox\n3:45 PM\nMeeting notes\n5 minutes ago\nYesterday\nToday at 09:30\n2h\nAction items",
+   "expect": "Inbox\n⟨clock⟩\nMeeting notes\n⟨clock⟩\nAction items"
+  },
+  {
+   "input": "Mon\nMonday, 3 PM\njust now\nan hour ago\nabout 3 weeks ago\n• 12m\n14:02:11\n10 a.m.",
+   "expect": "⟨clock⟩"
+  },
+  {
+   "input": "Price 3.45\n5 days\nNow reading\n10:30 meeting room\n2 hours left\nYesterday's report",
+   "expect": "Price 3.45\n5 days\nNow reading\n10:30 meeting room\n2 hours left\nYesterday's report"
+  },
+  {
+   "input": "See https://example.test/a?utm_source=x&id=7&fbclid=abc#section.",
+   "expect": "See https://example.test/a?id=7&⟨tracking⟩#⟨fragment⟩."
+  },
+  {
+   "input": "Links: (https://shop.test/p?gclid=1) and HTTPS://Example.test/x?UTM_Medium=y&keep=1&&msclkid=z, done",
+   "expect": "Links: (https://shop.test/p?⟨tracking⟩) and HTTPS://Example.test/x?keep=1&⟨tracking⟩, done"
+  },
+  {
+   "input": "a\na\nA\na",
+   "expect": "a\n⟨repeat×2⟩\nA\na"
+  },
+  {
+   "input": "x  y　z",
+   "expect": "x y z"
+  },
+  {
+   "input": "Café\nCafé\nCafé",
+   "expect": "Café\nCafé\n⟨repeat×2⟩"
+  },
+  {
+   "input": "",
+   "expect": ""
+  },
+  {
+   "input": "\n\n  \n",
+   "expect": ""
+  },
+  {
+   "input": "Status 3:45 PM\n3:45 PM\n3:45 PM\nStatus 3:45 PM",
+   "expect": "Status 3:45 PM\n⟨clock⟩\nStatus 3:45 PM"
+  },
+  {
+   "input": "row\n1:00\nrow",
+   "expect": "row\n⟨clock⟩\nrow"
+  },
+  {
+   "input": "Inbox\n⟨clock⟩\nMeeting\n⟨repeat×2⟩\nSee https://example.test/p?⟨tracking⟩#⟨fragment⟩",
+   "expect": "Inbox\n⟨clock⟩\nMeeting\n⟨repeat×2⟩\nSee https://example.test/p?⟨tracking⟩#⟨fragment⟩"
+  },
+  {
+   "input": "Total\nTotal\nTotal\nTotal",
+   "expect": "Total\n⟨repeat×4⟩"
+  },
+  {
+   "input": "3:45 PM\n4:10 PM\n4:11 PM\nSummary",
+   "expect": "⟨clock⟩\nSummary"
+  },
+  {
+   "input": "Open https://example.test/p#\nthen",
+   "expect": "Open https://example.test/p\nthen"
+  }
+ ],
+ "urls": [
+  {
+   "input": "https://example.test/path?utm_source=news&utm_campaign=x",
+   "expect": "https://example.test/path?⟨tracking⟩"
+  },
+  {
+   "input": "https://example.test/path?q=search&gclid=abc&page=2#top",
+   "expect": "https://example.test/path?q=search&page=2&⟨tracking⟩#⟨fragment⟩"
+  },
+  {
+   "input": "https://example.test/#/app/route",
+   "expect": "https://example.test/#⟨fragment⟩"
+  },
+  {
+   "input": "https://example.test/p?_hsenc=a&_hsmi=b&ref_src=c&keep=d",
+   "expect": "https://example.test/p?keep=d&⟨tracking⟩"
+  },
+  {
+   "input": "https://example.test/p?keep",
+   "expect": "https://example.test/p?keep"
+  },
+  {
+   "input": "https://example.test/p?",
+   "expect": "https://example.test/p"
+  },
+  {
+   "input": "https://example.test/p?&&",
+   "expect": "https://example.test/p"
+  },
+  {
+   "input": "https://example.test/p?FBCLID=1&Id=2",
+   "expect": "https://example.test/p?Id=2&⟨tracking⟩"
+  },
+  {
+   "input": "file:///Users/example/Report.txt",
+   "expect": "file:///Users/example/Report.txt"
+  }
+ ],
+ "clock_lines": [
+  {
+   "input": "3:45 PM",
+   "expect": true
+  },
+  {
+   "input": "3:45pm",
+   "expect": true
+  },
+  {
+   "input": "15:45",
+   "expect": true
+  },
+  {
+   "input": "5 minutes ago",
+   "expect": true
+  },
+  {
+   "input": "a minute ago",
+   "expect": true
+  },
+  {
+   "input": "Yesterday",
+   "expect": true
+  },
+  {
+   "input": "yesterday at 3:45 PM",
+   "expect": true
+  },
+  {
+   "input": "2h",
+   "expect": true
+  },
+  {
+   "input": "Tue.",
+   "expect": true
+  },
+  {
+   "input": "Tuesday",
+   "expect": true
+  },
+  {
+   "input": "3.45",
+   "expect": false
+  },
+  {
+   "input": "10 apples",
+   "expect": false
+  },
+  {
+   "input": "2 hours left",
+   "expect": false
+  },
+  {
+   "input": "Due 3:45 PM",
+   "expect": false
+  },
+  {
+   "input": "Meeting at 3pm",
+   "expect": false
+  }
+ ]
+}

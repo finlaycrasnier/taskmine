@@ -1,0 +1,97 @@
+{
+ "stage2_replay.json": {
+  "input": {
+   "events": 43,
+   "items_after_removing_gaps": 41,
+   "gaps": 2,
+   "first": "2026-09-29T00:16:40Z",
+   "last": "2026-09-29T00:20:47Z"
+  },
+  "reference_rules_run": {
+   "sessions": 11,
+   "episodes": [
+    {
+     "sessions": "S0-S2",
+     "from": "00:16:56",
+     "to": "00:17:38",
+     "close": "break",
+     "next_switch": "S3 00:18:22 new_search (gap 44 s) hard break 0.85"
+    },
+    {
+     "sessions": "S3-S6",
+     "from": "00:18:22",
+     "to": "00:19:09",
+     "close": "break",
+     "next_switch": "S7 00:19:35 new_search (gap 26 s) hard break 0.85"
+    },
+    {
+     "sessions": "S7-S10",
+     "from": "00:19:35",
+     "to": "00:20:20",
+     "close": "quiet or paused"
+    }
+   ],
+   "in_episode_switches": [
+    "search_then_create supporting 0.85",
+    "shared_anchor same 0.95"
+   ],
+   "similarity": {
+    "ep0_ep1": 0.933,
+    "ep0_ep2": 0.933,
+    "ep1_ep2": 1.0
+   },
+   "processes": 1,
+   "process_members": 3
+  },
+  "test_assertions": [
+   "3 non-trivial task episodes, none with unplaced actions",
+   "each has apps {com.google.Chrome, com.apple.TextEdit}",
+   "each holds one company: northwind, brightline, harbour in order",
+   "1 process, 3 instances, 3 distinct instance ids",
+   "output template 'onboarding - {name}' in TextEdit",
+   "process steps kinds [search, create, type, save, close], apps [Google Chrome] + [TextEdit]*4",
+   "3 tasks, all with the process",
+   "match_basis rules, wording basis rules without a model",
+   "stored state before regroup: 7 task episodes and 7 tasks; regroup gives episodes 3, processes 1, instances 3; second regroup identical"
+  ]
+ },
+ "timesheet_replay.json": {
+  "input": {
+   "events": 534,
+   "gaps": 1,
+   "first": "2026-09-29T20:29:28Z",
+   "last": "2026-09-29T20:32:42Z"
+  },
+  "reference_rules_run": {
+   "sessions": 19,
+   "episodes": [
+    {
+     "sessions": "S0-S8",
+     "from": "20:29:33",
+     "to": "20:31:29",
+     "case": "CS-1042 Kestrel Freight"
+    },
+    {
+     "sessions": "S9-S18",
+     "from": "20:31:18",
+     "to": "20:32:42",
+     "case": "CS-1057 Northgate Foods",
+     "boundary": "S9 first seen 20:31:18, gap 1 s, case_conflict hard break 1.00"
+    }
+   ],
+   "similarity": 0.868,
+   "processes": 1,
+   "process_members": 2
+  },
+  "test_assertions": [
+   "2 non-trivial episodes, each with exactly one case",
+   "each uses Gmail, 'Client rate card' and 'Billing' documents",
+   "1 process, 2 instances",
+   "2 tasks both in the process",
+   "rate card lookup is its own step before the billing save step; no step mixes both documents",
+   "stored state before regroup: 1 task episode and 2 tasks (borrowed case); regroup gives 2 episodes, 1 process, 2 instances",
+   "with a model that words steps: process name 'Enter timesheets in LibreOffice \u00b7 2 timesheets'; rate-card steps are marked reference"
+  ]
+ },
+ "native_window_cases.json": "expected_groups per case are inside the file; Layer 1 instance placement only"
+}

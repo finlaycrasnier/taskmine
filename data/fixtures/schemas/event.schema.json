@@ -1,0 +1,212 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://taskmine.local/contracts/event.schema.json",
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "taskmine.event/1"
+    },
+    "event_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "source_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+    },
+    "observed_at": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "Z$",
+      "maxLength": 40
+    },
+    "first_seen_at": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "Z$",
+      "maxLength": 40
+    },
+    "last_seen_at": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "Z$",
+      "maxLength": 40
+    },
+    "provenance": {
+      "enum": [
+        "native_accessibility",
+        "native_interaction",
+        "screen_ocr",
+        "app_reader",
+        "synthetic"
+      ]
+    },
+    "content": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "enum": [
+            "screen_text",
+            "interaction",
+            "capture_gap"
+          ]
+        },
+        "text": {
+          "type": "string",
+          "maxLength": 60000
+        },
+        "text_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "metadata": {
+          "type": "object",
+          "properties": {
+            "app_bundle_id": {
+              "type": "string",
+              "maxLength": 256
+            },
+            "app_name": {
+              "type": "string",
+              "maxLength": 256
+            },
+            "window_title": {
+              "type": "string",
+              "maxLength": 2048
+            },
+            "document_url": {
+              "type": "string",
+              "maxLength": 2048
+            },
+            "window_ref": {
+              "type": "string",
+              "pattern": "^window:[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$",
+              "maxLength": 43
+            },
+            "document_id": {
+              "type": "string",
+              "pattern": "^document:[a-f0-9]{64}$",
+              "maxLength": 73
+            },
+            "browser_domain": {
+              "type": "string",
+              "maxLength": 253,
+              "pattern": "^[a-z0-9](?:[a-z0-9.-]{0,251}[a-z0-9])?$"
+            },
+            "private_browsing": {
+              "type": "boolean"
+            },
+            "control_role": {
+              "type": "string",
+              "maxLength": 256
+            },
+            "focus_name": {
+              "type": "string",
+              "maxLength": 256
+            },
+            "focus_path": {
+              "type": "string",
+              "maxLength": 512
+            },
+            "element_id": {
+              "type": "string",
+              "maxLength": 512
+            },
+            "shortcut": {
+              "type": "string",
+              "maxLength": 32,
+              "pattern": "^(?:(?:cmd|ctrl|opt|shift)\\+){1,4}[a-z0-9=,./;'`\\[\\]-]$"
+            },
+            "sighting_count": {
+              "type": "string",
+              "maxLength": 7,
+              "pattern": "^[1-9][0-9]{0,6}$"
+            },
+            "duration_s": {
+              "type": "string",
+              "maxLength": 7,
+              "pattern": "^(?:0|[1-9][0-9]{0,6})$"
+            },
+            "text_revision": {
+              "enum": [
+                "append",
+                "similar",
+                "final"
+              ]
+            },
+            "value_omitted": {
+              "type": "string",
+              "maxLength": 32,
+              "pattern": "^[a-z_]{1,32}$"
+            },
+            "gap_reason": {
+              "type": "string",
+              "maxLength": 1024
+            },
+            "capture_method": {
+              "type": "string",
+              "maxLength": 64
+            },
+            "trigger": {
+              "type": "string",
+              "maxLength": 64
+            },
+            "interaction_type": {
+              "type": "string",
+              "maxLength": 64
+            },
+            "ocr_confidence": {
+              "type": "string",
+              "maxLength": 32
+            },
+            "ocr_reason": {
+              "type": "string",
+              "maxLength": 64
+            },
+            "codes": {
+              "type": "string",
+              "maxLength": 128,
+              "pattern": "^[A-Z]+=[0-9]{1,6}(?:,[A-Z]+=[0-9]{1,6})*$"
+            },
+            "furniture": {
+              "type": "string",
+              "maxLength": 1024,
+              "pattern": "^[0-9]+(?:-[0-9]+)?(?:,[0-9]+(?:-[0-9]+)?)*$"
+            },
+            "case_ref": {
+              "type": "string",
+              "maxLength": 160
+            }
+          },
+          "required": [
+            "app_bundle_id"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "type",
+        "text",
+        "text_sha256",
+        "metadata"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schema",
+    "event_id",
+    "revision",
+    "source_id",
+    "observed_at",
+    "first_seen_at",
+    "last_seen_at",
+    "provenance",
+    "content"
+  ],
+  "additionalProperties": false
+}
