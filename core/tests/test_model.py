@@ -5,14 +5,12 @@ No network and no sleeps. Every model gets a fake opener that records the reques
 scripted response, and an injected clock and date.
 """
 import json
-import socket
 import urllib.error
 import urllib.request
 from datetime import date, timedelta
 from types import SimpleNamespace
 
 import pytest
-
 from taskmine import model as model_module
 from taskmine.model import (
     Answer,
@@ -370,7 +368,7 @@ def test_http_500_raises_model_error():
 
 
 def test_timeout_raises_model_error():
-    opener = FakeOpener(socket.timeout("timed out"))
+    opener = FakeOpener(TimeoutError("timed out"))
     with pytest.raises(ModelError):
         jev(opener).ask([q("r1")])
 

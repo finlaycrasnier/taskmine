@@ -20,7 +20,7 @@ from dataclasses import dataclass, field
 from datetime import UTC, datetime, timedelta
 
 __all__ = ["BadOperation", "Conflict", "NotFound", "PassResult", "StaleRevision", "Store",
-           "StoreError"]
+           "StoreError", "name_key"]
 
 SCHEMA = """
 CREATE TABLE events (
@@ -146,6 +146,8 @@ DECISION_CORE = ("features", "p_join", "choice", "basis", "reason", "hard")
 QUESTION_COLUMNS = ("asked_at", "ask_context", "question_status", "answer", "answered_at")
 DECISION_COLUMNS = ["key", "left_event_id", "right_event_id", "at", *DECISION_CORE,
                     *QUESTION_COLUMNS]
+NAME_COLUMNS = ("signature", "verb", "object", "system", "title", "basis", "reusable",
+                "updated_at")
 PROCESS_COLUMNS = ("id", "name", "signature", "steps", "templates", "score", "basis", "created_at",
                    "updated_at")
 TASK_SQL = """SELECT t.*,
@@ -202,6 +204,8 @@ class PassResult:
     decisions: list[dict] = field(default_factory=list)
     placements: dict[str, str] = field(default_factory=dict)
     settled: bool = False
+    names: list[dict] = field(default_factory=list)
+    links: dict[str, str] = field(default_factory=dict)
 
 
 # ---------------------------------------------------------------- time, keys, rows
@@ -378,12 +382,24 @@ def _latest(c, task_id: str) -> dict:
                           "ORDER BY last_action_at DESC, id DESC LIMIT 1", (task_id,)).fetchone())
 
 
+def name_key(signature: dict) -> str:
+    """Content-free name key of an episode signature: its step kinds and apps."""
+    steps = signature.get("steps", [])
+    apps = signature.get("apps") or {s["app"] for s in steps}
+    return _key("name", sorted({s["kind"] for s in steps}), sorted(apps))
+
+
 def _name_key(c, task_id: str) -> str:
     """Content-free name key of a task's latest episode."""
-    sig = _latest(c, task_id)["signature"]
-    steps = sig.get("steps", [])
-    apps = sig.get("apps") or {s["app"] for s in steps}
-    return _key("name", sorted({s["kind"] for s in steps}), sorted(apps))
+    return name_key(_latest(c, task_id)["signature"])
+
+
+def _write_name(c, n: dict) -> None:
+    """Upsert a name record; a lower basis never replaces a higher one."""
+    old = c.execute("SELECT basis FROM names WHERE signature = ?", (n["signature"],)).fetchone()
+    if old is not None and RANK.get(old["basis"], 0) >= RANK.get(n.get("basis"), 0):
+        return
+    _put(c, "names", {k: n.get(k) for k in NAME_COLUMNS} | {"reusable": int(n.get("reusable") or 0)})
 
 
 def _label(c, kind: str, key: str, source: str, label: str, features, at: str) -> int:
@@ -666,7 +682,36 @@ class Store:
             c.executemany(PLACE_SQL, [(ep, ev, ep) for ev, ep in result.placements.items()])
             for p in result.processes:
                 _write_process(c, p)
+            c.executemany("UPDATE episodes SET process_id = ? WHERE id = ? AND process_id IS NULL",
+                          [(pid, eid) for eid, pid in result.links.items()])
+            for n in result.names:
+                _write_name(c, n)
             _drop_orphans(c)
+
+    def recent_episodes(self, limit: int = 200) -> list[dict]:
+        """The newest settled, non-trivial episodes by ended_at, with signature and process_id."""
+        with self._tx(False) as c:
+            rows = c.execute("SELECT * FROM episodes WHERE settled = 1 AND trivial = 0 "
+                             "ORDER BY ended_at DESC, id DESC LIMIT ?", (limit,)).fetchall()
+        return [_row(r) for r in rows]
+
+    def actions_by_id(self, event_ids) -> dict[str, dict]:
+        """Event rows by id, for the ids that still exist."""
+        ids, out = sorted(set(event_ids)), {}
+        with self._tx(False) as c:
+            for i in range(0, len(ids), 500):
+                chunk = ids[i:i + 500]
+                for r in c.execute(f"SELECT * FROM events WHERE event_id IN ({_marks(len(chunk))})",
+                                   chunk):
+                    out[r["event_id"]] = _row(r)
+        return out
+
+    def names(self, signatures=None) -> dict[str, dict]:
+        """Stored name records by name key, all or only the given keys."""
+        with self._tx(False) as c:
+            rows = [dict(r) for r in c.execute("SELECT * FROM names")]  # no JSON columns
+        wanted = None if signatures is None else set(signatures)
+        return {r["signature"]: r for r in rows if wanted is None or r["signature"] in wanted}
 
     def task(self, task_id: str) -> dict | None:
         """One task with episode_count and action_count, or None."""
