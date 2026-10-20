@@ -2,9 +2,12 @@
 
 Sources: docs/LEARNING.md, docs/CONTRACTS.md sections 3 and 4, grouper spec 4.4 and 4.5.
 
+Durations in a feature dict (gap, prev_seconds, context_seconds) arrive as log1p(seconds),
+already transformed by group.features (LEARNING.md section 1). learn uses them as given and
+never applies log1p again. Scorer.from_rules() samples gaps in seconds and transforms them itself.
+
 Conventions these tests fix where the docs are silent:
-- A feature dict holds all 20 names in FEATURES. Flags are 0.0 or 1.0. Durations (gap,
-  prev_seconds, context_seconds) are raw seconds; learn applies log(1 + seconds) itself.
+- A feature dict holds all 20 names in FEATURES. Flags are 0.0 or 1.0.
 - Times passed to learn are timezone-aware. Tests build them in the machine's local zone,
   so `when.hour` and the local hour agree. Stored times are UTC ISO 8601 with a Z.
 - Scorer.fit returns (new scorer, its agreement on the fitted rows).
@@ -89,9 +92,10 @@ def gap_for(f: dict[str, bool]) -> float:
 
 
 def features(f: dict[str, bool], **numbers: float) -> dict[str, float]:
+    """A feature dict as group.features builds it: durations as log1p(seconds)."""
     out = {name: 1.0 if f[name] else 0.0 for name in SIGNALS}
     out.update({name: 0.0 for name in NUMBERS})
-    out["gap"] = gap_for(f)
+    out["gap"] = math.log1p(gap_for(f))
     out.update(numbers)
     return out
 
@@ -302,6 +306,31 @@ def test_larger_learning_rate_moves_p_further():
     small.update(x, 1, lr=0.05)
     large.update(x, 1, lr=0.5)
     assert large.p_join(x) - start > small.p_join(x) - start > 0
+
+
+def _logit(p: float) -> float:
+    return math.log(p / (1.0 - p))
+
+
+@pytest.mark.parametrize("name", ["gap", "prev_seconds", "context_seconds"])
+def test_durations_are_used_as_given(name):
+    """Durations arrive as log1p(seconds). The logit of a logistic regression is affine in each
+    input as given, so equal steps in the value give equal steps in the logit. A second log1p
+    inside learn would bend it."""
+    base = flags("recent", "same_app")
+    short = {k: math.log1p(5) for k in ("gap", "prev_seconds", "context_seconds")}
+    long = {k: math.log1p(3000) for k in ("gap", "prev_seconds", "context_seconds")}
+    rows = [(features(base, **short), 1), (features(base, **long), 0)] * 5
+    scorer, _ = Scorer.from_rules().fit(rows, epochs=20)
+
+    logits = []
+    for value in (1.0, 3.0, 5.0):
+        p = scorer.p_join(features(base, **{**short, name: value}))
+        assert 1e-9 < p < 1 - 1e-9
+        logits.append(_logit(p))
+    first, second = logits[1] - logits[0], logits[2] - logits[1]
+    assert abs(first) > 1e-6, "the fit left this duration without weight"
+    assert second == pytest.approx(first, rel=1e-6, abs=1e-9)
 
 
 def _toy_rows() -> list[tuple[dict, int]]:

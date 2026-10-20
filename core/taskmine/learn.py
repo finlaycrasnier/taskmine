@@ -19,7 +19,6 @@ NUMBERS = (
     "hour_sin", "hour_cos", "to_browser",
 )
 FEATURES = SIGNALS + NUMBERS
-DURATIONS = frozenset({"gap", "prev_seconds", "context_seconds"})
 JOINS = frozenset({"same", "supporting"})
 
 JOIN_AT = 0.65
@@ -78,9 +77,8 @@ def _sigmoid(z: float) -> float:
 
 
 def _raw(features: dict[str, Any], name: str) -> float:
-    """One feature value, with log(1 + seconds) applied to durations."""
-    value = float(features.get(name, 0.0) or 0.0)
-    return math.log1p(max(0.0, value)) if name in DURATIONS else value
+    """One feature value as given; durations already arrive as log1p(seconds)."""
+    return float(features.get(name, 0.0) or 0.0)
 
 
 class Scorer:
@@ -169,17 +167,18 @@ class Scorer:
 
 
 def _rule_rows() -> list[tuple[dict[str, float], int]]:
-    """The 4096 flag combinations with sampled gaps, labelled by the rule table."""
+    """The 4096 flag combinations with gaps sampled in seconds as log1p, labelled by the rules."""
     rng = random.Random(0)
     rows = []
     for bits in itertools.product((0.0, 1.0), repeat=len(SIGNALS)):
         feats = dict(zip(SIGNALS, bits)) | {name: 0.0 for name in NUMBERS}
         if feats["idle"]:
-            feats["gap"] = rng.uniform(IDLE_S + 1, MAX_GAP_S)
+            seconds = rng.uniform(IDLE_S + 1, MAX_GAP_S)
         elif feats["recent"]:
-            feats["gap"] = rng.uniform(0.0, RECENT_S)
+            seconds = rng.uniform(0.0, RECENT_S)
         else:
-            feats["gap"] = rng.uniform(RECENT_S + 1, IDLE_S)
+            seconds = rng.uniform(RECENT_S + 1, IDLE_S)
+        feats["gap"] = math.log1p(seconds)
         rows.append((feats, int(rule_choice(feats)[0] in JOINS)))
     return rows
 
