@@ -368,5 +368,6 @@ def refit(store: Any, now: datetime, force: bool = False) -> dict[str, Any] | No
     if accepted:
         store.save_model("scorer", fitted.to_dict(), len(rows), agreement, basis="labels")
     store.set_setting("refit_at", _utc_text(now))
+    store.set_setting("last_refit_at", _utc_text(now))
     return {"examples": len(rows), "agreement": agreement, "previous": previous,
             "accepted": accepted}
