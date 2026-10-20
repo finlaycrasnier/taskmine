@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 356" width="1000" height="356" font-family="-apple-system, Helvetica Neue, Helvetica, Arial, sans-serif" role="img" aria-label="A switch between two windows becomes twenty features. Clear cases are decided by fixed rules. The rest go to Jev, which sees a masked view of the switch and your notes and acts at 0.8 confidence or more. Below that, taskmine decides whether to ask you. Your answers and corrections become new lines in your notes at once, and Jev tidies the notes each night.">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#4b4a46"/></marker>
+    <marker id="arrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f6f8b"/></marker>
+  </defs>
+  <rect width="1000" height="356" fill="#faf9f5"/>
+
+  <g>
+    <rect x="20" y="110" width="150" height="70" rx="6" fill="#ffffff" stroke="#4b4a46"/>
+    <text x="95" y="138" text-anchor="middle" font-size="14" font-weight="600" fill="#1d1d1b">A switch</text>
+    <text x="95" y="156" text-anchor="middle" font-size="12" fill="#4b4a46">you move from one</text>
+    <text x="95" y="170" text-anchor="middle" font-size="12" fill="#4b4a46">window to another</text>
+  </g>
+  <line x1="170" y1="145" x2="210" y2="145" stroke="#4b4a46" stroke-width="1.5" marker-end="url(#arr)"/>
+  <g>
+    <rect x="210" y="110" width="150" height="70" rx="6" fill="#ffffff" stroke="#4b4a46"/>
+    <text x="285" y="138" text-anchor="middle" font-size="14" font-weight="600" fill="#1d1d1b">20 features</text>
+    <text x="285" y="156" text-anchor="middle" font-size="12" fill="#4b4a46">gap, shared words, same</text>
+    <text x="285" y="170" text-anchor="middle" font-size="12" fill="#4b4a46">case number, hour, …</text>
+  </g>
+  <line x1="360" y1="145" x2="400" y2="145" stroke="#4b4a46" stroke-width="1.5" marker-end="url(#arr)"/>
+  <g>
+    <polygon points="470,100 540,145 470,190 400,145" fill="#ffffff" stroke="#4b4a46"/>
+    <text x="470" y="141" text-anchor="middle" font-size="12" font-weight="600" fill="#1d1d1b">clear-cut</text>
+    <text x="470" y="156" text-anchor="middle" font-size="12" fill="#4b4a46">rule?</text>
+  </g>
+  <line x1="470" y1="100" x2="470" y2="60" stroke="#4b4a46" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="478" y="84" font-size="11" fill="#4b4a46">yes</text>
+  <g>
+    <rect x="380" y="20" width="180" height="40" rx="6" fill="#ffffff" stroke="#4b4a46"/>
+    <text x="470" y="45" text-anchor="middle" font-size="13" fill="#1d1d1b">Fixed answer, never asked</text>
+  </g>
+  <line x1="540" y1="145" x2="580" y2="145" stroke="#4b4a46" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="560" y="136" text-anchor="middle" font-size="11" fill="#4b4a46">no</text>
+  <g>
+    <rect x="580" y="110" width="210" height="70" rx="6" fill="#ffffff" stroke="#4b4a46"/>
+    <text x="685" y="138" text-anchor="middle" font-size="14" font-weight="600" fill="#1d1d1b">Jev</text>
+    <text x="685" y="156" text-anchor="middle" font-size="12" fill="#4b4a46">sees a masked view and your notes;</text>
+    <text x="685" y="170" text-anchor="middle" font-size="12" fill="#4b4a46">acts at 0.8 confidence or more</text>
+  </g>
+  <line x1="685" y1="110" x2="685" y2="60" stroke="#4b4a46" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="693" y="84" font-size="11" fill="#4b4a46">sure</text>
+  <g>
+    <rect x="610" y="20" width="150" height="40" rx="6" fill="#ffffff" stroke="#4b4a46"/>
+    <text x="685" y="45" text-anchor="middle" font-size="13" fill="#1d1d1b">Join or split, done</text>
+  </g>
+  <g>
+    <rect x="830" y="110" width="150" height="70" rx="6" fill="#e3eef3" stroke="#1f6f8b"/>
+    <text x="905" y="138" text-anchor="middle" font-size="14" font-weight="600" fill="#1d1d1b">Your notes</text>
+    <text x="905" y="156" text-anchor="middle" font-size="12" fill="#4b4a46">markdown file of what</text>
+    <text x="905" y="170" text-anchor="middle" font-size="12" fill="#4b4a46">you have confirmed</text>
+  </g>
+  <line x1="830" y1="145" x2="790" y2="145" stroke="#4b4a46" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="810" y="136" text-anchor="middle" font-size="11" fill="#4b4a46">with</text>
+  <line x1="685" y1="180" x2="685" y2="220" stroke="#4b4a46" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="693" y="204" font-size="11" fill="#4b4a46">below 0.8</text>
+  <g>
+    <rect x="580" y="220" width="210" height="70" rx="6" fill="#e3eef3" stroke="#1f6f8b"/>
+    <text x="685" y="246" text-anchor="middle" font-size="14" font-weight="600" fill="#1d1d1b">Ask you?</text>
+    <text x="685" y="264" text-anchor="middle" font-size="12" fill="#4b4a46">asks only when you tend to answer:</text>
+    <text x="685" y="278" text-anchor="middle" font-size="12" fill="#4b4a46">"One task or two?" on the page</text>
+  </g>
+  <path d="M 790 255 L 870 255 L 870 180" fill="none" stroke="#1f6f8b" stroke-width="1.5" marker-end="url(#arrb)"/>
+  <text x="828" y="247" text-anchor="middle" font-size="11" fill="#1f6f8b">your answer</text>
+  <g>
+    <rect x="20" y="220" width="340" height="70" rx="6" fill="#e3eef3" stroke="#1f6f8b"/>
+    <text x="190" y="246" text-anchor="middle" font-size="14" font-weight="600" fill="#1d1d1b">Corrections on the page</text>
+    <text x="190" y="264" text-anchor="middle" font-size="12" fill="#4b4a46">rename, merge, split, move, complete;</text>
+    <text x="190" y="278" text-anchor="middle" font-size="12" fill="#4b4a46">each merge, split or move adds a line to your notes</text>
+  </g>
+  <path d="M 190 290 L 190 314 L 950 314 L 950 180" fill="none" stroke="#1f6f8b" stroke-width="1.5" marker-end="url(#arrb)"/>
+  <text x="570" y="332" text-anchor="middle" font-size="11" fill="#1f6f8b">a new line now; Jev tidies the notes each night</text>
+</svg>
