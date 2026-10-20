@@ -6,3 +6,4 @@ __pycache__/
 .ruff_cache/
 reader/.build/
 .DS_Store
+*.egg-info/
