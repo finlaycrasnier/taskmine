@@ -214,6 +214,8 @@ def replay(path) -> dict:
     """One settled in-memory pass over a recorded day; counts and episode boundaries."""
     doc = json.loads(Path(path).read_text())
     rows = doc if isinstance(doc, list) else doc.get("events") or doc.get("evidence") or []
+    if not rows or not all(isinstance(r, dict) and ("observed_at" in r) for r in rows):
+        raise SystemExit(f"{path}: not a recorded day (expected a list of events with observed_at)")
     actions = [_action(row) for row in rows]
     now = max(_dt(a["last_seen_at"]) for a in actions) + timedelta(seconds=REPLAY_SETTLE_S)
     result = run_batch(actions, Scorer.from_rules(), Asker.load({}, seed=0), FakeModel({}),
