@@ -20,10 +20,14 @@
     model: "Named from its steps, with a model's help.",
     person: 'Your name for this kind of task.',
   };
+  // Headings by action code (review-page-spec 1.4.2).
   const ACTION_LABELS = {
-    click: 'Clicked', edit: 'Edited', content_change: 'Edited', shortcut: 'Used a shortcut',
-    scroll: 'Scrolled', focus: 'Switched focus', element_focus: 'Switched focus',
-    window_focus: 'Switched window', navigation: 'Opened page',
+    click: 'Clicked', clicked: 'Clicked', edit: 'Edited text', typed: 'Edited text',
+    edited: 'Edited text', content_change: 'Edited text', focus: 'Switched focus',
+    focused: 'Switched focus', element_focus: 'Switched focus', window_focus: 'Switched window',
+    navigation: 'Opened page', navigated: 'Opened page', scroll: 'Scrolled',
+    shortcut: 'Used a shortcut', opened: 'Opened', saved: 'Saved', resumed: 'Resumed',
+    completed: 'Completed',
   };
   const APP_NAMES = {
     'com.microsoft.Excel': 'Excel', 'com.apple.iWork.Numbers': 'Numbers',
@@ -655,10 +659,18 @@
     return wrap;
   }
 
+  function actionHeading(action) {
+    const code = String(action.interaction || '').toLowerCase();
+    if (ACTION_LABELS[code]) return ACTION_LABELS[code];
+    if (code) return code.charAt(0).toUpperCase() + code.slice(1).replace(/_/g, ' ');
+    if (action.kind === 'capture_gap') return 'Capture gap';
+    if (action.kind === 'interaction') return 'Interaction';
+    if (action.provenance === 'screen_ocr') return 'Saved screen text';
+    return 'Saved visible context';
+  }
+
   function renderAction(action) {
-    const heading = ACTION_LABELS[action.interaction]
-      || (action.kind === 'capture_gap' ? 'Capture gap'
-        : action.kind === 'interaction' ? 'Interaction' : 'Saved visible context');
+    const heading = actionHeading(action);
     const link = action.url ? activityUrl(action.url) : null;
     const lastSeen = action.last_seen_at && action.last_seen_at !== action.first_seen_at
       ? `Last seen at ${hhmm(action.last_seen_at)}.` : null;

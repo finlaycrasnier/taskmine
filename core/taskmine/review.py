@@ -55,7 +55,8 @@ STALE = ("Task changed while you were correcting it. Taskmine reloaded it; check
 TASK_KEYS = ("id", "title", "name_basis", "summary", "lifecycle", "revision", "started_at",
              "last_seen_at", "draft_id")
 ACTION_KEYS = ("event_id", "episode_id", "observed_at", "first_seen_at", "last_seen_at", "kind",
-               "interaction", "app", "app_name", "text", "url", "sightings", "duration_s")
+               "provenance", "interaction", "app", "app_name", "text", "url", "sightings",
+               "duration_s")
 EPISODE_KEYS = ("id", "task_id", "started_at", "ended_at", "first_action_at", "last_action_at",
                 "close_reason", "process_id", "revision")
 QUESTION_KEYS = ("key", "at", "asked_at", "left_task_id", "left_title", "right_task_id",

@@ -974,16 +974,30 @@ class Store:
         return minutes
 
     def task_apps(self, task_ids: list[str]) -> dict[str, list[str]]:
-        """Display app names of each task's actions, most used first."""
+        """One display name per app of each task, most used app first.
+
+        The name is the most frequent non-empty app_name of the bundle id, else the bundle id.
+        """
         if not task_ids:
             return {}
-        out: dict[str, list[str]] = {}
+        uses: dict[str, dict[str, int]] = {}
+        names: dict[tuple[str, str], dict[str, int]] = {}
         with self._tx(False) as c:
-            for r in c.execute("SELECT e.task_id, COALESCE(v.app_name, v.app) AS name, "
-                               "COUNT(*) AS n FROM events v JOIN episodes e ON e.id = v.episode_id "
+            for r in c.execute("SELECT e.task_id, v.app, v.app_name, COUNT(*) AS n FROM events v "
+                               "JOIN episodes e ON e.id = v.episode_id "
                                f"WHERE e.task_id IN ({_marks(len(task_ids))}) "
-                               "GROUP BY e.task_id, name ORDER BY n DESC, name", task_ids):
-                out.setdefault(r["task_id"], []).append(r["name"])
+                               "GROUP BY e.task_id, v.app, v.app_name", task_ids):
+                per_task = uses.setdefault(r["task_id"], {})
+                per_task[r["app"]] = per_task.get(r["app"], 0) + r["n"]
+                if r["app_name"] and r["app_name"].strip():
+                    named = names.setdefault((r["task_id"], r["app"]), {})
+                    named[r["app_name"]] = named.get(r["app_name"], 0) + r["n"]
+        out: dict[str, list[str]] = {}
+        for task_id, apps in uses.items():
+            for app in sorted(apps, key=lambda a: (-apps[a], a)):
+                named = names.get((task_id, app))
+                out.setdefault(task_id, []).append(
+                    min(named, key=lambda n: (-named[n], n)) if named else app)
         return out
 
     def task_processes(self, task_ids: list[str]) -> dict[str, dict]:

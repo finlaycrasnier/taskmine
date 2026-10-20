@@ -18,6 +18,10 @@ __all__ = ["check_event"]
 STRUCTURED = {"app_bundle_id", "window_ref", "document_id", "browser_domain", "shortcut",
               "sighting_count", "duration_s", "text_revision", "value_omitted", "codes",
               "furniture", "document_url", "private_browsing"}
+INTERACTIONS = frozenset({"click", "edit", "shortcut", "scroll", "focus", "window_focus",
+                          "element_focus", "navigation", "content_change"})
+INTERACTION_ALIASES = {"clicked": "click", "typed": "edit", "edited": "edit", "focused": "focus",
+                       "navigated": "navigation"}
 CODED = ("window_title", "focus_name", "focus_path", "element_id", "control_role", "case_ref",
          "gap_reason")
 
@@ -113,5 +117,15 @@ def check_event(event: dict, *, policy: Policy, key: bytes | None, salt: bytes, 
         raw = meta.get(column)
         if isinstance(raw, str | int) and str(raw).isdigit():
             out["sightings" if column == "sighting_count" else "duration_s"] = int(raw)
+    out["interaction"] = _interaction(content.get("type"), meta.get("interaction_type"))
     out.update(_anchors(out, salt))
     return out, None
+
+
+def _interaction(kind: str | None, code: object) -> str | None:
+    """The action code for the store's interaction column; None when there is none."""
+    if kind != "interaction" or not isinstance(code, str):
+        return None
+    code = code.strip().lower()
+    code = INTERACTION_ALIASES.get(code, code)
+    return code if code in INTERACTIONS else None
