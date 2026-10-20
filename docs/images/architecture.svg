@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" width="1000" height="560" font-family="-apple-system, Helvetica Neue, Helvetica, Arial, sans-serif" role="img" aria-label="Three readers in the menu-bar app feed the core. Inside the core the steps run in order: receive, check, store, group, decide. The decision model, called with your key, settles unsure cases. The My activity page shows the tasks and sends corrections and answers back. A write-up comes out of review.">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#4b4a46"/></marker>
+    <marker id="arrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f6f8b"/></marker>
+  </defs>
+  <rect width="1000" height="560" fill="#faf9f5"/>
+
+  <text x="130" y="60" text-anchor="middle" font-size="12" fill="#5f5e58" font-family="ui-monospace, Menlo, monospace">MENU-BAR APP · Swift</text>
+  <g>
+    <rect x="30" y="76" width="200" height="96" rx="6" fill="#ffffff" stroke="#4b4a46"/>
+    <text x="130" y="102" text-anchor="middle" font-size="15" font-weight="600" fill="#1d1d1b">Text reader</text>
+    <text x="130" y="122" text-anchor="middle" font-size="12" fill="#4b4a46">Accessibility API: the text of open</text>
+    <text x="130" y="138" text-anchor="middle" font-size="12" fill="#4b4a46">apps and browser pages, plus your</text>
+    <text x="130" y="154" text-anchor="middle" font-size="12" fill="#4b4a46">clicks, edits and shortcuts</text>
+  </g>
+  <g>
+    <rect x="30" y="196" width="200" height="80" rx="6" fill="#ffffff" stroke="#4b4a46"/>
+    <text x="130" y="222" text-anchor="middle" font-size="15" font-weight="600" fill="#1d1d1b">Picture reader</text>
+    <text x="130" y="242" text-anchor="middle" font-size="12" fill="#4b4a46">screenshot and OCR, only where</text>
+    <text x="130" y="260" text-anchor="middle" font-size="12" fill="#4b4a46">text cannot be read; keeps the words</text>
+  </g>
+  <g>
+    <rect x="30" y="300" width="200" height="80" rx="6" fill="#ffffff" stroke="#4b4a46"/>
+    <text x="130" y="326" text-anchor="middle" font-size="15" font-weight="600" fill="#1d1d1b">App reader</text>
+    <text x="130" y="346" text-anchor="middle" font-size="12" fill="#4b4a46">asks apps that share their data</text>
+    <text x="130" y="364" text-anchor="middle" font-size="12" fill="#4b4a46">directly for the exact cell or email</text>
+  </g>
+  <g>
+    <rect x="30" y="420" width="200" height="60" rx="6" fill="#e3eef3" stroke="#1f6f8b"/>
+    <text x="130" y="444" text-anchor="middle" font-size="13" font-weight="600" fill="#1d1d1b">Every reading, before it is saved</text>
+    <text x="130" y="464" text-anchor="middle" font-size="12" fill="#4b4a46">hide secrets → code personal data → tidy</text>
+  </g>
+
+  <text x="510" y="60" text-anchor="middle" font-size="12" fill="#5f5e58" font-family="ui-monospace, Menlo, monospace">CORE · Python · a server on 127.0.0.1 · steps in this order</text>
+  <g>
+    <rect x="330" y="76" width="360" height="64" rx="6" fill="#ffffff" stroke="#4b4a46"/>
+    <text x="350" y="101" font-size="15" font-weight="600" fill="#1d1d1b">1  Receive</text>
+    <text x="350" y="121" font-size="12" fill="#4b4a46">a batch of readings arrives with the local token</text>
+    <text x="350" y="135" font-size="12" fill="#4b4a46">and is checked against the event format</text>
+  </g>
+  <g>
+    <rect x="330" y="164" width="360" height="64" rx="6" fill="#ffffff" stroke="#4b4a46"/>
+    <text x="350" y="189" font-size="15" font-weight="600" fill="#1d1d1b">2  Check</text>
+    <text x="350" y="209" font-size="12" fill="#4b4a46">secrets removed again; card, bank and email</text>
+    <text x="350" y="223" font-size="12" fill="#4b4a46">numbers replaced by codes; blocked windows dropped</text>
+  </g>
+  <g>
+    <rect x="330" y="252" width="360" height="64" rx="6" fill="#ffffff" stroke="#4b4a46"/>
+    <text x="350" y="277" font-size="15" font-weight="600" fill="#1d1d1b">3  Store</text>
+    <text x="350" y="297" font-size="12" fill="#4b4a46">one SQLite file in your home folder:</text>
+    <text x="350" y="311" font-size="12" fill="#4b4a46">time, app, window and the kept text</text>
+  </g>
+  <g>
+    <rect x="330" y="340" width="360" height="64" rx="6" fill="#ffffff" stroke="#4b4a46"/>
+    <text x="350" y="365" font-size="15" font-weight="600" fill="#1d1d1b">4  Group</text>
+    <text x="350" y="385" font-size="12" fill="#4b4a46">a rough pass every minute, a final pass after 5 quiet minutes:</text>
+    <text x="350" y="399" font-size="12" fill="#4b4a46">sessions → tasks → repeated processes, named by their steps</text>
+  </g>
+  <g>
+    <rect x="330" y="428" width="360" height="64" rx="6" fill="#e3eef3" stroke="#1f6f8b"/>
+    <text x="350" y="453" font-size="15" font-weight="600" fill="#1d1d1b">5  Decide</text>
+    <text x="350" y="473" font-size="12" fill="#4b4a46">rules settle clear switches; a local scorer and the decision</text>
+    <text x="350" y="487" font-size="12" fill="#4b4a46">model settle the rest; you are asked only when both are unsure</text>
+  </g>
+  <g stroke="#4b4a46" stroke-width="1.5" marker-end="url(#arr)">
+    <line x1="510" y1="140" x2="510" y2="164"/>
+    <line x1="510" y1="228" x2="510" y2="252"/>
+    <line x1="510" y1="316" x2="510" y2="340"/>
+    <line x1="510" y1="404" x2="510" y2="428"/>
+    <line x1="230" y1="124" x2="330" y2="104"/>
+    <line x1="230" y1="236" x2="330" y2="112"/>
+    <line x1="230" y1="340" x2="330" y2="122"/>
+  </g>
+  <path d="M 330 460 L 315 460 L 315 372 L 330 372" fill="none" stroke="#1f6f8b" stroke-width="1.5" marker-end="url(#arrb)"/>
+  <text x="306" y="416" font-size="10" fill="#1f6f8b" text-anchor="middle" transform="rotate(-90 306 416)">better grouping</text>
+
+  <g>
+    <rect x="780" y="76" width="200" height="68" rx="6" fill="#ffffff" stroke="#4b4a46"/>
+    <text x="880" y="104" text-anchor="middle" font-size="15" font-weight="600" fill="#1d1d1b">7  Write-up</text>
+    <text x="880" y="124" text-anchor="middle" font-size="12" fill="#4b4a46">one task as steps, editable, local</text>
+  </g>
+  <g>
+    <rect x="780" y="300" width="200" height="104" rx="6" fill="#e3eef3" stroke="#1f6f8b"/>
+    <text x="880" y="326" text-anchor="middle" font-size="15" font-weight="600" fill="#1d1d1b">6  My activity</text>
+    <text x="880" y="346" text-anchor="middle" font-size="12" fill="#4b4a46">a page in your browser:</text>
+    <text x="880" y="362" text-anchor="middle" font-size="12" fill="#4b4a46">task list, saved context, questions,</text>
+    <text x="880" y="378" text-anchor="middle" font-size="12" fill="#4b4a46">rename, merge, split, complete</text>
+  </g>
+  <line x1="690" y1="360" x2="780" y2="360" stroke="#4b4a46" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="735" y="352" text-anchor="middle" font-size="11" fill="#4b4a46">task list</text>
+  <line x1="880" y1="300" x2="880" y2="144" stroke="#1f6f8b" stroke-width="1.5" marker-end="url(#arrb)"/>
+  <text x="890" y="226" font-size="11" fill="#1f6f8b">"Review"</text>
+  <path d="M 980 380 L 992 380 L 992 520 L 600 520 L 600 492" fill="none" stroke="#1f6f8b" stroke-width="1.5" marker-end="url(#arrb)"/>
+  <text x="796" y="536" text-anchor="middle" font-size="11" fill="#1f6f8b">your answers and corrections</text>
+  <g>
+    <rect x="780" y="428" width="200" height="64" rx="6" fill="#ffffff" stroke="#4b4a46"/>
+    <text x="880" y="453" text-anchor="middle" font-size="15" font-weight="600" fill="#1d1d1b">Decision model</text>
+    <text x="880" y="471" text-anchor="middle" font-size="12" fill="#4b4a46">called with your key; sees a masked</text>
+    <text x="880" y="485" text-anchor="middle" font-size="12" fill="#4b4a46">view of the switch, never raw text</text>
+  </g>
+  <line x1="690" y1="446" x2="780" y2="446" stroke="#4b4a46" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="735" y="438" text-anchor="middle" font-size="11" fill="#4b4a46">unsure switches</text>
+  <line x1="780" y1="476" x2="690" y2="476" stroke="#4b4a46" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="735" y="504" text-anchor="middle" font-size="11" fill="#4b4a46">answers at 80 % confidence</text>
+</svg>
