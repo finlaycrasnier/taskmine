@@ -573,6 +573,22 @@ OPERATIONS = {"rename": _rename, "merge": _merge, "split": _split, "move": _move
               "reopen": _lifecycle("active", "reopen")}
 
 
+def _draft(row) -> dict | None:
+    """A drafts row with its workflow JSON decoded."""
+    if row is None:
+        return None
+    out = dict(row)
+    out["workflow"] = json.loads(out["workflow"])
+    return out
+
+
+def _add_personal(c, day: str, tasks: int, minutes: int) -> None:
+    """Add to one day's personal-time row."""
+    c.execute("INSERT INTO personal_days (day, tasks, minutes) VALUES (?, ?, ?) ON CONFLICT(day) "
+              "DO UPDATE SET tasks = tasks + excluded.tasks, minutes = minutes + excluded.minutes",
+              (day, tasks, minutes))
+
+
 # ---------------------------------------------------------------- store
 
 
@@ -813,3 +829,147 @@ class Store:
         with self._tx(False) as c:
             row = c.execute(STATUS_SQL).fetchone()
         return dict(row)
+
+    # ------------------------------------------------------------ review page and receive
+
+    def batch_ack(self, batch_id: str) -> dict | None:
+        """The ack stored for a batch, or None."""
+        with self._tx(False) as c:
+            row = c.execute("SELECT ack FROM batches WHERE batch_id = ?", (batch_id,)).fetchone()
+        return None if row is None else json.loads(row["ack"])
+
+    def record_batch(self, batch_id: str, ack: dict, now=None) -> None:
+        """Keep a batch's ack for replay; the first ack for an id wins."""
+        with self._tx() as c:
+            _put(c, "batches", {"batch_id": batch_id, "received_at": _stamp(now), "ack": ack},
+                 "INSERT OR IGNORE")
+
+    def draft(self, draft_id: str) -> dict | None:
+        """One draft with its workflow decoded, or None."""
+        with self._tx(False) as c:
+            return _draft(c.execute("SELECT * FROM drafts WHERE id = ?", (draft_id,)).fetchone())
+
+    def drafts(self) -> list[dict]:
+        """Every draft, newest first."""
+        with self._tx(False) as c:
+            rows = c.execute("SELECT * FROM drafts ORDER BY created_at DESC, id DESC").fetchall()
+        return [_draft(r) for r in rows]
+
+    def put_draft(self, draft: dict, now=None) -> bool:
+        """Insert a draft or replace its workflow; return True when it is new.
+
+        A new draft needs its task at task_revision (NotFound, StaleRevision) and becomes the
+        task's draft_id.
+        """
+        at = _stamp(now)
+        with self._tx() as c:
+            if c.execute("SELECT 1 FROM drafts WHERE id = ?", (draft["id"],)).fetchone():
+                c.execute("UPDATE drafts SET workflow = ?, updated_at = ? WHERE id = ?",
+                          (_dump(draft["workflow"]), at, draft["id"]))
+                return False
+            task = c.execute("SELECT revision FROM tasks WHERE id = ?",
+                             (draft["task_id"],)).fetchone()
+            if task is None:
+                raise NotFound(draft["task_id"])
+            if task["revision"] != draft["task_revision"]:
+                raise StaleRevision(draft["task_id"])
+            _put(c, "drafts", {"id": draft["id"], "task_id": draft["task_id"],
+                               "task_revision": draft["task_revision"],
+                               "status": draft.get("status", "pending_review"),
+                               "workflow": _dump(draft["workflow"]), "created_at": at,
+                               "updated_at": at}, "INSERT")
+            c.execute("UPDATE tasks SET draft_id = ? WHERE id = ?", (draft["id"], draft["task_id"]))
+            return True
+
+    def delete_draft(self, draft_id: str) -> bool:
+        """Delete a draft and clear the task's link to it; False when it did not exist."""
+        with self._tx() as c:
+            gone = c.execute("DELETE FROM drafts WHERE id = ?", (draft_id,)).rowcount
+            c.execute("UPDATE tasks SET draft_id = NULL WHERE draft_id = ?", (draft_id,))
+        return gone == 1
+
+    def add_personal_day(self, day: str, tasks: int, minutes: int) -> None:
+        """Add to one day's personal-time total."""
+        with self._tx() as c:
+            _add_personal(c, day, tasks, minutes)
+
+    def personal_time(self, day: str) -> dict:
+        """One day's personal-time total: {tasks, minutes}."""
+        with self._tx(False) as c:
+            row = c.execute("SELECT tasks, minutes FROM personal_days WHERE day = ?",
+                            (day,)).fetchone()
+        return {"tasks": row["tasks"] if row else 0, "minutes": row["minutes"] if row else 0}
+
+    def delete_personal_task(self, task_id: str, day: str) -> int:
+        """Delete a possibly personal task with its actions, episodes, decisions and drafts.
+
+        Only its minutes are kept, added to `day`. Raises NotFound, or Conflict when the task
+        is not marked possibly personal. Returns the minutes added.
+        """
+        mine = ("SELECT event_id FROM events WHERE episode_id IN "
+                "(SELECT id FROM episodes WHERE task_id = ?)")
+        with self._tx() as c:
+            task = c.execute("SELECT possibly_personal FROM tasks WHERE id = ?",
+                             (task_id,)).fetchone()
+            if task is None:
+                raise NotFound(task_id)
+            if not task["possibly_personal"]:
+                raise Conflict(task_id)
+            seconds = sum(max(0.0, (datetime.fromisoformat(b) - datetime.fromisoformat(a))
+                              .total_seconds()) for a, b in c.execute(
+                "SELECT first_action_at, last_action_at FROM episodes WHERE task_id = ?",
+                (task_id,)))
+            c.execute(f"DELETE FROM decisions WHERE left_event_id IN ({mine}) "
+                      f"OR right_event_id IN ({mine})", (task_id, task_id))
+            c.execute(f"DELETE FROM events WHERE event_id IN ({mine})", (task_id,))
+            for table, column in (("episodes", "task_id"), ("drafts", "task_id"), ("tasks", "id")):
+                c.execute(f"DELETE FROM {table} WHERE {column} = ?", (task_id,))
+            minutes = int(seconds // 60)
+            _add_personal(c, day, 1, minutes)
+        return minutes
+
+    def task_apps(self, task_ids: list[str]) -> dict[str, list[str]]:
+        """Display app names of each task's actions, most used first."""
+        if not task_ids:
+            return {}
+        out: dict[str, list[str]] = {}
+        with self._tx(False) as c:
+            for r in c.execute("SELECT e.task_id, COALESCE(v.app_name, v.app) AS name, "
+                               "COUNT(*) AS n FROM events v JOIN episodes e ON e.id = v.episode_id "
+                               f"WHERE e.task_id IN ({_marks(len(task_ids))}) "
+                               "GROUP BY e.task_id, name ORDER BY n DESC, name", task_ids):
+                out.setdefault(r["task_id"], []).append(r["name"])
+        return out
+
+    def task_processes(self, task_ids: list[str]) -> dict[str, dict]:
+        """The newest process with two or more episodes that each task takes part in."""
+        if not task_ids:
+            return {}
+        out: dict[str, dict] = {}
+        with self._tx(False) as c:
+            for r in c.execute("SELECT e.task_id, p.id, p.name FROM episodes e JOIN processes p "
+                               f"ON p.id = e.process_id WHERE e.task_id IN ({_marks(len(task_ids))})"
+                               " AND (SELECT COUNT(*) FROM episodes x WHERE x.process_id = p.id) "
+                               ">= 2 ORDER BY e.last_action_at DESC", task_ids):
+                out.setdefault(r["task_id"], {"id": r["id"], "name": r["name"]})
+        return out
+
+    def episode_cases(self, episode_ids: list[str]) -> dict[str, dict]:
+        """Each episode's task id, task title, span and close reason."""
+        if not episode_ids:
+            return {}
+        with self._tx(False) as c:
+            rows = c.execute("SELECT e.id AS episode_id, e.task_id, t.title, e.started_at, "
+                             "e.ended_at, e.close_reason FROM episodes e JOIN tasks t "
+                             f"ON t.id = e.task_id WHERE e.id IN ({_marks(len(episode_ids))})",
+                             episode_ids).fetchall()
+        return {r["episode_id"]: dict(r) for r in rows}
+
+    def label_counts(self) -> dict[str, dict[str, int]]:
+        """Label counts by kind, then source."""
+        out: dict[str, dict[str, int]] = {}
+        with self._tx(False) as c:
+            for r in c.execute("SELECT kind, source, COUNT(*) AS n FROM labels "
+                               "GROUP BY kind, source"):
+                out.setdefault(r["kind"], {})[r["source"]] = r["n"]
+        return out

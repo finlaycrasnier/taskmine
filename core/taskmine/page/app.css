@@ -1,0 +1,208 @@
+:root {
+  --bg: #ffffff;
+  --fg: #1d1d1f;
+  --muted: #5f6368;
+  --line: #d9dce1;
+  --panel: #f6f7f9;
+  --accent: #0b57d0;
+  --ok: #137333;
+  --warn: #9a5b00;
+  --bad: #b3261e;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #17181a;
+    --fg: #e8eaed;
+    --muted: #a5a9b0;
+    --line: #3a3d42;
+    --panel: #212327;
+    --accent: #8ab4f8;
+    --ok: #81c995;
+    --warn: #fdd663;
+    --bad: #f28b82;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0 auto;
+  max-width: 72rem;
+  padding: 1rem;
+  background: var(--bg);
+  color: var(--fg);
+  font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+h1 { font-size: 1.6rem; margin: 0 0 0.5rem; }
+h2 { font-size: 1.2rem; margin: 0; }
+h3 { font-size: 1rem; margin: 1rem 0 0.25rem; }
+h4 { font-size: 0.95rem; margin: 1rem 0 0.25rem; }
+p { margin: 0.25rem 0; }
+
+button, select, input, textarea { font: inherit; color: inherit; }
+
+button {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 0.3rem 0.75rem;
+  cursor: pointer;
+}
+button:disabled { opacity: 0.55; cursor: not-allowed; }
+button.primary { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+button.link {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+input[type="text"], input:not([type]), select, textarea {
+  width: 100%;
+  max-width: 36rem;
+  padding: 0.35rem 0.5rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--bg);
+}
+textarea { max-width: none; }
+
+nav { display: flex; gap: 1rem; margin-bottom: 0.75rem; }
+nav a { color: var(--accent); }
+nav a[aria-current="page"] { color: var(--fg); font-weight: 600; text-decoration: none; }
+
+.note, .muted { color: var(--muted); font-size: 0.9rem; }
+
+.strip {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.strip-text { flex: 1; display: flex; flex-wrap: wrap; gap: 0 0.5rem; }
+.strip-text span { color: var(--muted); }
+.dot { width: 0.7rem; height: 0.7rem; border-radius: 50%; background: var(--muted); flex: none; }
+.is-recording .dot { background: var(--ok); }
+.is-paused .dot { background: var(--warn); }
+.is-offline .dot { background: var(--bad); }
+
+.personal-time { color: var(--muted); }
+.notice { min-height: 1.5rem; margin: 0.5rem 0; }
+.notice.is-error { color: var(--bad); }
+
+.activity {
+  display: grid;
+  grid-template-areas: "questions" "saved";
+  gap: 1rem;
+}
+.saved { grid-area: saved; min-width: 0; }
+.questions { grid-area: questions; }
+
+@media (min-width: 60rem) {
+  .activity {
+    grid-template-columns: minmax(0, 1fr) 20rem;
+    grid-template-areas: "saved questions";
+    align-items: start;
+  }
+}
+
+.section-head { display: flex; align-items: center; justify-content: space-between; }
+.coverage { margin: 0.5rem 0 0.75rem; }
+.coverage p { color: var(--muted); font-size: 0.9rem; }
+
+.day { color: var(--muted); font-weight: 600; border-bottom: 1px solid var(--line); padding-bottom: 0.2rem; }
+
+.task { border-bottom: 1px solid var(--line); }
+.task-row {
+  display: flex;
+  width: 100%;
+  gap: 0.75rem;
+  align-items: baseline;
+  text-align: left;
+  background: none;
+  border: none;
+  border-radius: 0;
+  padding: 0.6rem 0.25rem;
+}
+.task-row:hover { background: var(--panel); }
+.task-row .time { font-variant-numeric: tabular-nums; color: var(--muted); flex: none; }
+.row-main { flex: 1; display: flex; flex-direction: column; }
+.task-row .title { font-weight: 600; }
+.task-row .meta { color: var(--muted); font-size: 0.9rem; }
+.marker { flex: none; width: 1rem; text-align: center; color: var(--muted); }
+
+.task-panel { padding: 0.25rem 0.5rem 1rem 4rem; }
+.basis { color: var(--muted); }
+.personal-box {
+  border: 1px solid var(--warn);
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  margin: 0.5rem 0;
+}
+
+.actions { list-style: none; padding: 0; margin: 0; }
+.action { padding: 0.5rem 0; border-top: 1px solid var(--line); }
+.action-head { display: flex; gap: 0.75rem; }
+.action-head time { font-variant-numeric: tabular-nums; color: var(--muted); }
+.action .app, .action .window { color: var(--muted); font-size: 0.9rem; }
+.context-text {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  background: var(--panel);
+  border-radius: 6px;
+  padding: 0.5rem;
+  margin: 0.25rem 0;
+  font: 0.9rem/1.45 ui-monospace, Menlo, monospace;
+}
+
+details > summary { cursor: pointer; color: var(--accent); }
+details[data-key^="correct:"] {
+  margin-top: 1rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.rename, .related, fieldset { margin: 0.75rem 0; }
+.rename label, .related label { display: block; font-weight: 600; }
+fieldset { border: 1px solid var(--line); border-radius: 6px; }
+.check { display: flex; gap: 0.5rem; align-items: center; }
+.buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.5rem; }
+.review { margin-top: 1rem; }
+
+.questions {
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  padding: 0.75rem;
+}
+.questions ul { list-style: none; padding: 0; margin: 0; }
+.question { padding: 0.5rem 0; border-top: 1px solid var(--line); }
+
+.process { border-top: 1px solid var(--line); padding: 0.5rem 0; }
+.signature { font-family: ui-monospace, Menlo, monospace; font-size: 0.9rem; }
+.cases, .drafts { padding-left: 1.25rem; }
+
+dialog {
+  width: min(48rem, 100% - 2rem);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--bg);
+  color: var(--fg);
+}
+dialog::backdrop { background: rgb(0 0 0 / 40%); }
+dialog label { display: block; font-weight: 600; margin-top: 0.75rem; }
+.dialog-actions { display: flex; justify-content: flex-end; gap: 0.5rem; margin-top: 1rem; }
+
+.empty { padding: 1rem 0; }
+.empty-title { font-weight: 600; }
+
+@media (max-width: 40rem) {
+  .task-panel { padding-left: 0.5rem; }
+}
