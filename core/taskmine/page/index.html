@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>My activity · Taskmine</title>
+<link rel="stylesheet" href="/app.css">
+<script src="/app.js" defer></script>
+</head>
+<body>
+<header class="top">
+  <h1>My activity</h1>
+  <nav aria-label="Views">
+    <a href="#activity" data-view="activity">Tasks</a>
+    <a href="#processes" data-view="processes">Repeated work</a>
+    <a href="#drafts" data-view="drafts">Write-ups</a>
+  </nav>
+  <section class="strip is-checking" id="strip" aria-label="Capture">
+    <span class="dot" aria-hidden="true"></span>
+    <div class="strip-text">
+      <strong id="strip-label">Checking recorder</strong>
+      <span id="strip-detail"></span>
+    </div>
+    <button type="button" id="pause" disabled>Pause</button>
+  </section>
+  <p id="personal-time" class="personal-time" hidden></p>
+  <p id="notice" class="notice" role="status" aria-live="polite"></p>
+</header>
+
+<main>
+  <div id="view-activity" class="view activity">
+    <section class="saved" aria-labelledby="saved-heading">
+      <div class="section-head">
+        <h2 id="saved-heading">Saved tasks</h2>
+        <button type="button" id="refresh">Refresh</button>
+      </div>
+      <details class="coverage" id="coverage">
+        <summary>What is saved</summary>
+        <div id="coverage-body"></div>
+      </details>
+      <div id="task-list" class="task-list"></div>
+      <button type="button" id="more-tasks" hidden>Load earlier tasks</button>
+    </section>
+    <aside id="questions" class="questions" aria-labelledby="questions-heading" hidden></aside>
+  </div>
+  <section id="view-processes" class="view" aria-labelledby="processes-heading" hidden></section>
+  <section id="view-drafts" class="view" aria-labelledby="drafts-heading" hidden></section>
+</main>
+
+<dialog id="draft-dialog" aria-labelledby="draft-heading">
+  <form id="draft-form" novalidate>
+    <h2 id="draft-heading">Write-up</h2>
+    <p class="note">This draft stays on this Mac. Review it before you use it.</p>
+    <label for="draft-outcome">Task / outcome</label>
+    <input id="draft-outcome" name="outcome" maxlength="240" autocomplete="off">
+    <label for="draft-owner">Owner</label>
+    <input id="draft-owner" name="owner" maxlength="4000" autocomplete="off">
+    <label for="draft-inputs">Inputs</label>
+    <textarea id="draft-inputs" name="inputs" rows="2" maxlength="4000"></textarea>
+    <label for="draft-steps">Steps</label>
+    <textarea id="draft-steps" name="steps" rows="12" maxlength="11500"></textarea>
+    <label for="draft-exceptions">Exceptions</label>
+    <textarea id="draft-exceptions" name="exceptions" rows="2" maxlength="4000"></textarea>
+    <label for="draft-completion">Completion</label>
+    <textarea id="draft-completion" name="completion" rows="2" maxlength="4000"></textarea>
+    <p id="draft-notice" class="notice" role="status" aria-live="polite"></p>
+    <div class="dialog-actions">
+      <button type="button" id="draft-keep">Keep private</button>
+      <button type="button" id="draft-delete">Delete draft</button>
+      <button type="button" id="draft-save" class="primary">Save changes</button>
+    </div>
+  </form>
+</dialog>
+</body>
+</html>
