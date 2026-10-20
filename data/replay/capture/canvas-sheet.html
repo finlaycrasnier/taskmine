@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Client rate card - Canvas sheet fixture</title>
+<style>
+  body { font-family: -apple-system, Helvetica, sans-serif; margin: 0; }
+  [role=toolbar] { display: flex; gap: 6px; padding: 6px; border-bottom: 1px solid #ddd; }
+  .bar { display: flex; gap: 8px; padding: 4px 6px; border-bottom: 1px solid #ddd; align-items: center; }
+  #name { width: 60px; }
+  #formula { flex: 1; }
+</style>
+</head>
+<body>
+<!-- Fictional regression fixture: a spreadsheet whose grid is drawn on a
+     canvas, like Google Sheets. Only the toolbar, name box and formula bar
+     reach the accessibility tree. -->
+<div role="menubar" aria-label="Menu bar">
+  <span role="menuitem">File</span> <span role="menuitem">Edit</span> <span role="menuitem">View</span>
+  <span role="menuitem">Insert</span> <span role="menuitem">Format</span> <span role="menuitem">Data</span>
+</div>
+<div role="toolbar" aria-label="Main">
+  <button>Undo</button><button>Redo</button><button>Print</button><button>Bold</button><button>Italic</button>
+  <button>Text color</button><button>Fill color</button><button>Borders</button><button>Merge cells</button>
+</div>
+<div class="bar">
+  <input id="name" aria-label="Name box" value="G2">
+  <div id="formula" role="textbox" aria-label="Formula bar" contenteditable="true">1.5</div>
+</div>
+<canvas id="grid" width="1100" height="260" aria-hidden="true"></canvas>
+<script>
+  const rows = [
+    ["Client", "Worker", "Placement", "Pay rate (GBP/h)", "Bill rate (GBP/h)", "Standard hours", "Overtime multiplier", "Overtime approver"],
+    ["Harbour Logistics", "Maya Patel", "CS-1042", "18.00", "24.30", "40", "1.5", "Dana Hughes"],
+    ["Northgate Foods", "Tom Reid", "CS-1057", "16.50", "22.10", "40", "1.25", "Sam Okafor"],
+    ["Ridgeway Retail", "Priya Shah", "CS-1063", "17.25", "23.00", "37.5", "1.5", "Lee Carter"]
+  ];
+  const widths = [150, 110, 90, 140, 140, 120, 150, 150];
+  const context = document.getElementById("grid").getContext("2d");
+  context.font = "15px Helvetica";
+  context.strokeStyle = "#ccc";
+  rows.forEach((row, r) => {
+    let x = 0;
+    row.forEach((cell, c) => {
+      context.strokeRect(x, r * 32, widths[c], 32);
+      context.fillStyle = "#202124";
+      context.fillText(cell, x + 6, r * 32 + 21);
+      x += widths[c];
+    });
+  });
+</script>
+</body>
+</html>

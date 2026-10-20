@@ -1,0 +1,2341 @@
+{
+ "about": "Stage 2 real-device replay, 28 Sep 2026. Three fictional companies: search in Chrome, then write and save an onboarding note in TextEdit. Trimmed copy of discovery.sqlite3 and context.sqlite3. Google result pages are replaced with fictional listings and the signed-in account line is replaced. Employee, tenant and source IDs are replaced.",
+ "employee_id": "replay-employee",
+ "evidence": [
+  {
+   "content": {
+    "metadata": {
+     "app_bundle_id": "com.google.Chrome",
+     "capture_method": "withheld",
+     "duration_s": "175",
+     "gap_reason": "withheld:secure_surface",
+     "sighting_count": "2"
+    },
+    "text": "",
+    "type": "capture_gap"
+   },
+   "event_id": "desktop-withheld-f60d0577-e6b7-4004-8174-2d033b229fd5",
+   "first_seen_at": "2026-09-29T00:16:40Z",
+   "last_seen_at": "2026-09-29T00:19:35Z",
+   "observed_at": "2026-09-29T00:16:40Z",
+   "provenance": "native_accessibility",
+   "revision": 2,
+   "source_type": "desktop"
+  },
+  {
+   "content": {
+    "metadata": {
+     "app_bundle_id": "com.google.Chrome",
+     "app_name": "Google Chrome",
+     "browser_domain": "www.google.com",
+     "capture_method": "native_interaction",
+     "interaction_type": "focus",
+     "trigger": "accessibility_notification",
+     "window_ref": "window:3846d806-bd51-4d91-9642-7722758381a5",
+     "window_title": "northwind dental - Google Search - Google Chrome"
+    },
+    "text": "",
+    "type": "interaction"
+   },
+   "event_id": "desktop-interaction-56551ef8-1542-4ec4-91c6-5c5a441f179b",
+   "first_seen_at": "2026-09-29T00:16:56Z",
+   "last_seen_at": "2026-09-29T00:16:56Z",
+   "observed_at": "2026-09-29T00:16:56Z",
+   "provenance": "native_interaction",
+   "revision": 1,
+   "source_type": "desktop"
+  },
+  {
+   "content": {
+    "metadata": {
+     "app_bundle_id": "com.google.Chrome",
+     "app_name": "Google Chrome",
+     "browser_domain": "www.google.com",
+     "capture_method": "native_interaction",
+     "interaction_type": "focus",
+     "trigger": "accessibility_notification",
+     "window_ref": "window:3846d806-bd51-4d91-9642-7722758381a5",
+     "window_title": "northwind dental - Google Search - Google Chrome"
+    },
+    "text": "",
+    "type": "interaction"
+   },
+   "event_id": "desktop-interaction-ac2d83b7-6b91-498e-ac83-acae2229a017",
+   "first_seen_at": "2026-09-29T00:16:56Z",
+   "last_seen_at": "2026-09-29T00:16:56Z",
+   "observed_at": "2026-09-29T00:16:56Z",
+   "provenance": "native_interaction",
+   "revision": 1,
+   "source_type": "desktop"
+  },
+  {
+   "content": {
+    "metadata": {
+     "app_bundle_id": "com.google.Chrome",
+     "app_name": "Google Chrome",
+     "browser_domain": "www.google.com",
+     "capture_method": "native_interaction",
+     "interaction_type": "focus",
+     "trigger": "accessibility_notification",
+     "window_ref": "window:3846d806-bd51-4d91-9642-7722758381a5",
+     "window_title": "northwind dental - Google Search - Google Chrome"
+    },
+    "text": "",
+    "type": "interaction"
+   },
+   "event_id": "desktop-interaction-4dbe4ae1-faf1-4431-a703-49c5704b333b",
+   "first_seen_at": "2026-09-29T00:16:56Z",
+   "last_seen_at": "2026-09-29T00:16:56Z",
+   "observed_at": "2026-09-29T00:16:56Z",
+   "provenance": "native_interaction",
+   "revision": 1,
+   "source_type": "desktop"
+  },
+  {
+   "content": {
+    "metadata": {
+     "app_bundle_id": "com.google.Chrome",
+     "app_name": "Google Chrome",
+     "browser_domain": "www.google.com",
+     "capture_method": "native_interaction",
+     "control_role": "AXTextArea",
+     "focus_name": "Search",
+     "interaction_type": "edit",
+     "trigger": "accessibility_notification",
+     "window_ref": "window:3846d806-bd51-4d91-9642-7722758381a5",
+     "window_title": "northwind dental - Google Search - Google Chrome"
+    },
+    "text": "",
+    "type": "interaction"
+   },
+   "event_id": "desktop-interaction-115aba57-0807-412a-be0d-7be2eca9044b",
+   "first_seen_at": "2026-09-29T00:16:56Z",
+   "last_seen_at": "2026-09-29T00:16:56Z",
+   "observed_at": "2026-09-29T00:16:56Z",
+   "provenance": "native_interaction",
+   "revision": 1,
+   "source_type": "desktop"
+  },
+  {
+   "content": {
+    "metadata": {
+     "app_bundle_id": "com.google.Chrome",
+     "app_name": "Google Chrome",
+     "browser_domain": "www.google.com",
+     "capture_method": "native_interaction",
+     "control_role": "AXWebArea",
+     "focus_name": "northwind dental - Google Search",
+     "interaction_type": "edit",
+     "trigger": "accessibility_notification",
+     "window_ref": "window:3846d806-bd51-4d91-9642-7722758381a5",
+     "window_title": "northwind dental - Google Search - Google Chrome"
+    },
+    "text": "",
+    "type": "interaction"
+   },
+   "event_id": "desktop-interaction-6e0dd6f6-3b60-4e84-a088-7d28dbbd7cbf",
+   "first_seen_at": "2026-09-29T00:16:56Z",
+   "last_seen_at": "2026-09-29T00:16:56Z",
+   "observed_at": "2026-09-29T00:16:56Z",
+   "provenance": "native_interaction",
+   "revision": 1,
+   "source_type": "desktop"
+  },
+  {
+   "content": {
+    "metadata": {
+     "app_bundle_id": "com.google.Chrome",
+     "app_name": "Google Chrome",
+     "browser_domain": "www.google.com",
+     "capture_method": "native_interaction",
+     "control_role": "AXStaticText",
+     "focus_path": "northwind dental - Google Search - Google Chrome",
+     "interaction_type": "edit",
+     "trigger": "accessibility_notification",
+     "window_ref": "window:3846d806-bd51-4d91-9642-7722758381a5",
+     "window_title": "northwind dental - Google Search - Google Chrome"
+    },
+    "text": "",
+    "type": "interaction"
+   },
+   "event_id": "desktop-interaction-225c38ce-c869-4088-b0f4-4c83f970413e",
+   "first_seen_at": "2026-09-29T00:16:56Z",
+   "last_seen_at": "2026-09-29T00:16:56Z",
+   "observed_at": "2026-09-29T00:16:56Z",
+   "provenance": "native_interaction",
+   "revision": 1,
+   "source_type": "desktop"
+  },
+  {
+   "content": {
+    "metadata": {
+     "app_bundle_id": "com.google.Chrome",
+     "app_name": "Google Chrome",
+     "browser_domain": "www.google.com",
+     "control_role": "AXWebArea",
+     "duration_s": "11",
+     "focus_name": "northwind dental - Google Search",
+     "sighting_count": "5",
+     "trigger": "accessibility_event",
+     "window_ref": "window:3846d806-bd51-4d91-9642-7722758381a5",
+     "window_title": "northwind dental - Google Search - Google Chrome"
+    },
+    "text": "northwind dental - Google Search\nSkip to main content\nAccessibility help\nGo to Google Home\nSearch\nnorthwind dental\nClear\nSearch by voice\nSearch by image\nShare\nGoogle apps\nGoogle Account: Test User (test.user@example.test), Google membership\nAI Mode\nAll\nImages\nMaps\nShopping\nVideos\nForums\nMore filters\nTools\nSearch Results\nWeb results\nNorthwind Dental result 1 northwinddental.example https://northwinddental.example/page1\nFictional listing 1 for northwind dental. Opening hours, services and contact form.\nAbout this result\nNorthwind Dental result 2 northwinddental.example https://northwinddental.example/page2\nFictional listing 2 for northwind dental. Opening hours, services and contact form.\nAbout this result\nNorthwind Dental result 3 northwinddental.example https://northwinddental.example/page3\nFictional listing 3 for northwind dental. Opening hours, services and contact form.\nAbout this result\nNorthwind Dental result 4 northwinddental.example https://northwinddental.example/page4\nFictional listing 4 for northwind dental. Opening hours, services and contact form.\nAbout this result\nNorthwind Dental result 5 northwinddental.example https://northwinddental.example/page5\nFictional listing 5 for northwind dental. Opening hours, services and contact form.\nAbout this result\nNorthwind Dental result 6 northwinddental.example https://northwinddental.example/page6\nFictional listing 6 for northwind dental. Opening hours, services and contact form.\nAbout this result\nNorthwind Dental result 7 northwinddental.example https://northwinddental.example/page7\nFictional listing 7 for northwind dental. Opening hours, services and contact form.\nAbout this result\nNorthwind Dental result 8 northwinddental.example https://northwinddental.example/page8\nFictional listing 8 for northwind dental. Opening hours, services and contact form.\nAbout this result\nNorthwind Dental result 9 northwinddental.example https://northwinddental.example/page9\nFictional listing 9 for northwind dental. Opening hours, services and contact form.\nAbout this result\nNorthwind Dental result 10 northwinddental.example https://northwinddental.example/page10\nFictional listing 10 for northwind dental. Opening hours, services and contact form.\nAbout this result\nNorthwind Dental result 11 northwinddental.example https://northwinddental.example/page11\nFictional listing 11 for northwind dental. Opening hours, services and contact form.\nAbout this result\nNorthwind Dental result 12 northwinddental.example https://northwinddental.example/page12\nFictional listing 12 for northwind dental. Opening hours, services and contact form.\nAbout this result\nPeople also ask\nRelated searches\nnorthwind dental reviews\nnorthwind dental contact\nNext",
+    "type": "screen_text"
+   },
+   "event_id": "desktop-4845a90c-fd45-4738-83ec-afa0f67eaa44",
+   "first_seen_at": "2026-09-29T00:16:57Z",
+   "last_seen_at": "2026-09-29T00:17:08Z",
+   "observed_at": "2026-09-29T00:16:57Z",
+   "provenance": "native_accessibility",
+   "revision": 2,
+   "source_type": "desktop"
+  },
+  {
+   "content": {
+    "metadata": {
+     "app_bundle_id": "com.apple.TextEdit",
+     "capture_method": "withheld",
+     "duration_s": "217",
+     "gap_reason": "withheld:secure_surface",
+     "sighting_count": "22"
+    },
+    "text": "",
+    "type": "capture_gap"
+   },
+   "event_id": "desktop-withheld-dd13ad99-dbb3-4978-b864-e7105bf80c5c",
+   "first_seen_at": "2026-09-29T00:17:10Z",
+   "last_seen_at": "2026-09-29T00:20:47Z",
+   "observed_at": "2026-09-29T00:17:10Z",
+   "provenance": "native_accessibility",
+   "revision": 9,
+   "source_type": "desktop"
+  },
+  {
+   "content": {
+    "metadata": {
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "control_role": "AXTextArea",
+     "duration_s": "20",
+     "focus_path": "Untitled",
+     "sighting_count": "6",
+     "trigger": "interval",
+     "window_ref": "window:53607d5e-08a3-45ae-8a5f-1d486e6c5e90",
+     "window_title": "Untitled"
+    },
+    "text": "Untitled\ncus\nbold\nitalic\nunderline\nstrikethrough\ntext colour\nrgb 0 0 0 1\ntext background colour\nrgb 1 1 1 1\ntypeface\nHelvetica\nstyle\nRegular\nfont size\n12\nfont size\nalign left\nalign centre\nalign right\nfully justify\nlist style\nline spacing\n1.0\nEdited\ndocument actions\n—\nUntitled",
+    "type": "screen_text"
+   },
+   "event_id": "desktop-565f847d-3c6d-4ee6-a852-7716f5f4770b",
+   "first_seen_at": "2026-09-29T00:17:16Z",
+   "last_seen_at": "2026-09-29T00:17:36Z",
+   "observed_at": "2026-09-29T00:17:16Z",
+   "provenance": "native_accessibility",
+   "revision": 2,
+   "source_type": "desktop"
+  },
+  {
+   "content": {
+    "metadata": {
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "capture_method": "native_interaction",
+     "control_role": "AXMenuBarItem",
+     "document_id": "document:831b615f16cb5d45eb61995c42618ed025b2e24569e1f6dfdfca6549affc4bca",
+     "focus_name": "File",
+     "interaction_type": "click",
+     "trigger": "global_event",
+     "window_ref": "window:53607d5e-08a3-45ae-8a5f-1d486e6c5e90",
+     "window_title": "Untitled"
+    },
+    "text": "",
+    "type": "interaction"
+   },
+   "event_id": "desktop-interaction-54f6a130-b1c7-48d2-a2e2-1026e1e497d4",
+   "first_seen_at": "2026-09-29T00:17:37Z",
+   "last_seen_at": "2026-09-29T00:17:37Z",
+   "observed_at": "2026-09-29T00:17:37Z",
+   "provenance": "native_interaction",
+   "revision": 1,
+   "source_type": "desktop"
+  },
+  {
+   "content": {
+    "metadata": {
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "capture_method": "native_interaction",
+     "control_role": "AXMenuItem",
+     "document_id": "document:831b615f16cb5d45eb61995c42618ed025b2e24569e1f6dfdfca6549affc4bca",
+     "focus_name": "Save...",
+     "interaction_type": "click",
+     "trigger": "global_event",
+     "window_ref": "window:53607d5e-08a3-45ae-8a5f-1d486e6c5e90",
+     "window_title": "Untitled"
+    },
+    "text": "",
+    "type": "interaction"
+   },
+   "event_id": "desktop-interaction-b8e5b734-7d38-4de9-bc21-071dbbe7162e",
+   "first_seen_at": "2026-09-29T00:17:38Z",
+   "last_seen_at": "2026-09-29T00:17:38Z",
+   "observed_at": "2026-09-29T00:17:38Z",
+   "provenance": "native_interaction",
+   "revision": 1,
+   "source_type": "desktop"
+  },
+  {
+   "content": {
+    "metadata": {
+     "app_bundle_id": "com.google.Chrome",
+     "app_name": "Google Chrome",
+     "browser_domain": "www.google.com",
+     "capture_method": "native_interaction",
+     "interaction_type": "focus",
+     "trigger": "accessibility_notification",
+     "window_ref": "window:3846d806-bd51-4d91-9642-7722758381a5",
+     "window_title": "brightline logistics - Google Search - Google Chrome"
+    },
+    "text": "",
+    "type": "interaction"
+   },
+   "event_id": "desktop-interaction-3a051760-f768-4208-84e2-482df376b69e",
+   "first_seen_at": "2026-09-29T00:18:22Z",
+   "last_seen_at": "2026-09-29T00:18:22Z",
+   "observed_at": "2026-09-29T00:18:22Z",
+   "provenance": "native_interaction",
+   "revision": 1,
+   "source_type": "desktop"
+  },
+  {
+   "content": {
+    "metadata": {
+     "app_bundle_id": "com.google.Chrome",
+     "app_name": "Google Chrome",
+     "browser_domain": "www.google.com",
+     "capture_method": "native_interaction",
+     "interaction_type": "focus",
+     "trigger": "accessibility_notification",
+     "window_ref": "window:3846d806-bd51-4d91-9642-7722758381a5",
+     "window_title": "brightline logistics - Google Search - Google Chrome"
+    },
+    "text": "",
+    "type": "interaction"
+   },
+   "event_id": "desktop-interaction-9b2e96b4-1144-46f0-940c-2553cda8f1fa",
+   "first_seen_at": "2026-09-29T00:18:22Z",
+   "last_seen_at": "2026-09-29T00:18:22Z",
+   "observed_at": "2026-09-29T00:18:22Z",
+   "provenance": "native_interaction",
+   "revision": 1,
+   "source_type": "desktop"
+  },
+  {
+   "content": {
+    "metadata": {
+     "app_bundle_id": "com.google.Chrome",
+     "app_name": "Google Chrome",
+     "browser_domain": "www.google.com",
+     "capture_method": "native_interaction",
+     "control_role": "AXTextArea",
+     "focus_name": "Search",
+     "interaction_type": "edit",
+     "trigger": "accessibility_notification",
+     "window_ref": "window:3846d806-bd51-4d91-9642-7722758381a5",
+     "window_title": "brightline logistics - Google Search - Google Chrome"
+    },
+    "text": "",
+    "type": "interaction"
+   },
+   "event_id": "desktop-interaction-1ea8f1e6-5be9-42a2-8974-4f62f11feb7b",
+   "first_seen_at": "2026-09-29T00:18:22Z",
+   "last_seen_at": "2026-09-29T00:18:22Z",
+   "observed_at": "2026-09-29T00:18:22Z",
+   "provenance": "native_interaction",
+   "revision": 1,
+   "source_type": "desktop"
+  },
+  {
+   "content": {
+    "metadata": {
+     "app_bundle_id": "com.google.Chrome",
+     "app_name": "Google Chrome",
+     "browser_domain": "www.google.com",
+     "capture_method": "native_interaction",
+     "control_role": "AXWebArea",
+     "focus_name": "brightline logistics - Google Search",
+     "interaction_type": "edit",
+     "trigger": "accessibility_notification",
+     "window_ref": "window:3846d806-bd51-4d91-9642-7722758381a5",
+     "window_title": "brightline logistics - Google Search - Google Chrome"
+    },
+    "text": "",
+    "type": "interaction"
+   },
+   "event_id": "desktop-interaction-321f3f4b-8f9a-4d9f-8d52-b3e713d1d21a",
+   "first_seen_at": "2026-09-29T00:18:22Z",
+   "last_seen_at": "2026-09-29T00:18:22Z",
+   "observed_at": "2026-09-29T00:18:22Z",
+   "provenance": "native_interaction",
+   "revision": 1,
+   "source_type": "desktop"
+  },
+  {
+   "content": {
+    "metadata": {
+     "app_bundle_id": "com.google.Chrome",
+     "app_name": "Google Chrome",
+     "browser_domain": "www.google.com",
+     "capture_method": "native_interaction",
+     "control_role": "AXStaticText",
+     "focus_path": "brightline logistics - Google Search - Google Chrome",
+     "interaction_type": "edit",
+     "trigger": "accessibility_notification",
+     "window_ref": "window:3846d806-bd51-4d91-9642-7722758381a5",
+     "window_title": "brightline logistics - Google Search - Google Chrome"
+    },
+    "text": "",
+    "type": "interaction"
+   },
+   "event_id": "desktop-interaction-9cb06999-ed64-4560-93f9-b3ca127c85bf",
+   "first_seen_at": "2026-09-29T00:18:23Z",
+   "last_seen_at": "2026-09-29T00:18:23Z",
+   "observed_at": "2026-09-29T00:18:23Z",
+   "provenance": "native_interaction",
+   "revision": 1,
+   "source_type": "desktop"
+  },
+  {
+   "content": {
+    "metadata": {
+     "app_bundle_id": "com.google.Chrome",
+     "app_name": "Google Chrome",
+     "browser_domain": "www.google.com",
+     "control_role": "AXWebArea",
+     "duration_s": "1",
+     "focus_name": "brightline logistics - Google Search",
+     "sighting_count": "2",
+     "text_revision": "append",
+     "trigger": "accessibility_event",
+     "window_ref": "window:3846d806-bd51-4d91-9642-7722758381a5",
+     "window_title": "brightline logistics - Google Search - Google Chrome"
+    },
+    "text": "brightline logistics - Google Search\nSkip to main content\nAccessibility help\nGo to Google Home\nSearch\nbrightline logistics\nClear\nSearch by voice\nSearch by image\nShare\nGoogle apps\nGoogle Account: Test User (test.user@example.test), Google membership\nAI Mode\nAll\nImages\nNews\nVideos\nMaps\nShopping\nMore filters\nSearch Results\nWeb results\nBrightline Logistics result 1 brightlinelogistics.example https://brightlinelogistics.example/page1\nFictional listing 1 for brightline logistics. Opening hours, services and contact form.\nAbout this result\nBrightline Logistics result 2 brightlinelogistics.example https://brightlinelogistics.example/page2\nFictional listing 2 for brightline logistics. Opening hours, services and contact form.\nAbout this result\nBrightline Logistics result 3 brightlinelogistics.example https://brightlinelogistics.example/page3\nFictional listing 3 for brightline logistics. Opening hours, services and contact form.\nAbout this result\nBrightline Logistics result 4 brightlinelogistics.example https://brightlinelogistics.example/page4\nFictional listing 4 for brightline logistics. Opening hours, services and contact form.\nAbout this result\nBrightline Logistics result 5 brightlinelogistics.example https://brightlinelogistics.example/page5\nFictional listing 5 for brightline logistics. Opening hours, services and contact form.\nAbout this result\nBrightline Logistics result 6 brightlinelogistics.example https://brightlinelogistics.example/page6\nFictional listing 6 for brightline logistics. Opening hours, services and contact form.\nAbout this result\nBrightline Logistics result 7 brightlinelogistics.example https://brightlinelogistics.example/page7\nFictional listing 7 for brightline logistics. Opening hours, services and contact form.\nAbout this result\nBrightline Logistics result 8 brightlinelogistics.example https://brightlinelogistics.example/page8\nFictional listing 8 for brightline logistics. Opening hours, services and contact form.\nAbout this result\nBrightline Logistics result 9 brightlinelogistics.example https://brightlinelogistics.example/page9\nFictional listing 9 for brightline logistics. Opening hours, services and contact form.\nAbout this result\nBrightline Logistics result 10 brightlinelogistics.example https://brightlinelogistics.example/page10\nFictional listing 10 for brightline logistics. Opening hours, services and contact form.\nAbout this result\nBrightline Logistics result 11 brightlinelogistics.example https://brightlinelogistics.example/page11\nFictional listing 11 for brightline logistics. Opening hours, services and contact form.\nAbout this result\nBrightline Logistics result 12 brightlinelogistics.example https://brightlinelogistics.example/page12\nFictional listing 12 for brightline logistics. Opening hours, services and contact form.\nAbout this result\nPeople also ask\nRelated searches\nbrightline logistics reviews\nbrightline logistics contact\nNext",
+    "type": "screen_text"
+   },
+   "event_id": "desktop-cb4a8886-5734-4a97-af8d-e59186841195",
+   "first_seen_at": "2026-09-29T00:18:23Z",
+   "last_seen_at": "2026-09-29T00:18:24Z",
+   "observed_at": "2026-09-29T00:18:23Z",
+   "provenance": "native_accessibility",
+   "revision": 2,
+   "source_type": "desktop"
+  },
+  {
+   "content": {
+    "metadata": {
+     "app_bundle_id": "com.google.Chrome",
+     "app_name": "Google Chrome",
+     "browser_domain": "www.google.com",
+     "capture_method": "native_interaction",
+     "interaction_type": "focus",
+     "trigger": "accessibility_notification",
+     "window_ref": "window:3846d806-bd51-4d91-9642-7722758381a5",
+     "window_title": "brightline logistics - Google Search - Google Chrome"
+    },
+    "text": "",
+    "type": "interaction"
+   },
+   "event_id": "desktop-interaction-c8b5e861-55c0-403e-bc9c-80e096a0729f",
+   "first_seen_at": "2026-09-29T00:18:24Z",
+   "last_seen_at": "2026-09-29T00:18:24Z",
+   "observed_at": "2026-09-29T00:18:24Z",
+   "provenance": "native_interaction",
+   "revision": 1,
+   "source_type": "desktop"
+  },
+  {
+   "content": {
+    "metadata": {
+     "app_bundle_id": "com.google.Chrome",
+     "app_name": "Google Chrome",
+     "browser_domain": "www.google.com",
+     "control_role": "AXWebArea",
+     "duration_s": "4",
+     "focus_name": "brightline logistics - Google Search",
+     "sighting_count": "3",
+     "trigger": "accessibility_event",
+     "window_ref": "window:3846d806-bd51-4d91-9642-7722758381a5",
+     "window_title": "brightline logistics - Google Search - Google Chrome"
+    },
+    "text": "brightline logistics - Google Search\nSkip to main content\nAccessibility help\nGo to Google Home\nSearch\nbrightline logistics\nClear\nSearch by voice\nSearch by image\nShare\nGoogle apps\nGoogle Account: Test User (test.user@example.test), Google membership\nAI Mode\nAll\nImages\nNews\nVideos\nMaps\nShopping\nMore filters\nTools\nSearch Results\nWeb results\nBrightline Logistics result 1 brightlinelogistics.example https://brightlinelogistics.example/page1\nFictional listing 1 for brightline logistics. Opening hours, services and contact form.\nAbout this result\nBrightline Logistics result 2 brightlinelogistics.example https://brightlinelogistics.example/page2\nFictional listing 2 for brightline logistics. Opening hours, services and contact form.\nAbout this result\nBrightline Logistics result 3 brightlinelogistics.example https://brightlinelogistics.example/page3\nFictional listing 3 for brightline logistics. Opening hours, services and contact form.\nAbout this result\nBrightline Logistics result 4 brightlinelogistics.example https://brightlinelogistics.example/page4\nFictional listing 4 for brightline logistics. Opening hours, services and contact form.\nAbout this result\nBrightline Logistics result 5 brightlinelogistics.example https://brightlinelogistics.example/page5\nFictional listing 5 for brightline logistics. Opening hours, services and contact form.\nAbout this result\nBrightline Logistics result 6 brightlinelogistics.example https://brightlinelogistics.example/page6\nFictional listing 6 for brightline logistics. Opening hours, services and contact form.\nAbout this result\nBrightline Logistics result 7 brightlinelogistics.example https://brightlinelogistics.example/page7\nFictional listing 7 for brightline logistics. Opening hours, services and contact form.\nAbout this result\nBrightline Logistics result 8 brightlinelogistics.example https://brightlinelogistics.example/page8\nFictional listing 8 for brightline logistics. Opening hours, services and contact form.\nAbout this result\nBrightline Logistics result 9 brightlinelogistics.example https://brightlinelogistics.example/page9\nFictional listing 9 for brightline logistics. Opening hours, services and contact form.\nAbout this result\nBrightline Logistics result 10 brightlinelogistics.example https://brightlinelogistics.example/page10\nFictional listing 10 for brightline logistics. Opening hours, services and contact form.\nAbout this result\nBrightline Logistics result 11 brightlinelogistics.example https://brightlinelogistics.example/page11\nFictional listing 11 for brightline logistics. Opening hours, services and contact form.\nAbout this result\nBrightline Logistics result 12 brightlinelogistics.example https://brightlinelogistics.example/page12\nFictional listing 12 for brightline logistics. Opening hours, services and contact form.\nAbout this result\nPeople also ask\nRelated searches\nbrightline logistics reviews\nbrightline logistics contact\nNext",
+    "type": "screen_text"
+   },
+   "event_id": "desktop-f90fb287-0ac6-4665-872e-0181a4e24e97",
+   "first_seen_at": "2026-09-29T00:18:25Z",
+   "last_seen_at": "2026-09-29T00:18:29Z",
+   "observed_at": "2026-09-29T00:18:25Z",
+   "provenance": "native_accessibility",
+   "revision": 2,
+   "source_type": "desktop"
+  },
+  {
+   "content": {
+    "metadata": {
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "control_role": "AXTextArea",
+     "focus_path": "Untitled",
+     "trigger": "accessibility_event",
+     "window_ref": "window:d74251d6-611b-43a8-94f0-bfa3f1fe13b9",
+     "window_title": "Untitled"
+    },
+    "text": "Untitled\nbold\nitalic\nunderline\nstrikethrough\ntext colour\nrgb 0 0 0 1\ntext background colour\nrgb 1 1 1 1\ntypeface\nHelvetica\nstyle\nRegular\nfont size\n12\nfont size\nalign left\nalign centre\nalign right\nfully justify\nlist style\nline spacing\n1.0\ndocument actions\nUntitled",
+    "type": "screen_text"
+   },
+   "event_id": "desktop-f551bd0f-eaee-44f5-bc2d-8ac340bdc708",
+   "first_seen_at": "2026-09-29T00:18:37Z",
+   "last_seen_at": "2026-09-29T00:18:37Z",
+   "observed_at": "2026-09-29T00:18:37Z",
+   "provenance": "native_accessibility",
+   "revision": 1,
+   "source_type": "desktop"
+  },
+  {
+   "content": {
+    "metadata": {
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "control_role": "AXTextArea",
+     "document_id": "document:831b615f16cb5d45eb61995c42618ed025b2e24569e1f6dfdfca6549affc4bca",
+     "focus_path": "Untitled",
+     "trigger": "accessibility_event",
+     "window_ref": "window:d74251d6-611b-43a8-94f0-bfa3f1fe13b9",
+     "window_title": "Untitled"
+    },
+    "text": "Untitled\ncustomer onboarding: brightline logistics\nbold\nitalic\nunderline\nstrikethrough\ntext colour\nrgb 0 0 0 1\ntext background colour\nrgb 1 1 1 1\ntypeface\nHelvetica\nstyle\nRegular\nfont size\n12\nfont size\nalign left\nalign centre\nalign right\nfully justify\nlist style\nline spacing\n1.0\nEdited\ndocument actions\n—\nUntitled",
+    "type": "screen_text"
+   },
+   "event_id": "desktop-9197ea25-84db-4f75-beeb-fb474a02e2f2",
+   "first_seen_at": "2026-09-29T00:18:48Z",
+   "last_seen_at": "2026-09-29T00:18:48Z",
+   "observed_at": "2026-09-29T00:18:48Z",
+   "provenance": "native_accessibility",
+   "revision": 1,
+   "source_type": "desktop"
+  },
+  {
+   "content": {
+    "metadata": {
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "control_role": "AXTextArea",
+     "document_id": "document:831b615f16cb5d45eb61995c42618ed025b2e24569e1f6dfdfca6549affc4bca",
+     "focus_path": "Untitled",
+     "trigger": "accessibility_event",
+     "window_ref": "window:d74251d6-611b-43a8-94f0-bfa3f1fe13b9",
+     "window_title": "Untitled"
+    },
+    "text": "Untitled\ncustomer onboarding: brightline logistics\nwebsite: brightline.example\nmain contact: tom okafor\nteam size: 40\nn\nbold\nitalic\nunderline\nstrikethrough\ntext colour\nrgb 0 0 0 1\ntext background colour\nrgb 1 1 1 1\ntypeface\nHelvetica\nstyle\nRegular\nfont size\n12\nfont size\nalign left\nalign centre\nalign right\nfully justify\nlist style\nline spacing\n1.0\nEdited\ndocument actions\n—\nUntitled",
+    "type": "screen_text"
+   },
+   "event_id": "desktop-3b4891d6-15e2-469a-81db-e72c02eaf129",
+   "first_seen_at": "2026-09-29T00:18:56Z",
+   "last_seen_at": "2026-09-29T00:18:56Z",
+   "observed_at": "2026-09-29T00:18:56Z",
+   "provenance": "native_accessibility",
+   "revision": 1,
+   "source_type": "desktop"
+  },
+  {
+   "content": {
+    "metadata": {
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "capture_method": "native_interaction",
+     "control_role": "AXMenuBarItem",
+     "document_id": "document:831b615f16cb5d45eb61995c42618ed025b2e24569e1f6dfdfca6549affc4bca",
+     "focus_name": "File",
+     "interaction_type": "click",
+     "trigger": "global_event",
+     "window_ref": "window:d74251d6-611b-43a8-94f0-bfa3f1fe13b9",
+     "window_title": "Untitled"
+    },
+    "text": "",
+    "type": "interaction"
+   },
+   "event_id": "desktop-interaction-799db7cc-4614-4158-9dd4-66b5387fef9c",
+   "first_seen_at": "2026-09-29T00:19:00Z",
+   "last_seen_at": "2026-09-29T00:19:00Z",
+   "observed_at": "2026-09-29T00:19:00Z",
+   "provenance": "native_interaction",
+   "revision": 1,
+   "source_type": "desktop"
+  },
+  {
+   "content": {
+    "metadata": {
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "control_role": "AXTextArea",
+     "document_id": "document:831b615f16cb5d45eb61995c42618ed025b2e24569e1f6dfdfca6549affc4bca",
+     "focus_path": "Untitled",
+     "trigger": "accessibility_event",
+     "window_ref": "window:d74251d6-611b-43a8-94f0-bfa3f1fe13b9",
+     "window_title": "Untitled"
+    },
+    "text": "Untitled\ncustomer onboarding: brightline logistics\nwebsite: brightline.example\nmain contact: tom okafor\nteam size: 40\nnext step: book kickoff call\nbold\nitalic\nunderline\nstrikethrough\ntext colour\nrgb 0 0 0 1\ntext background colour\nrgb 1 1 1 1\ntypeface\nHelvetica\nstyle\nRegular\nfont size\n12\nfont size\nalign left\nalign centre\nalign right\nfully justify\nlist style\nline spacing\n1.0\nEdited\ndocument actions\n—\nUntitled",
+    "type": "screen_text"
+   },
+   "event_id": "desktop-59f86167-2196-4efe-b983-1b4433a9c045",
+   "first_seen_at": "2026-09-29T00:19:00Z",
+   "last_seen_at": "2026-09-29T00:19:00Z",
+   "observed_at": "2026-09-29T00:19:00Z",
+   "provenance": "native_accessibility",
+   "revision": 1,
+   "source_type": "desktop"
+  },
+  {
+   "content": {
+    "metadata": {
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "capture_method": "native_interaction",
+     "control_role": "AXMenuItem",
+     "document_id": "document:831b615f16cb5d45eb61995c42618ed025b2e24569e1f6dfdfca6549affc4bca",
+     "focus_name": "Save...",
+     "interaction_type": "click",
+     "trigger": "global_event",
+     "window_ref": "window:d74251d6-611b-43a8-94f0-bfa3f1fe13b9",
+     "window_title": "Untitled"
+    },
+    "text": "",
+    "type": "interaction"
+   },
+   "event_id": "desktop-interaction-62c76476-d6e5-48d0-846a-cf7fac64fad8",
+   "first_seen_at": "2026-09-29T00:19:00Z",
+   "last_seen_at": "2026-09-29T00:19:00Z",
+   "observed_at": "2026-09-29T00:19:00Z",
+   "provenance": "native_interaction",
+   "revision": 1,
+   "source_type": "desktop"
+  },
+  {
+   "content": {
+    "metadata": {
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "control_role": "AXTextArea",
+     "document_id": "document:c44f2cb77822652a5a4235e14e982c16dcda02a060904919a2c81ace9e50f4db",
+     "focus_path": "onboarding - brightline",
+     "trigger": "accessibility_event",
+     "window_ref": "window:d74251d6-611b-43a8-94f0-bfa3f1fe13b9",
+     "window_title": "onboarding - brightline"
+    },
+    "text": "onboarding - brightline\ncustomer onboarding: brightline logistics\nwebsite: brightline.example\nmain contact: tom okafor\nteam size: 40\nnext step: book kickoff call\nonboarding - brightline",
+    "type": "screen_text"
+   },
+   "event_id": "desktop-7f061a65-e2e1-4fc3-a41c-f5058e54f8d4",
+   "first_seen_at": "2026-09-29T00:19:08Z",
+   "last_seen_at": "2026-09-29T00:19:08Z",
+   "observed_at": "2026-09-29T00:19:08Z",
+   "provenance": "native_accessibility",
+   "revision": 1,
+   "source_type": "desktop"
+  },
+  {
+   "content": {
+    "metadata": {
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "capture_method": "native_interaction",
+     "document_id": "document:c44f2cb77822652a5a4235e14e982c16dcda02a060904919a2c81ace9e50f4db",
+     "interaction_type": "shortcut",
+     "shortcut": "cmd+w",
+     "trigger": "global_event",
+     "window_ref": "window:d74251d6-611b-43a8-94f0-bfa3f1fe13b9",
+     "window_title": "onboarding - brightline"
+    },
+    "text": "",
+    "type": "interaction"
+   },
+   "event_id": "desktop-interaction-ffe8bd4a-deba-46d2-8abf-f2c522048543",
+   "first_seen_at": "2026-09-29T00:19:09Z",
+   "last_seen_at": "2026-09-29T00:19:09Z",
+   "observed_at": "2026-09-29T00:19:09Z",
+   "provenance": "native_interaction",
+   "revision": 1,
+   "source_type": "desktop"
+  },
+  {
+   "content": {
+    "metadata": {
+     "app_bundle_id": "com.google.Chrome",
+     "app_name": "Google Chrome",
+     "browser_domain": "www.google.com",
+     "capture_method": "native_interaction",
+     "interaction_type": "focus",
+     "trigger": "accessibility_notification",
+     "window_ref": "window:3846d806-bd51-4d91-9642-7722758381a5",
+     "window_title": "harbour cafe group - Google Search - Google Chrome"
+    },
+    "text": "",
+    "type": "interaction"
+   },
+   "event_id": "desktop-interaction-099e2a88-48ef-4508-98ed-8c29d2ead025",
+   "first_seen_at": "2026-09-29T00:19:35Z",
+   "last_seen_at": "2026-09-29T00:19:35Z",
+   "observed_at": "2026-09-29T00:19:35Z",
+   "provenance": "native_interaction",
+   "revision": 1,
+   "source_type": "desktop"
+  },
+  {
+   "content": {
+    "metadata": {
+     "app_bundle_id": "com.google.Chrome",
+     "app_name": "Google Chrome",
+     "browser_domain": "www.google.com",
+     "capture_method": "native_interaction",
+     "interaction_type": "focus",
+     "trigger": "accessibility_notification",
+     "window_ref": "window:3846d806-bd51-4d91-9642-7722758381a5",
+     "window_title": "harbour cafe group - Google Search - Google Chrome"
+    },
+    "text": "",
+    "type": "interaction"
+   },
+   "event_id": "desktop-interaction-8a76d6d8-9a8a-46b2-901f-45d8faf4b427",
+   "first_seen_at": "2026-09-29T00:19:36Z",
+   "last_seen_at": "2026-09-29T00:19:36Z",
+   "observed_at": "2026-09-29T00:19:36Z",
+   "provenance": "native_interaction",
+   "revision": 1,
+   "source_type": "desktop"
+  },
+  {
+   "content": {
+    "metadata": {
+     "app_bundle_id": "com.google.Chrome",
+     "app_name": "Google Chrome",
+     "browser_domain": "www.google.com",
+     "capture_method": "native_interaction",
+     "control_role": "AXTextArea",
+     "focus_name": "Search",
+     "interaction_type": "edit",
+     "trigger": "accessibility_notification",
+     "window_ref": "window:3846d806-bd51-4d91-9642-7722758381a5",
+     "window_title": "harbour cafe group - Google Search - Google Chrome"
+    },
+    "text": "",
+    "type": "interaction"
+   },
+   "event_id": "desktop-interaction-b7fc6c7d-b34c-4b67-8646-e466cb76e6da",
+   "first_seen_at": "2026-09-29T00:19:36Z",
+   "last_seen_at": "2026-09-29T00:19:36Z",
+   "observed_at": "2026-09-29T00:19:36Z",
+   "provenance": "native_interaction",
+   "revision": 1,
+   "source_type": "desktop"
+  },
+  {
+   "content": {
+    "metadata": {
+     "app_bundle_id": "com.google.Chrome",
+     "app_name": "Google Chrome",
+     "browser_domain": "www.google.com",
+     "capture_method": "native_interaction",
+     "control_role": "AXWebArea",
+     "focus_name": "harbour cafe group - Google Search",
+     "interaction_type": "edit",
+     "trigger": "accessibility_notification",
+     "window_ref": "window:3846d806-bd51-4d91-9642-7722758381a5",
+     "window_title": "harbour cafe group - Google Search - Google Chrome"
+    },
+    "text": "",
+    "type": "interaction"
+   },
+   "event_id": "desktop-interaction-e7ba8f3f-fda9-4053-859c-cce9b01adb25",
+   "first_seen_at": "2026-09-29T00:19:36Z",
+   "last_seen_at": "2026-09-29T00:19:36Z",
+   "observed_at": "2026-09-29T00:19:36Z",
+   "provenance": "native_interaction",
+   "revision": 1,
+   "source_type": "desktop"
+  },
+  {
+   "content": {
+    "metadata": {
+     "app_bundle_id": "com.google.Chrome",
+     "app_name": "Google Chrome",
+     "browser_domain": "www.google.com",
+     "capture_method": "native_interaction",
+     "control_role": "AXStaticText",
+     "focus_path": "harbour cafe group - Google Search - Google Chrome",
+     "interaction_type": "edit",
+     "trigger": "accessibility_notification",
+     "window_ref": "window:3846d806-bd51-4d91-9642-7722758381a5",
+     "window_title": "harbour cafe group - Google Search - Google Chrome"
+    },
+    "text": "",
+    "type": "interaction"
+   },
+   "event_id": "desktop-interaction-684c25d4-0f55-4a06-83bb-5ee76fc74c84",
+   "first_seen_at": "2026-09-29T00:19:36Z",
+   "last_seen_at": "2026-09-29T00:19:36Z",
+   "observed_at": "2026-09-29T00:19:36Z",
+   "provenance": "native_interaction",
+   "revision": 1,
+   "source_type": "desktop"
+  },
+  {
+   "content": {
+    "metadata": {
+     "app_bundle_id": "com.google.Chrome",
+     "app_name": "Google Chrome",
+     "browser_domain": "www.google.com",
+     "control_role": "AXWebArea",
+     "focus_name": "harbour cafe group - Google Search",
+     "trigger": "accessibility_event",
+     "window_ref": "window:3846d806-bd51-4d91-9642-7722758381a5",
+     "window_title": "harbour cafe group - Google Search - Google Chrome"
+    },
+    "text": "harbour cafe group - Google Search\nSkip to main content\nAccessibility help\nGo to Google Home\nSearch\nharbour cafe group\nClear\nSearch by voice\nSearch by image\nShare\nGoogle apps\nGoogle Account: Test User (test.user@example.test), Google membership\nAI Mode\nAll\nImages\nVideos\nMaps\nShopping\nNews\nMore filters\nSearch Results\nWeb results\nHarbour Cafe Group result 1 harbourcafegroup.example https://harbourcafegroup.example/page1\nFictional listing 1 for harbour cafe group. Opening hours, services and contact form.\nAbout this result\nHarbour Cafe Group result 2 harbourcafegroup.example https://harbourcafegroup.example/page2\nFictional listing 2 for harbour cafe group. Opening hours, services and contact form.\nAbout this result\nHarbour Cafe Group result 3 harbourcafegroup.example https://harbourcafegroup.example/page3\nFictional listing 3 for harbour cafe group. Opening hours, services and contact form.\nAbout this result\nHarbour Cafe Group result 4 harbourcafegroup.example https://harbourcafegroup.example/page4\nFictional listing 4 for harbour cafe group. Opening hours, services and contact form.\nAbout this result\nHarbour Cafe Group result 5 harbourcafegroup.example https://harbourcafegroup.example/page5\nFictional listing 5 for harbour cafe group. Opening hours, services and contact form.\nAbout this result\nHarbour Cafe Group result 6 harbourcafegroup.example https://harbourcafegroup.example/page6\nFictional listing 6 for harbour cafe group. Opening hours, services and contact form.\nAbout this result\nHarbour Cafe Group result 7 harbourcafegroup.example https://harbourcafegroup.example/page7\nFictional listing 7 for harbour cafe group. Opening hours, services and contact form.\nAbout this result\nHarbour Cafe Group result 8 harbourcafegroup.example https://harbourcafegroup.example/page8\nFictional listing 8 for harbour cafe group. Opening hours, services and contact form.\nAbout this result\nHarbour Cafe Group result 9 harbourcafegroup.example https://harbourcafegroup.example/page9\nFictional listing 9 for harbour cafe group. Opening hours, services and contact form.\nAbout this result\nHarbour Cafe Group result 10 harbourcafegroup.example https://harbourcafegroup.example/page10\nFictional listing 10 for harbour cafe group. Opening hours, services and contact form.\nAbout this result\nHarbour Cafe Group result 11 harbourcafegroup.example https://harbourcafegroup.example/page11\nFictional listing 11 for harbour cafe group. Opening hours, services and contact form.\nAbout this result\nHarbour Cafe Group result 12 harbourcafegroup.example https://harbourcafegroup.example/page12\nFictional listing 12 for harbour cafe group. Opening hours, services and contact form.\nAbout this result\nPeople also ask\nRelated searches\nharbour cafe group reviews\nharbour cafe group contact\nNext",
+    "type": "screen_text"
+   },
+   "event_id": "desktop-8cfb67c4-fa6f-4e99-90f7-534c6e83ce63",
+   "first_seen_at": "2026-09-29T00:19:36Z",
+   "last_seen_at": "2026-09-29T00:19:36Z",
+   "observed_at": "2026-09-29T00:19:36Z",
+   "provenance": "native_accessibility",
+   "revision": 1,
+   "source_type": "desktop"
+  },
+  {
+   "content": {
+    "metadata": {
+     "app_bundle_id": "com.google.Chrome",
+     "app_name": "Google Chrome",
+     "browser_domain": "www.google.com",
+     "control_role": "AXWebArea",
+     "focus_name": "harbour cafe group - Google Search",
+     "trigger": "accessibility_event",
+     "window_ref": "window:3846d806-bd51-4d91-9642-7722758381a5",
+     "window_title": "harbour cafe group - Google Search - Google Chrome"
+    },
+    "text": "harbour cafe group - Google Search\nSkip to main content\nAccessibility help\nGo to Google Home\nSearch\nharbour cafe group\nClear\nSearch by voice\nSearch by image\nShare\nGoogle apps\nGoogle Account: Test User (test.user@example.test), Google membership\nAI Mode\nAll\nImages\nVideos\nMaps\nShopping\nNews\nMore filters\nTools\nSearch Results\nWeb results\nHarbour Cafe Group result 1 harbourcafegroup.example https://harbourcafegroup.example/page1\nFictional listing 1 for harbour cafe group. Opening hours, services and contact form.\nAbout this result\nHarbour Cafe Group result 2 harbourcafegroup.example https://harbourcafegroup.example/page2\nFictional listing 2 for harbour cafe group. Opening hours, services and contact form.\nAbout this result\nHarbour Cafe Group result 3 harbourcafegroup.example https://harbourcafegroup.example/page3\nFictional listing 3 for harbour cafe group. Opening hours, services and contact form.\nAbout this result\nHarbour Cafe Group result 4 harbourcafegroup.example https://harbourcafegroup.example/page4\nFictional listing 4 for harbour cafe group. Opening hours, services and contact form.\nAbout this result\nHarbour Cafe Group result 5 harbourcafegroup.example https://harbourcafegroup.example/page5\nFictional listing 5 for harbour cafe group. Opening hours, services and contact form.\nAbout this result\nHarbour Cafe Group result 6 harbourcafegroup.example https://harbourcafegroup.example/page6\nFictional listing 6 for harbour cafe group. Opening hours, services and contact form.\nAbout this result\nHarbour Cafe Group result 7 harbourcafegroup.example https://harbourcafegroup.example/page7\nFictional listing 7 for harbour cafe group. Opening hours, services and contact form.\nAbout this result\nHarbour Cafe Group result 8 harbourcafegroup.example https://harbourcafegroup.example/page8\nFictional listing 8 for harbour cafe group. Opening hours, services and contact form.\nAbout this result\nHarbour Cafe Group result 9 harbourcafegroup.example https://harbourcafegroup.example/page9\nFictional listing 9 for harbour cafe group. Opening hours, services and contact form.\nAbout this result\nHarbour Cafe Group result 10 harbourcafegroup.example https://harbourcafegroup.example/page10\nFictional listing 10 for harbour cafe group. Opening hours, services and contact form.\nAbout this result\nHarbour Cafe Group result 11 harbourcafegroup.example https://harbourcafegroup.example/page11\nFictional listing 11 for harbour cafe group. Opening hours, services and contact form.\nAbout this result\nHarbour Cafe Group result 12 harbourcafegroup.example https://harbourcafegroup.example/page12\nFictional listing 12 for harbour cafe group. Opening hours, services and contact form.\nAbout this result\nPeople also ask\nRelated searches\nharbour cafe group reviews\nharbour cafe group contact\nNext",
+    "type": "screen_text"
+   },
+   "event_id": "desktop-4353708e-2a29-4db7-819b-f0642b42df7c",
+   "first_seen_at": "2026-09-29T00:19:37Z",
+   "last_seen_at": "2026-09-29T00:19:37Z",
+   "observed_at": "2026-09-29T00:19:37Z",
+   "provenance": "native_accessibility",
+   "revision": 1,
+   "source_type": "desktop"
+  },
+  {
+   "content": {
+    "metadata": {
+     "app_bundle_id": "com.google.Chrome",
+     "app_name": "Google Chrome",
+     "browser_domain": "www.google.com",
+     "control_role": "AXWebArea",
+     "duration_s": "8",
+     "focus_name": "harbour cafe group - Google Search",
+     "sighting_count": "2",
+     "trigger": "accessibility_event",
+     "window_ref": "window:3846d806-bd51-4d91-9642-7722758381a5",
+     "window_title": "harbour cafe group - Google Search - Google Chrome"
+    },
+    "text": "harbour cafe group - Google Search\nSkip to main content\nAccessibility help\nGo to Google Home\nSearch\nharbour cafe group\nClear\nSearch by voice\nSearch by image\nShare\nGoogle apps\nGoogle Account: Test User (test.user@example.test), Google membership\nAI Mode\nAll\nImages\nVideos\nMaps\nShopping\nNews\nMore filters\nTools\nSearch Results\nWeb results\nHarbour Cafe Group result 1 harbourcafegroup.example https://harbourcafegroup.example/page1\nFictional listing 1 for harbour cafe group. Opening hours, services and contact form.\nAbout this result\nHarbour Cafe Group result 2 harbourcafegroup.example https://harbourcafegroup.example/page2\nFictional listing 2 for harbour cafe group. Opening hours, services and contact form.\nAbout this result\nHarbour Cafe Group result 3 harbourcafegroup.example https://harbourcafegroup.example/page3\nFictional listing 3 for harbour cafe group. Opening hours, services and contact form.\nAbout this result\nHarbour Cafe Group result 4 harbourcafegroup.example https://harbourcafegroup.example/page4\nFictional listing 4 for harbour cafe group. Opening hours, services and contact form.\nAbout this result\nHarbour Cafe Group result 5 harbourcafegroup.example https://harbourcafegroup.example/page5\nFictional listing 5 for harbour cafe group. Opening hours, services and contact form.\nAbout this result\nHarbour Cafe Group result 6 harbourcafegroup.example https://harbourcafegroup.example/page6\nFictional listing 6 for harbour cafe group. Opening hours, services and contact form.\nAbout this result\nHarbour Cafe Group result 7 harbourcafegroup.example https://harbourcafegroup.example/page7\nFictional listing 7 for harbour cafe group. Opening hours, services and contact form.\nAbout this result\nHarbour Cafe Group result 8 harbourcafegroup.example https://harbourcafegroup.example/page8\nFictional listing 8 for harbour cafe group. Opening hours, services and contact form.\nAbout this result\nHarbour Cafe Group result 9 harbourcafegroup.example https://harbourcafegroup.example/page9\nFictional listing 9 for harbour cafe group. Opening hours, services and contact form.\nAbout this result\nHarbour Cafe Group result 10 harbourcafegroup.example https://harbourcafegroup.example/page10\nFictional listing 10 for harbour cafe group. Opening hours, services and contact form.\nAbout this result\nHarbour Cafe Group result 11 harbourcafegroup.example https://harbourcafegroup.example/page11\nFictional listing 11 for harbour cafe group. Opening hours, services and contact form.\nAbout this result\nHarbour Cafe Group result 12 harbourcafegroup.example https://harbourcafegroup.example/page12\nFictional listing 12 for harbour cafe group. Opening hours, services and contact form.\nAbout this result\nPeople also ask\nRelated searches\nharbour cafe group reviews\nharbour cafe group contact\nNext",
+    "type": "screen_text"
+   },
+   "event_id": "desktop-b603a7ee-e33c-4d09-99c4-beb97295ca6b",
+   "first_seen_at": "2026-09-29T00:19:41Z",
+   "last_seen_at": "2026-09-29T00:19:49Z",
+   "observed_at": "2026-09-29T00:19:41Z",
+   "provenance": "native_accessibility",
+   "revision": 2,
+   "source_type": "desktop"
+  },
+  {
+   "content": {
+    "metadata": {
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "control_role": "AXTextArea",
+     "focus_path": "Untitled",
+     "trigger": "accessibility_event",
+     "window_ref": "window:cc755568-6416-469d-9b56-d13bb9c156e1",
+     "window_title": "Untitled"
+    },
+    "text": "Untitled",
+    "type": "screen_text"
+   },
+   "event_id": "desktop-cf9d5236-d1a1-4deb-be0f-f4a825fd28df",
+   "first_seen_at": "2026-09-29T00:19:53Z",
+   "last_seen_at": "2026-09-29T00:19:53Z",
+   "observed_at": "2026-09-29T00:19:53Z",
+   "provenance": "native_accessibility",
+   "revision": 1,
+   "source_type": "desktop"
+  },
+  {
+   "content": {
+    "metadata": {
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "control_role": "AXTextArea",
+     "focus_path": "Untitled",
+     "trigger": "accessibility_event",
+     "window_ref": "window:cc755568-6416-469d-9b56-d13bb9c156e1",
+     "window_title": "Untitled"
+    },
+    "text": "Untitled\ncustomer onboarding: harbour cafe group\nwebsite: harbourcafe.example\nmain contact:\nEdited\n—\nUntitled",
+    "type": "screen_text"
+   },
+   "event_id": "desktop-46b78112-6e16-4f4b-9720-87e35bfba9d1",
+   "first_seen_at": "2026-09-29T00:20:02Z",
+   "last_seen_at": "2026-09-29T00:20:02Z",
+   "observed_at": "2026-09-29T00:20:02Z",
+   "provenance": "native_accessibility",
+   "revision": 1,
+   "source_type": "desktop"
+  },
+  {
+   "content": {
+    "metadata": {
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "capture_method": "native_interaction",
+     "control_role": "AXMenuBarItem",
+     "document_id": "document:831b615f16cb5d45eb61995c42618ed025b2e24569e1f6dfdfca6549affc4bca",
+     "focus_name": "File",
+     "interaction_type": "click",
+     "trigger": "global_event",
+     "window_ref": "window:cc755568-6416-469d-9b56-d13bb9c156e1",
+     "window_title": "Untitled"
+    },
+    "text": "",
+    "type": "interaction"
+   },
+   "event_id": "desktop-interaction-3d8329f2-33bf-41dd-b932-8bf29b29d4c7",
+   "first_seen_at": "2026-09-29T00:20:10Z",
+   "last_seen_at": "2026-09-29T00:20:10Z",
+   "observed_at": "2026-09-29T00:20:10Z",
+   "provenance": "native_interaction",
+   "revision": 1,
+   "source_type": "desktop"
+  },
+  {
+   "content": {
+    "metadata": {
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "control_role": "AXTextArea",
+     "document_id": "document:831b615f16cb5d45eb61995c42618ed025b2e24569e1f6dfdfca6549affc4bca",
+     "focus_path": "Untitled",
+     "trigger": "accessibility_event",
+     "window_ref": "window:cc755568-6416-469d-9b56-d13bb9c156e1",
+     "window_title": "Untitled"
+    },
+    "text": "Untitled\ncustomer onboarding: harbour cafe group\nwebsite: harbourcafe.example\nmain contact: sofia marin\nteam size: 8\nnext step: book kicckoff call\nEdited\n—\nUntitled",
+    "type": "screen_text"
+   },
+   "event_id": "desktop-64dde480-09d3-4510-89c6-1138f00214dc",
+   "first_seen_at": "2026-09-29T00:20:10Z",
+   "last_seen_at": "2026-09-29T00:20:10Z",
+   "observed_at": "2026-09-29T00:20:10Z",
+   "provenance": "native_accessibility",
+   "revision": 1,
+   "source_type": "desktop"
+  },
+  {
+   "content": {
+    "metadata": {
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "capture_method": "native_interaction",
+     "control_role": "AXMenuItem",
+     "document_id": "document:831b615f16cb5d45eb61995c42618ed025b2e24569e1f6dfdfca6549affc4bca",
+     "focus_name": "Save...",
+     "interaction_type": "click",
+     "trigger": "global_event",
+     "window_ref": "window:cc755568-6416-469d-9b56-d13bb9c156e1",
+     "window_title": "Untitled"
+    },
+    "text": "",
+    "type": "interaction"
+   },
+   "event_id": "desktop-interaction-d2c54a5e-1f0b-4e23-be5f-0bcf925ae806",
+   "first_seen_at": "2026-09-29T00:20:11Z",
+   "last_seen_at": "2026-09-29T00:20:11Z",
+   "observed_at": "2026-09-29T00:20:11Z",
+   "provenance": "native_interaction",
+   "revision": 1,
+   "source_type": "desktop"
+  },
+  {
+   "content": {
+    "metadata": {
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "control_role": "AXTextArea",
+     "document_id": "document:ef64c2769a5c29898bb93d5f962b906e1e01d1396ef5c40d359cc5ab29fbabad",
+     "focus_path": "onboarding - harbou cafe",
+     "trigger": "accessibility_event",
+     "window_ref": "window:cc755568-6416-469d-9b56-d13bb9c156e1",
+     "window_title": "onboarding - harbou cafe"
+    },
+    "text": "onboarding - harbou cafe\nmain contact: sofia marin\nteam size: 8\nnext step: book kicckoff call\nonboarding - harbou cafe",
+    "type": "screen_text"
+   },
+   "event_id": "desktop-a8cbd174-e91c-402a-8d04-180b0a1a8add",
+   "first_seen_at": "2026-09-29T00:20:17Z",
+   "last_seen_at": "2026-09-29T00:20:17Z",
+   "observed_at": "2026-09-29T00:20:17Z",
+   "provenance": "native_accessibility",
+   "revision": 1,
+   "source_type": "desktop"
+  },
+  {
+   "content": {
+    "metadata": {
+     "app_bundle_id": "com.apple.TextEdit",
+     "app_name": "TextEdit",
+     "capture_method": "native_interaction",
+     "document_id": "document:ef64c2769a5c29898bb93d5f962b906e1e01d1396ef5c40d359cc5ab29fbabad",
+     "interaction_type": "shortcut",
+     "shortcut": "cmd+w",
+     "trigger": "global_event",
+     "window_ref": "window:cc755568-6416-469d-9b56-d13bb9c156e1",
+     "window_title": "onboarding - harbou cafe"
+    },
+    "text": "",
+    "type": "interaction"
+   },
+   "event_id": "desktop-interaction-9da0f59a-6d66-44f9-a85d-2fa515f1fc95",
+   "first_seen_at": "2026-09-29T00:20:20Z",
+   "last_seen_at": "2026-09-29T00:20:20Z",
+   "observed_at": "2026-09-29T00:20:20Z",
+   "provenance": "native_interaction",
+   "revision": 1,
+   "source_type": "desktop"
+  }
+ ],
+ "generation": "6d18ab5e57054c1eaf882e540386e551",
+ "policy_version": 38,
+ "source_id": "mac-recorder.replay",
+ "stored": {
+  "actions": [
+   {
+    "anchors_json": "{\"artifact\": null, \"case\": [], \"surface\": null, \"window\": null}",
+    "app": "com.google.Chrome",
+    "app_name": "",
+    "at": "2026-09-29T00:16:40.000000Z",
+    "decision": "uncertain",
+    "episode_id": "5e7edfa3dd584ca5a691dafc25a40031",
+    "evidence_event_id": "desktop-withheld-f60d0577-e6b7-4004-8174-2d033b229fd5",
+    "evidence_revision": 2,
+    "first_seen_at": "2026-09-29T00:16:40.000000Z",
+    "id": "1e05b82cabe15f31c97c846af7b29d92",
+    "interaction": "",
+    "last_seen_at": "2026-09-29T00:19:35.000000Z",
+    "policy_version": 37,
+    "source": "accessibility",
+    "task_episode_id": "e40a0c88e32c4a759d3b5957c473e10f",
+    "task_id": "cb18c7a81fe4407ab56c897181688d4b"
+   },
+   {
+    "anchors_json": "{\"artifact\": null, \"case\": [], \"surface\": \"c8ec47891a3eee91c8bfb957c19421aa\", \"window\": \"fa7077aa0b02cf12f0cec45cfc2d6f23\"}",
+    "app": "com.google.Chrome",
+    "app_name": "Google Chrome",
+    "at": "2026-09-29T00:16:56.000000Z",
+    "decision": "uncertain",
+    "episode_id": "9890cafc3c1e4645807f851bc362c437",
+    "evidence_event_id": "desktop-interaction-4dbe4ae1-faf1-4431-a703-49c5704b333b",
+    "evidence_revision": 1,
+    "first_seen_at": "2026-09-29T00:16:56.000000Z",
+    "id": "3f1316fac98b333b0f5f7d54ab474c05",
+    "interaction": "focus",
+    "last_seen_at": "2026-09-29T00:16:56.000000Z",
+    "policy_version": 37,
+    "source": "interaction",
+    "task_episode_id": "e045983462624773a5dd33beb9d26f5c",
+    "task_id": "a2df1201588d4884aa14e4d14416a19a"
+   },
+   {
+    "anchors_json": "{\"artifact\": null, \"case\": [], \"surface\": \"c8ec47891a3eee91c8bfb957c19421aa\", \"window\": \"fa7077aa0b02cf12f0cec45cfc2d6f23\"}",
+    "app": "com.google.Chrome",
+    "app_name": "Google Chrome",
+    "at": "2026-09-29T00:16:56.000000Z",
+    "decision": "uncertain",
+    "episode_id": "9890cafc3c1e4645807f851bc362c437",
+    "evidence_event_id": "desktop-interaction-225c38ce-c869-4088-b0f4-4c83f970413e",
+    "evidence_revision": 1,
+    "first_seen_at": "2026-09-29T00:16:56.000000Z",
+    "id": "519d60d30d00ca14cdf05b7296e274a4",
+    "interaction": "edit",
+    "last_seen_at": "2026-09-29T00:16:56.000000Z",
+    "policy_version": 37,
+    "source": "interaction",
+    "task_episode_id": "e045983462624773a5dd33beb9d26f5c",
+    "task_id": "a2df1201588d4884aa14e4d14416a19a"
+   },
+   {
+    "anchors_json": "{\"artifact\": null, \"case\": [], \"surface\": \"c8ec47891a3eee91c8bfb957c19421aa\", \"window\": \"fa7077aa0b02cf12f0cec45cfc2d6f23\"}",
+    "app": "com.google.Chrome",
+    "app_name": "Google Chrome",
+    "at": "2026-09-29T00:16:56.000000Z",
+    "decision": "uncertain",
+    "episode_id": "9890cafc3c1e4645807f851bc362c437",
+    "evidence_event_id": "desktop-interaction-ac2d83b7-6b91-498e-ac83-acae2229a017",
+    "evidence_revision": 1,
+    "first_seen_at": "2026-09-29T00:16:56.000000Z",
+    "id": "73bb014d8a4176a060ed534fe62ba2c6",
+    "interaction": "focus",
+    "last_seen_at": "2026-09-29T00:16:56.000000Z",
+    "policy_version": 37,
+    "source": "interaction",
+    "task_episode_id": "e045983462624773a5dd33beb9d26f5c",
+    "task_id": "a2df1201588d4884aa14e4d14416a19a"
+   },
+   {
+    "anchors_json": "{\"artifact\": null, \"case\": [], \"surface\": \"c8ec47891a3eee91c8bfb957c19421aa\", \"window\": \"fa7077aa0b02cf12f0cec45cfc2d6f23\"}",
+    "app": "com.google.Chrome",
+    "app_name": "Google Chrome",
+    "at": "2026-09-29T00:16:56.000000Z",
+    "decision": "uncertain",
+    "episode_id": "9890cafc3c1e4645807f851bc362c437",
+    "evidence_event_id": "desktop-interaction-56551ef8-1542-4ec4-91c6-5c5a441f179b",
+    "evidence_revision": 1,
+    "first_seen_at": "2026-09-29T00:16:56.000000Z",
+    "id": "a3d2fe1a86c0eaf9344ca28abf1ae42e",
+    "interaction": "focus",
+    "last_seen_at": "2026-09-29T00:16:56.000000Z",
+    "policy_version": 37,
+    "source": "interaction",
+    "task_episode_id": "e045983462624773a5dd33beb9d26f5c",
+    "task_id": "a2df1201588d4884aa14e4d14416a19a"
+   },
+   {
+    "anchors_json": "{\"artifact\": null, \"case\": [], \"surface\": \"c8ec47891a3eee91c8bfb957c19421aa\", \"window\": \"fa7077aa0b02cf12f0cec45cfc2d6f23\"}",
+    "app": "com.google.Chrome",
+    "app_name": "Google Chrome",
+    "at": "2026-09-29T00:16:56.000000Z",
+    "decision": "uncertain",
+    "episode_id": "9890cafc3c1e4645807f851bc362c437",
+    "evidence_event_id": "desktop-interaction-115aba57-0807-412a-be0d-7be2eca9044b",
+    "evidence_revision": 1,
+    "first_seen_at": "2026-09-29T00:16:56.000000Z",
+    "id": "c1baaa3c4a75781f4b8a6f259ac75faa",
+    "interaction": "edit",
+    "last_seen_at": "2026-09-29T00:16:56.000000Z",
+    "policy_version": 37,
+    "source": "interaction",
+    "task_episode_id": "e045983462624773a5dd33beb9d26f5c",
+    "task_id": "a2df1201588d4884aa14e4d14416a19a"
+   },
+   {
+    "anchors_json": "{\"artifact\": null, \"case\": [], \"surface\": \"c8ec47891a3eee91c8bfb957c19421aa\", \"window\": \"fa7077aa0b02cf12f0cec45cfc2d6f23\"}",
+    "app": "com.google.Chrome",
+    "app_name": "Google Chrome",
+    "at": "2026-09-29T00:16:56.000000Z",
+    "decision": "uncertain",
+    "episode_id": "9890cafc3c1e4645807f851bc362c437",
+    "evidence_event_id": "desktop-interaction-6e0dd6f6-3b60-4e84-a088-7d28dbbd7cbf",
+    "evidence_revision": 1,
+    "first_seen_at": "2026-09-29T00:16:56.000000Z",
+    "id": "f98b4d24eb0b3d363e9e57dca03aeafa",
+    "interaction": "edit",
+    "last_seen_at": "2026-09-29T00:16:56.000000Z",
+    "policy_version": 37,
+    "source": "interaction",
+    "task_episode_id": "e045983462624773a5dd33beb9d26f5c",
+    "task_id": "a2df1201588d4884aa14e4d14416a19a"
+   },
+   {
+    "anchors_json": "{\"artifact\": null, \"case\": [], \"surface\": \"c8ec47891a3eee91c8bfb957c19421aa\", \"window\": \"fa7077aa0b02cf12f0cec45cfc2d6f23\"}",
+    "app": "com.google.Chrome",
+    "app_name": "Google Chrome",
+    "at": "2026-09-29T00:16:57.000000Z",
+    "decision": "uncertain",
+    "episode_id": "9890cafc3c1e4645807f851bc362c437",
+    "evidence_event_id": "desktop-4845a90c-fd45-4738-83ec-afa0f67eaa44",
+    "evidence_revision": 2,
+    "first_seen_at": "2026-09-29T00:16:57.000000Z",
+    "id": "f0274e63f52d5304bf77330e031d9c31",
+    "interaction": "accessibility_event",
+    "last_seen_at": "2026-09-29T00:17:08.000000Z",
+    "policy_version": 37,
+    "source": "accessibility",
+    "task_episode_id": "e045983462624773a5dd33beb9d26f5c",
+    "task_id": "a2df1201588d4884aa14e4d14416a19a"
+   },
+   {
+    "anchors_json": "{\"artifact\": null, \"case\": [], \"surface\": null, \"window\": null}",
+    "app": "com.apple.TextEdit",
+    "app_name": "",
+    "at": "2026-09-29T00:17:10.000000Z",
+    "decision": "uncertain",
+    "episode_id": "9bff2342ea5e40c7b0c39d344b1bf2c7",
+    "evidence_event_id": "desktop-withheld-dd13ad99-dbb3-4978-b864-e7105bf80c5c",
+    "evidence_revision": 9,
+    "first_seen_at": "2026-09-29T00:17:10.000000Z",
+    "id": "e136d5d578f5a4535a1c4a05c79b6a7c",
+    "interaction": "",
+    "last_seen_at": "2026-09-29T00:20:47.000000Z",
+    "policy_version": 37,
+    "source": "accessibility",
+    "task_episode_id": "808eca73376c4fe69a71ce20fb2eea72",
+    "task_id": "fdb6a70c398448b5a924f3fd71ffe0e5"
+   },
+   {
+    "anchors_json": "{\"artifact\": null, \"case\": [], \"surface\": \"680f685ebd39583bb62c08267888f74c\", \"window\": \"cfd3b9c88e90cf4c0f38811425f31990\"}",
+    "app": "com.apple.TextEdit",
+    "app_name": "TextEdit",
+    "at": "2026-09-29T00:17:16.000000Z",
+    "decision": "uncertain",
+    "episode_id": "88b96bdd9d294be08dbb6341ff2ef45a",
+    "evidence_event_id": "desktop-565f847d-3c6d-4ee6-a852-7716f5f4770b",
+    "evidence_revision": 2,
+    "first_seen_at": "2026-09-29T00:17:16.000000Z",
+    "id": "2f9f8d6a071c228de4e42ceb3835f829",
+    "interaction": "interval",
+    "last_seen_at": "2026-09-29T00:17:36.000000Z",
+    "policy_version": 37,
+    "source": "accessibility",
+    "task_episode_id": "e886a3c07f934f3ab7871160a65df6b6",
+    "task_id": "fdb6a70c398448b5a924f3fd71ffe0e5"
+   },
+   {
+    "anchors_json": "{\"artifact\": \"19e1138d4d857c300c4489da4ab38895\", \"case\": [], \"surface\": \"680f685ebd39583bb62c08267888f74c\", \"window\": \"cfd3b9c88e90cf4c0f38811425f31990\"}",
+    "app": "com.apple.TextEdit",
+    "app_name": "TextEdit",
+    "at": "2026-09-29T00:17:37.000000Z",
+    "decision": "uncertain",
+    "episode_id": "88b96bdd9d294be08dbb6341ff2ef45a",
+    "evidence_event_id": "desktop-interaction-54f6a130-b1c7-48d2-a2e2-1026e1e497d4",
+    "evidence_revision": 1,
+    "first_seen_at": "2026-09-29T00:17:37.000000Z",
+    "id": "7ae714a9acb525189901f6fcf4bdace7",
+    "interaction": "click",
+    "last_seen_at": "2026-09-29T00:17:37.000000Z",
+    "policy_version": 37,
+    "source": "interaction",
+    "task_episode_id": "808eca73376c4fe69a71ce20fb2eea72",
+    "task_id": "fdb6a70c398448b5a924f3fd71ffe0e5"
+   },
+   {
+    "anchors_json": "{\"artifact\": \"19e1138d4d857c300c4489da4ab38895\", \"case\": [], \"surface\": \"680f685ebd39583bb62c08267888f74c\", \"window\": \"cfd3b9c88e90cf4c0f38811425f31990\"}",
+    "app": "com.apple.TextEdit",
+    "app_name": "TextEdit",
+    "at": "2026-09-29T00:17:38.000000Z",
+    "decision": "uncertain",
+    "episode_id": "88b96bdd9d294be08dbb6341ff2ef45a",
+    "evidence_event_id": "desktop-interaction-b8e5b734-7d38-4de9-bc21-071dbbe7162e",
+    "evidence_revision": 1,
+    "first_seen_at": "2026-09-29T00:17:38.000000Z",
+    "id": "0e7601a6c278a24891825df813ea6757",
+    "interaction": "click",
+    "last_seen_at": "2026-09-29T00:17:38.000000Z",
+    "policy_version": 37,
+    "source": "interaction",
+    "task_episode_id": "808eca73376c4fe69a71ce20fb2eea72",
+    "task_id": "fdb6a70c398448b5a924f3fd71ffe0e5"
+   },
+   {
+    "anchors_json": "{\"artifact\": null, \"case\": [], \"surface\": \"002476d9df63df83215e3b5e43cd74b9\", \"window\": \"fa7077aa0b02cf12f0cec45cfc2d6f23\"}",
+    "app": "com.google.Chrome",
+    "app_name": "Google Chrome",
+    "at": "2026-09-29T00:18:22.000000Z",
+    "decision": "uncertain",
+    "episode_id": "c2b21c80c5d4454bb165314fcc2e8894",
+    "evidence_event_id": "desktop-interaction-1ea8f1e6-5be9-42a2-8974-4f62f11feb7b",
+    "evidence_revision": 1,
+    "first_seen_at": "2026-09-29T00:18:22.000000Z",
+    "id": "359fea30ba7362604b647e121111f8c4",
+    "interaction": "edit",
+    "last_seen_at": "2026-09-29T00:18:22.000000Z",
+    "policy_version": 37,
+    "source": "interaction",
+    "task_episode_id": "ee6eb68cb53a47e7a9765dcf1466de72",
+    "task_id": "2fd1e157e4414e61b3a0ae46d30f51c6"
+   },
+   {
+    "anchors_json": "{\"artifact\": null, \"case\": [], \"surface\": \"002476d9df63df83215e3b5e43cd74b9\", \"window\": \"fa7077aa0b02cf12f0cec45cfc2d6f23\"}",
+    "app": "com.google.Chrome",
+    "app_name": "Google Chrome",
+    "at": "2026-09-29T00:18:22.000000Z",
+    "decision": "uncertain",
+    "episode_id": "c2b21c80c5d4454bb165314fcc2e8894",
+    "evidence_event_id": "desktop-interaction-9b2e96b4-1144-46f0-940c-2553cda8f1fa",
+    "evidence_revision": 1,
+    "first_seen_at": "2026-09-29T00:18:22.000000Z",
+    "id": "797c43c093a3a60442cf11300dd66ec2",
+    "interaction": "focus",
+    "last_seen_at": "2026-09-29T00:18:22.000000Z",
+    "policy_version": 37,
+    "source": "interaction",
+    "task_episode_id": "ee6eb68cb53a47e7a9765dcf1466de72",
+    "task_id": "2fd1e157e4414e61b3a0ae46d30f51c6"
+   },
+   {
+    "anchors_json": "{\"artifact\": null, \"case\": [], \"surface\": \"002476d9df63df83215e3b5e43cd74b9\", \"window\": \"fa7077aa0b02cf12f0cec45cfc2d6f23\"}",
+    "app": "com.google.Chrome",
+    "app_name": "Google Chrome",
+    "at": "2026-09-29T00:18:22.000000Z",
+    "decision": "uncertain",
+    "episode_id": "c2b21c80c5d4454bb165314fcc2e8894",
+    "evidence_event_id": "desktop-interaction-321f3f4b-8f9a-4d9f-8d52-b3e713d1d21a",
+    "evidence_revision": 1,
+    "first_seen_at": "2026-09-29T00:18:22.000000Z",
+    "id": "a5bba15d7afb759f58ac278f4bff3f3c",
+    "interaction": "edit",
+    "last_seen_at": "2026-09-29T00:18:22.000000Z",
+    "policy_version": 37,
+    "source": "interaction",
+    "task_episode_id": "ee6eb68cb53a47e7a9765dcf1466de72",
+    "task_id": "2fd1e157e4414e61b3a0ae46d30f51c6"
+   },
+   {
+    "anchors_json": "{\"artifact\": null, \"case\": [], \"surface\": \"002476d9df63df83215e3b5e43cd74b9\", \"window\": \"fa7077aa0b02cf12f0cec45cfc2d6f23\"}",
+    "app": "com.google.Chrome",
+    "app_name": "Google Chrome",
+    "at": "2026-09-29T00:18:22.000000Z",
+    "decision": "uncertain",
+    "episode_id": "c2b21c80c5d4454bb165314fcc2e8894",
+    "evidence_event_id": "desktop-interaction-3a051760-f768-4208-84e2-482df376b69e",
+    "evidence_revision": 1,
+    "first_seen_at": "2026-09-29T00:18:22.000000Z",
+    "id": "d1f9f7ae6e69e73fd5fa783c52b13553",
+    "interaction": "focus",
+    "last_seen_at": "2026-09-29T00:18:22.000000Z",
+    "policy_version": 37,
+    "source": "interaction",
+    "task_episode_id": "ee6eb68cb53a47e7a9765dcf1466de72",
+    "task_id": "2fd1e157e4414e61b3a0ae46d30f51c6"
+   },
+   {
+    "anchors_json": "{\"artifact\": null, \"case\": [], \"surface\": \"002476d9df63df83215e3b5e43cd74b9\", \"window\": \"fa7077aa0b02cf12f0cec45cfc2d6f23\"}",
+    "app": "com.google.Chrome",
+    "app_name": "Google Chrome",
+    "at": "2026-09-29T00:18:23.000000Z",
+    "decision": "uncertain",
+    "episode_id": "c2b21c80c5d4454bb165314fcc2e8894",
+    "evidence_event_id": "desktop-cb4a8886-5734-4a97-af8d-e59186841195",
+    "evidence_revision": 2,
+    "first_seen_at": "2026-09-29T00:18:23.000000Z",
+    "id": "0b46791b6ddfbdb13623669fa1fca9fc",
+    "interaction": "accessibility_event",
+    "last_seen_at": "2026-09-29T00:18:24.000000Z",
+    "policy_version": 37,
+    "source": "accessibility",
+    "task_episode_id": "ee6eb68cb53a47e7a9765dcf1466de72",
+    "task_id": "2fd1e157e4414e61b3a0ae46d30f51c6"
+   },
+   {
+    "anchors_json": "{\"artifact\": null, \"case\": [], \"surface\": \"002476d9df63df83215e3b5e43cd74b9\", \"window\": \"fa7077aa0b02cf12f0cec45cfc2d6f23\"}",
+    "app": "com.google.Chrome",
+    "app_name": "Google Chrome",
+    "at": "2026-09-29T00:18:23.000000Z",
+    "decision": "uncertain",
+    "episode_id": "c2b21c80c5d4454bb165314fcc2e8894",
+    "evidence_event_id": "desktop-interaction-9cb06999-ed64-4560-93f9-b3ca127c85bf",
+    "evidence_revision": 1,
+    "first_seen_at": "2026-09-29T00:18:23.000000Z",
+    "id": "d5293a3d0446e808c70e77eeadf606d6",
+    "interaction": "edit",
+    "last_seen_at": "2026-09-29T00:18:23.000000Z",
+    "policy_version": 37,
+    "source": "interaction",
+    "task_episode_id": "ee6eb68cb53a47e7a9765dcf1466de72",
+    "task_id": "2fd1e157e4414e61b3a0ae46d30f51c6"
+   },
+   {
+    "anchors_json": "{\"artifact\": null, \"case\": [], \"surface\": \"002476d9df63df83215e3b5e43cd74b9\", \"window\": \"fa7077aa0b02cf12f0cec45cfc2d6f23\"}",
+    "app": "com.google.Chrome",
+    "app_name": "Google Chrome",
+    "at": "2026-09-29T00:18:24.000000Z",
+    "decision": "uncertain",
+    "episode_id": "c2b21c80c5d4454bb165314fcc2e8894",
+    "evidence_event_id": "desktop-interaction-c8b5e861-55c0-403e-bc9c-80e096a0729f",
+    "evidence_revision": 1,
+    "first_seen_at": "2026-09-29T00:18:24.000000Z",
+    "id": "289a3b5dc2f310f6117d0333f3f20165",
+    "interaction": "focus",
+    "last_seen_at": "2026-09-29T00:18:24.000000Z",
+    "policy_version": 37,
+    "source": "interaction",
+    "task_episode_id": "ee6eb68cb53a47e7a9765dcf1466de72",
+    "task_id": "2fd1e157e4414e61b3a0ae46d30f51c6"
+   },
+   {
+    "anchors_json": "{\"artifact\": null, \"case\": [], \"surface\": \"002476d9df63df83215e3b5e43cd74b9\", \"window\": \"fa7077aa0b02cf12f0cec45cfc2d6f23\"}",
+    "app": "com.google.Chrome",
+    "app_name": "Google Chrome",
+    "at": "2026-09-29T00:18:25.000000Z",
+    "decision": "uncertain",
+    "episode_id": "c2b21c80c5d4454bb165314fcc2e8894",
+    "evidence_event_id": "desktop-f90fb287-0ac6-4665-872e-0181a4e24e97",
+    "evidence_revision": 2,
+    "first_seen_at": "2026-09-29T00:18:25.000000Z",
+    "id": "1e668acf9697c79ceef984945b027dd1",
+    "interaction": "accessibility_event",
+    "last_seen_at": "2026-09-29T00:18:29.000000Z",
+    "policy_version": 37,
+    "source": "accessibility",
+    "task_episode_id": "ee6eb68cb53a47e7a9765dcf1466de72",
+    "task_id": "2fd1e157e4414e61b3a0ae46d30f51c6"
+   },
+   {
+    "anchors_json": "{\"artifact\": null, \"case\": [], \"surface\": \"680f685ebd39583bb62c08267888f74c\", \"window\": \"fac8390e0ea2cc96c74e4504959bef66\"}",
+    "app": "com.apple.TextEdit",
+    "app_name": "TextEdit",
+    "at": "2026-09-29T00:18:37.000000Z",
+    "decision": "uncertain",
+    "episode_id": "34074424955d45c3b2d8ea9cd2487e77",
+    "evidence_event_id": "desktop-f551bd0f-eaee-44f5-bc2d-8ac340bdc708",
+    "evidence_revision": 1,
+    "first_seen_at": "2026-09-29T00:18:37.000000Z",
+    "id": "d23d8cb784c88dc021be5bbdb7c96f02",
+    "interaction": "accessibility_event",
+    "last_seen_at": "2026-09-29T00:18:37.000000Z",
+    "policy_version": 37,
+    "source": "accessibility",
+    "task_episode_id": "e12c18542e1e406084125890afdaa8ad",
+    "task_id": "2fd1e157e4414e61b3a0ae46d30f51c6"
+   },
+   {
+    "anchors_json": "{\"artifact\": \"19e1138d4d857c300c4489da4ab38895\", \"case\": [], \"surface\": \"680f685ebd39583bb62c08267888f74c\", \"window\": \"fac8390e0ea2cc96c74e4504959bef66\"}",
+    "app": "com.apple.TextEdit",
+    "app_name": "TextEdit",
+    "at": "2026-09-29T00:18:48.000000Z",
+    "decision": "uncertain",
+    "episode_id": "34074424955d45c3b2d8ea9cd2487e77",
+    "evidence_event_id": "desktop-9197ea25-84db-4f75-beeb-fb474a02e2f2",
+    "evidence_revision": 1,
+    "first_seen_at": "2026-09-29T00:18:48.000000Z",
+    "id": "40056e590dda83911f0882499ff6766d",
+    "interaction": "accessibility_event",
+    "last_seen_at": "2026-09-29T00:18:48.000000Z",
+    "policy_version": 37,
+    "source": "accessibility",
+    "task_episode_id": "ee6eb68cb53a47e7a9765dcf1466de72",
+    "task_id": "2fd1e157e4414e61b3a0ae46d30f51c6"
+   },
+   {
+    "anchors_json": "{\"artifact\": \"19e1138d4d857c300c4489da4ab38895\", \"case\": [], \"surface\": \"680f685ebd39583bb62c08267888f74c\", \"window\": \"fac8390e0ea2cc96c74e4504959bef66\"}",
+    "app": "com.apple.TextEdit",
+    "app_name": "TextEdit",
+    "at": "2026-09-29T00:18:56.000000Z",
+    "decision": "uncertain",
+    "episode_id": "34074424955d45c3b2d8ea9cd2487e77",
+    "evidence_event_id": "desktop-3b4891d6-15e2-469a-81db-e72c02eaf129",
+    "evidence_revision": 1,
+    "first_seen_at": "2026-09-29T00:18:56.000000Z",
+    "id": "b9123ac7f28a141bd2f4d01c6be02882",
+    "interaction": "accessibility_event",
+    "last_seen_at": "2026-09-29T00:18:56.000000Z",
+    "policy_version": 37,
+    "source": "accessibility",
+    "task_episode_id": "ee6eb68cb53a47e7a9765dcf1466de72",
+    "task_id": "2fd1e157e4414e61b3a0ae46d30f51c6"
+   },
+   {
+    "anchors_json": "{\"artifact\": \"19e1138d4d857c300c4489da4ab38895\", \"case\": [], \"surface\": \"680f685ebd39583bb62c08267888f74c\", \"window\": \"fac8390e0ea2cc96c74e4504959bef66\"}",
+    "app": "com.apple.TextEdit",
+    "app_name": "TextEdit",
+    "at": "2026-09-29T00:19:00.000000Z",
+    "decision": "uncertain",
+    "episode_id": "34074424955d45c3b2d8ea9cd2487e77",
+    "evidence_event_id": "desktop-interaction-799db7cc-4614-4158-9dd4-66b5387fef9c",
+    "evidence_revision": 1,
+    "first_seen_at": "2026-09-29T00:19:00.000000Z",
+    "id": "62a856cd63b49a5cfe2413d043e944ab",
+    "interaction": "click",
+    "last_seen_at": "2026-09-29T00:19:00.000000Z",
+    "policy_version": 37,
+    "source": "interaction",
+    "task_episode_id": "ee6eb68cb53a47e7a9765dcf1466de72",
+    "task_id": "2fd1e157e4414e61b3a0ae46d30f51c6"
+   },
+   {
+    "anchors_json": "{\"artifact\": \"19e1138d4d857c300c4489da4ab38895\", \"case\": [], \"surface\": \"680f685ebd39583bb62c08267888f74c\", \"window\": \"fac8390e0ea2cc96c74e4504959bef66\"}",
+    "app": "com.apple.TextEdit",
+    "app_name": "TextEdit",
+    "at": "2026-09-29T00:19:00.000000Z",
+    "decision": "uncertain",
+    "episode_id": "34074424955d45c3b2d8ea9cd2487e77",
+    "evidence_event_id": "desktop-interaction-62c76476-d6e5-48d0-846a-cf7fac64fad8",
+    "evidence_revision": 1,
+    "first_seen_at": "2026-09-29T00:19:00.000000Z",
+    "id": "6438af50a7c4f3042aa5909be84edf32",
+    "interaction": "click",
+    "last_seen_at": "2026-09-29T00:19:00.000000Z",
+    "policy_version": 37,
+    "source": "interaction",
+    "task_episode_id": "ee6eb68cb53a47e7a9765dcf1466de72",
+    "task_id": "2fd1e157e4414e61b3a0ae46d30f51c6"
+   },
+   {
+    "anchors_json": "{\"artifact\": \"19e1138d4d857c300c4489da4ab38895\", \"case\": [], \"surface\": \"680f685ebd39583bb62c08267888f74c\", \"window\": \"fac8390e0ea2cc96c74e4504959bef66\"}",
+    "app": "com.apple.TextEdit",
+    "app_name": "TextEdit",
+    "at": "2026-09-29T00:19:00.000000Z",
+    "decision": "uncertain",
+    "episode_id": "34074424955d45c3b2d8ea9cd2487e77",
+    "evidence_event_id": "desktop-59f86167-2196-4efe-b983-1b4433a9c045",
+    "evidence_revision": 1,
+    "first_seen_at": "2026-09-29T00:19:00.000000Z",
+    "id": "e26d353b71c01f25451ea1f99fee01e0",
+    "interaction": "accessibility_event",
+    "last_seen_at": "2026-09-29T00:19:00.000000Z",
+    "policy_version": 37,
+    "source": "accessibility",
+    "task_episode_id": "ee6eb68cb53a47e7a9765dcf1466de72",
+    "task_id": "2fd1e157e4414e61b3a0ae46d30f51c6"
+   },
+   {
+    "anchors_json": "{\"artifact\": \"df11233c011f57e0f430f8f13185198a\", \"case\": [], \"surface\": \"7c51e8647e058d3e9a9558b9b497720b\", \"window\": \"fac8390e0ea2cc96c74e4504959bef66\"}",
+    "app": "com.apple.TextEdit",
+    "app_name": "TextEdit",
+    "at": "2026-09-29T00:19:08.000000Z",
+    "decision": "policy_changed",
+    "episode_id": "78b1e82380284408ae45c7861dad62ef",
+    "evidence_event_id": "desktop-7f061a65-e2e1-4fc3-a41c-f5058e54f8d4",
+    "evidence_revision": 1,
+    "first_seen_at": "2026-09-29T00:19:08.000000Z",
+    "id": "7f53929aae78cd569a8328882385bdd3",
+    "interaction": "accessibility_event",
+    "last_seen_at": "2026-09-29T00:19:08.000000Z",
+    "policy_version": 37,
+    "source": "accessibility",
+    "task_episode_id": "ee6eb68cb53a47e7a9765dcf1466de72",
+    "task_id": "ba8733d8d42645228e4e87208661a10a"
+   },
+   {
+    "anchors_json": "{\"artifact\": \"df11233c011f57e0f430f8f13185198a\", \"case\": [], \"surface\": \"7c51e8647e058d3e9a9558b9b497720b\", \"window\": \"fac8390e0ea2cc96c74e4504959bef66\"}",
+    "app": "com.apple.TextEdit",
+    "app_name": "TextEdit",
+    "at": "2026-09-29T00:19:09.000000Z",
+    "decision": "policy_changed",
+    "episode_id": "78b1e82380284408ae45c7861dad62ef",
+    "evidence_event_id": "desktop-interaction-ffe8bd4a-deba-46d2-8abf-f2c522048543",
+    "evidence_revision": 1,
+    "first_seen_at": "2026-09-29T00:19:09.000000Z",
+    "id": "a65392e8d64e44740d7ec6f0919c8a63",
+    "interaction": "shortcut",
+    "last_seen_at": "2026-09-29T00:19:09.000000Z",
+    "policy_version": 37,
+    "source": "interaction",
+    "task_episode_id": "ee6eb68cb53a47e7a9765dcf1466de72",
+    "task_id": "ba8733d8d42645228e4e87208661a10a"
+   },
+   {
+    "anchors_json": "{\"artifact\": null, \"case\": [], \"surface\": \"cb0e40e9bacc559d264f543ae57403a1\", \"window\": \"fa7077aa0b02cf12f0cec45cfc2d6f23\"}",
+    "app": "com.google.Chrome",
+    "app_name": "Google Chrome",
+    "at": "2026-09-29T00:19:35.000000Z",
+    "decision": "uncertain",
+    "episode_id": "894ce34e0bd644f29418e592ed61b580",
+    "evidence_event_id": "desktop-interaction-099e2a88-48ef-4508-98ed-8c29d2ead025",
+    "evidence_revision": 1,
+    "first_seen_at": "2026-09-29T00:19:35.000000Z",
+    "id": "6bd67b456565161f42cfa60d7bc49957",
+    "interaction": "focus",
+    "last_seen_at": "2026-09-29T00:19:35.000000Z",
+    "policy_version": 37,
+    "source": "interaction",
+    "task_episode_id": "68a4961824d746c9b6584f4de6a587ee",
+    "task_id": "974e520f15e04b1eb9dfb5f7d3051f99"
+   },
+   {
+    "anchors_json": "{\"artifact\": null, \"case\": [], \"surface\": \"cb0e40e9bacc559d264f543ae57403a1\", \"window\": \"fa7077aa0b02cf12f0cec45cfc2d6f23\"}",
+    "app": "com.google.Chrome",
+    "app_name": "Google Chrome",
+    "at": "2026-09-29T00:19:36.000000Z",
+    "decision": "uncertain",
+    "episode_id": "894ce34e0bd644f29418e592ed61b580",
+    "evidence_event_id": "desktop-interaction-b7fc6c7d-b34c-4b67-8646-e466cb76e6da",
+    "evidence_revision": 1,
+    "first_seen_at": "2026-09-29T00:19:36.000000Z",
+    "id": "4a351f1bdf197171e720ddfdb5f4d185",
+    "interaction": "edit",
+    "last_seen_at": "2026-09-29T00:19:36.000000Z",
+    "policy_version": 37,
+    "source": "interaction",
+    "task_episode_id": "68a4961824d746c9b6584f4de6a587ee",
+    "task_id": "974e520f15e04b1eb9dfb5f7d3051f99"
+   },
+   {
+    "anchors_json": "{\"artifact\": null, \"case\": [], \"surface\": \"cb0e40e9bacc559d264f543ae57403a1\", \"window\": \"fa7077aa0b02cf12f0cec45cfc2d6f23\"}",
+    "app": "com.google.Chrome",
+    "app_name": "Google Chrome",
+    "at": "2026-09-29T00:19:36.000000Z",
+    "decision": "uncertain",
+    "episode_id": "894ce34e0bd644f29418e592ed61b580",
+    "evidence_event_id": "desktop-interaction-8a76d6d8-9a8a-46b2-901f-45d8faf4b427",
+    "evidence_revision": 1,
+    "first_seen_at": "2026-09-29T00:19:36.000000Z",
+    "id": "71aec3f71fb66913f997bbe48f3ab066",
+    "interaction": "focus",
+    "last_seen_at": "2026-09-29T00:19:36.000000Z",
+    "policy_version": 37,
+    "source": "interaction",
+    "task_episode_id": "68a4961824d746c9b6584f4de6a587ee",
+    "task_id": "974e520f15e04b1eb9dfb5f7d3051f99"
+   },
+   {
+    "anchors_json": "{\"artifact\": null, \"case\": [], \"surface\": \"cb0e40e9bacc559d264f543ae57403a1\", \"window\": \"fa7077aa0b02cf12f0cec45cfc2d6f23\"}",
+    "app": "com.google.Chrome",
+    "app_name": "Google Chrome",
+    "at": "2026-09-29T00:19:36.000000Z",
+    "decision": "uncertain",
+    "episode_id": "894ce34e0bd644f29418e592ed61b580",
+    "evidence_event_id": "desktop-8cfb67c4-fa6f-4e99-90f7-534c6e83ce63",
+    "evidence_revision": 1,
+    "first_seen_at": "2026-09-29T00:19:36.000000Z",
+    "id": "a75b827d15fd4dd01d1cd67f527a509e",
+    "interaction": "accessibility_event",
+    "last_seen_at": "2026-09-29T00:19:36.000000Z",
+    "policy_version": 37,
+    "source": "accessibility",
+    "task_episode_id": "68a4961824d746c9b6584f4de6a587ee",
+    "task_id": "974e520f15e04b1eb9dfb5f7d3051f99"
+   },
+   {
+    "anchors_json": "{\"artifact\": null, \"case\": [], \"surface\": \"cb0e40e9bacc559d264f543ae57403a1\", \"window\": \"fa7077aa0b02cf12f0cec45cfc2d6f23\"}",
+    "app": "com.google.Chrome",
+    "app_name": "Google Chrome",
+    "at": "2026-09-29T00:19:36.000000Z",
+    "decision": "uncertain",
+    "episode_id": "894ce34e0bd644f29418e592ed61b580",
+    "evidence_event_id": "desktop-interaction-684c25d4-0f55-4a06-83bb-5ee76fc74c84",
+    "evidence_revision": 1,
+    "first_seen_at": "2026-09-29T00:19:36.000000Z",
+    "id": "ba80cb11ef4737436e71a759ee1fcf91",
+    "interaction": "edit",
+    "last_seen_at": "2026-09-29T00:19:36.000000Z",
+    "policy_version": 37,
+    "source": "interaction",
+    "task_episode_id": "68a4961824d746c9b6584f4de6a587ee",
+    "task_id": "974e520f15e04b1eb9dfb5f7d3051f99"
+   },
+   {
+    "anchors_json": "{\"artifact\": null, \"case\": [], \"surface\": \"cb0e40e9bacc559d264f543ae57403a1\", \"window\": \"fa7077aa0b02cf12f0cec45cfc2d6f23\"}",
+    "app": "com.google.Chrome",
+    "app_name": "Google Chrome",
+    "at": "2026-09-29T00:19:36.000000Z",
+    "decision": "uncertain",
+    "episode_id": "894ce34e0bd644f29418e592ed61b580",
+    "evidence_event_id": "desktop-interaction-e7ba8f3f-fda9-4053-859c-cce9b01adb25",
+    "evidence_revision": 1,
+    "first_seen_at": "2026-09-29T00:19:36.000000Z",
+    "id": "e4594c9543a1ccfabf1f4ad61f5b677c",
+    "interaction": "edit",
+    "last_seen_at": "2026-09-29T00:19:36.000000Z",
+    "policy_version": 37,
+    "source": "interaction",
+    "task_episode_id": "68a4961824d746c9b6584f4de6a587ee",
+    "task_id": "974e520f15e04b1eb9dfb5f7d3051f99"
+   },
+   {
+    "anchors_json": "{\"artifact\": null, \"case\": [], \"surface\": \"cb0e40e9bacc559d264f543ae57403a1\", \"window\": \"fa7077aa0b02cf12f0cec45cfc2d6f23\"}",
+    "app": "com.google.Chrome",
+    "app_name": "Google Chrome",
+    "at": "2026-09-29T00:19:37.000000Z",
+    "decision": "uncertain",
+    "episode_id": "894ce34e0bd644f29418e592ed61b580",
+    "evidence_event_id": "desktop-4353708e-2a29-4db7-819b-f0642b42df7c",
+    "evidence_revision": 1,
+    "first_seen_at": "2026-09-29T00:19:37.000000Z",
+    "id": "e6ed6dbc30150e16ba2c5f15465908ee",
+    "interaction": "accessibility_event",
+    "last_seen_at": "2026-09-29T00:19:37.000000Z",
+    "policy_version": 37,
+    "source": "accessibility",
+    "task_episode_id": "68a4961824d746c9b6584f4de6a587ee",
+    "task_id": "974e520f15e04b1eb9dfb5f7d3051f99"
+   },
+   {
+    "anchors_json": "{\"artifact\": null, \"case\": [], \"surface\": \"cb0e40e9bacc559d264f543ae57403a1\", \"window\": \"fa7077aa0b02cf12f0cec45cfc2d6f23\"}",
+    "app": "com.google.Chrome",
+    "app_name": "Google Chrome",
+    "at": "2026-09-29T00:19:41.000000Z",
+    "decision": "uncertain",
+    "episode_id": "894ce34e0bd644f29418e592ed61b580",
+    "evidence_event_id": "desktop-b603a7ee-e33c-4d09-99c4-beb97295ca6b",
+    "evidence_revision": 2,
+    "first_seen_at": "2026-09-29T00:19:41.000000Z",
+    "id": "6b743cd6be93930b65a962eeb5203628",
+    "interaction": "accessibility_event",
+    "last_seen_at": "2026-09-29T00:19:49.000000Z",
+    "policy_version": 37,
+    "source": "accessibility",
+    "task_episode_id": "68a4961824d746c9b6584f4de6a587ee",
+    "task_id": "974e520f15e04b1eb9dfb5f7d3051f99"
+   },
+   {
+    "anchors_json": "{\"artifact\": null, \"case\": [], \"surface\": \"680f685ebd39583bb62c08267888f74c\", \"window\": \"b4eafffb6f99e44d51b8fc0e9ad1bc9a\"}",
+    "app": "com.apple.TextEdit",
+    "app_name": "TextEdit",
+    "at": "2026-09-29T00:19:53.000000Z",
+    "decision": "policy_changed",
+    "episode_id": "64cec807a49240f08da7f27214436208",
+    "evidence_event_id": "desktop-cf9d5236-d1a1-4deb-be0f-f4a825fd28df",
+    "evidence_revision": 1,
+    "first_seen_at": "2026-09-29T00:19:53.000000Z",
+    "id": "55505670e169ee553c37778cf0709eba",
+    "interaction": "accessibility_event",
+    "last_seen_at": "2026-09-29T00:19:53.000000Z",
+    "policy_version": 37,
+    "source": "accessibility",
+    "task_episode_id": "68a4961824d746c9b6584f4de6a587ee",
+    "task_id": "974e520f15e04b1eb9dfb5f7d3051f99"
+   },
+   {
+    "anchors_json": "{\"artifact\": null, \"case\": [], \"surface\": \"680f685ebd39583bb62c08267888f74c\", \"window\": \"b4eafffb6f99e44d51b8fc0e9ad1bc9a\"}",
+    "app": "com.apple.TextEdit",
+    "app_name": "TextEdit",
+    "at": "2026-09-29T00:20:02.000000Z",
+    "decision": "policy_changed",
+    "episode_id": "64cec807a49240f08da7f27214436208",
+    "evidence_event_id": "desktop-46b78112-6e16-4f4b-9720-87e35bfba9d1",
+    "evidence_revision": 1,
+    "first_seen_at": "2026-09-29T00:20:02.000000Z",
+    "id": "5d87aef6bdb45d5c1885c50338b244b8",
+    "interaction": "accessibility_event",
+    "last_seen_at": "2026-09-29T00:20:02.000000Z",
+    "policy_version": 37,
+    "source": "accessibility",
+    "task_episode_id": "68a4961824d746c9b6584f4de6a587ee",
+    "task_id": "974e520f15e04b1eb9dfb5f7d3051f99"
+   },
+   {
+    "anchors_json": "{\"artifact\": \"19e1138d4d857c300c4489da4ab38895\", \"case\": [], \"surface\": \"680f685ebd39583bb62c08267888f74c\", \"window\": \"b4eafffb6f99e44d51b8fc0e9ad1bc9a\"}",
+    "app": "com.apple.TextEdit",
+    "app_name": "TextEdit",
+    "at": "2026-09-29T00:20:10.000000Z",
+    "decision": "policy_changed",
+    "episode_id": "64cec807a49240f08da7f27214436208",
+    "evidence_event_id": "desktop-interaction-3d8329f2-33bf-41dd-b932-8bf29b29d4c7",
+    "evidence_revision": 1,
+    "first_seen_at": "2026-09-29T00:20:10.000000Z",
+    "id": "3dc345c96df941a906636b3289b9d5b9",
+    "interaction": "click",
+    "last_seen_at": "2026-09-29T00:20:10.000000Z",
+    "policy_version": 37,
+    "source": "interaction",
+    "task_episode_id": "68a4961824d746c9b6584f4de6a587ee",
+    "task_id": "974e520f15e04b1eb9dfb5f7d3051f99"
+   },
+   {
+    "anchors_json": "{\"artifact\": \"19e1138d4d857c300c4489da4ab38895\", \"case\": [], \"surface\": \"680f685ebd39583bb62c08267888f74c\", \"window\": \"b4eafffb6f99e44d51b8fc0e9ad1bc9a\"}",
+    "app": "com.apple.TextEdit",
+    "app_name": "TextEdit",
+    "at": "2026-09-29T00:20:10.000000Z",
+    "decision": "policy_changed",
+    "episode_id": "64cec807a49240f08da7f27214436208",
+    "evidence_event_id": "desktop-64dde480-09d3-4510-89c6-1138f00214dc",
+    "evidence_revision": 1,
+    "first_seen_at": "2026-09-29T00:20:10.000000Z",
+    "id": "635d962e81845ec848ac4495631037cc",
+    "interaction": "accessibility_event",
+    "last_seen_at": "2026-09-29T00:20:10.000000Z",
+    "policy_version": 37,
+    "source": "accessibility",
+    "task_episode_id": "68a4961824d746c9b6584f4de6a587ee",
+    "task_id": "974e520f15e04b1eb9dfb5f7d3051f99"
+   },
+   {
+    "anchors_json": "{\"artifact\": \"19e1138d4d857c300c4489da4ab38895\", \"case\": [], \"surface\": \"680f685ebd39583bb62c08267888f74c\", \"window\": \"b4eafffb6f99e44d51b8fc0e9ad1bc9a\"}",
+    "app": "com.apple.TextEdit",
+    "app_name": "TextEdit",
+    "at": "2026-09-29T00:20:11.000000Z",
+    "decision": "policy_changed",
+    "episode_id": "64cec807a49240f08da7f27214436208",
+    "evidence_event_id": "desktop-interaction-d2c54a5e-1f0b-4e23-be5f-0bcf925ae806",
+    "evidence_revision": 1,
+    "first_seen_at": "2026-09-29T00:20:11.000000Z",
+    "id": "ad68436bc73c8ab5b1bdafd727d0fde3",
+    "interaction": "click",
+    "last_seen_at": "2026-09-29T00:20:11.000000Z",
+    "policy_version": 37,
+    "source": "interaction",
+    "task_episode_id": "68a4961824d746c9b6584f4de6a587ee",
+    "task_id": "974e520f15e04b1eb9dfb5f7d3051f99"
+   },
+   {
+    "anchors_json": "{\"artifact\": \"f5e8634fa2e6b127545235cafb046a92\", \"case\": [], \"surface\": \"c0263bf1a4631b9305093a456203212b\", \"window\": \"b4eafffb6f99e44d51b8fc0e9ad1bc9a\"}",
+    "app": "com.apple.TextEdit",
+    "app_name": "TextEdit",
+    "at": "2026-09-29T00:20:17.000000Z",
+    "decision": "policy_changed",
+    "episode_id": "da8d8a37fc714d84bb4ea60928deb419",
+    "evidence_event_id": "desktop-a8cbd174-e91c-402a-8d04-180b0a1a8add",
+    "evidence_revision": 1,
+    "first_seen_at": "2026-09-29T00:20:17.000000Z",
+    "id": "c7501becb833eefbe08a45c8a1a9cdf3",
+    "interaction": "accessibility_event",
+    "last_seen_at": "2026-09-29T00:20:17.000000Z",
+    "policy_version": 37,
+    "source": "accessibility",
+    "task_episode_id": "68a4961824d746c9b6584f4de6a587ee",
+    "task_id": "f42b78c76c044010b81a1280af9e9a33"
+   },
+   {
+    "anchors_json": "{\"artifact\": \"f5e8634fa2e6b127545235cafb046a92\", \"case\": [], \"surface\": \"c0263bf1a4631b9305093a456203212b\", \"window\": \"b4eafffb6f99e44d51b8fc0e9ad1bc9a\"}",
+    "app": "com.apple.TextEdit",
+    "app_name": "TextEdit",
+    "at": "2026-09-29T00:20:20.000000Z",
+    "decision": "policy_changed",
+    "episode_id": "da8d8a37fc714d84bb4ea60928deb419",
+    "evidence_event_id": "desktop-interaction-9da0f59a-6d66-44f9-a85d-2fa515f1fc95",
+    "evidence_revision": 1,
+    "first_seen_at": "2026-09-29T00:20:20.000000Z",
+    "id": "91ce1b3b7f62cf6ea663aee94fc7ea42",
+    "interaction": "shortcut",
+    "last_seen_at": "2026-09-29T00:20:20.000000Z",
+    "policy_version": 37,
+    "source": "interaction",
+    "task_episode_id": "68a4961824d746c9b6584f4de6a587ee",
+    "task_id": "f42b78c76c044010b81a1280af9e9a33"
+   }
+  ],
+  "anchors": [
+   {
+    "episode_id": "34074424955d45c3b2d8ea9cd2487e77",
+    "kind": "artifact",
+    "namespace": "",
+    "value": "19e1138d4d857c300c4489da4ab38895"
+   },
+   {
+    "episode_id": "64cec807a49240f08da7f27214436208",
+    "kind": "artifact",
+    "namespace": "",
+    "value": "19e1138d4d857c300c4489da4ab38895"
+   },
+   {
+    "episode_id": "78b1e82380284408ae45c7861dad62ef",
+    "kind": "artifact",
+    "namespace": "",
+    "value": "df11233c011f57e0f430f8f13185198a"
+   },
+   {
+    "episode_id": "88b96bdd9d294be08dbb6341ff2ef45a",
+    "kind": "artifact",
+    "namespace": "",
+    "value": "19e1138d4d857c300c4489da4ab38895"
+   },
+   {
+    "episode_id": "da8d8a37fc714d84bb4ea60928deb419",
+    "kind": "artifact",
+    "namespace": "",
+    "value": "f5e8634fa2e6b127545235cafb046a92"
+   }
+  ],
+  "episodes": [
+   {
+    "action_count": 1,
+    "anchors_json": "{\"artifact\": [], \"case\": [], \"surface\": [], \"window\": []}",
+    "ended_at": "2026-09-29T00:19:35.000000Z",
+    "first_action_at": "2026-09-29T00:16:40.000000Z",
+    "id": "5e7edfa3dd584ca5a691dafc25a40031",
+    "instance_id": "cb18c7a81fe4407ab56c897181688d4b",
+    "last_action_at": "2026-09-29T00:16:40.000000Z",
+    "seal_reason": "window",
+    "sealed": 1,
+    "started_at": "2026-09-29T00:16:40.000000Z",
+    "state": "uncertain"
+   },
+   {
+    "action_count": 7,
+    "anchors_json": "{\"artifact\": [], \"case\": [], \"surface\": [\"c8ec47891a3eee91c8bfb957c19421aa\"], \"window\": [\"fa7077aa0b02cf12f0cec45cfc2d6f23\"]}",
+    "ended_at": "2026-09-29T00:17:08.000000Z",
+    "first_action_at": "2026-09-29T00:16:56.000000Z",
+    "id": "9890cafc3c1e4645807f851bc362c437",
+    "instance_id": "a2df1201588d4884aa14e4d14416a19a",
+    "last_action_at": "2026-09-29T00:16:57.000000Z",
+    "seal_reason": "window",
+    "sealed": 1,
+    "started_at": "2026-09-29T00:16:56.000000Z",
+    "state": "uncertain"
+   },
+   {
+    "action_count": 1,
+    "anchors_json": "{\"artifact\": [], \"case\": [], \"surface\": [], \"window\": []}",
+    "ended_at": "2026-09-29T00:20:47.000000Z",
+    "first_action_at": "2026-09-29T00:17:10.000000Z",
+    "id": "9bff2342ea5e40c7b0c39d344b1bf2c7",
+    "instance_id": "fdb6a70c398448b5a924f3fd71ffe0e5",
+    "last_action_at": "2026-09-29T00:17:10.000000Z",
+    "seal_reason": "window",
+    "sealed": 1,
+    "started_at": "2026-09-29T00:17:10.000000Z",
+    "state": "uncertain"
+   },
+   {
+    "action_count": 3,
+    "anchors_json": "{\"artifact\": [\"19e1138d4d857c300c4489da4ab38895\"], \"case\": [], \"surface\": [\"680f685ebd39583bb62c08267888f74c\"], \"window\": [\"cfd3b9c88e90cf4c0f38811425f31990\"]}",
+    "ended_at": "2026-09-29T00:17:38.000000Z",
+    "first_action_at": "2026-09-29T00:17:16.000000Z",
+    "id": "88b96bdd9d294be08dbb6341ff2ef45a",
+    "instance_id": "fdb6a70c398448b5a924f3fd71ffe0e5",
+    "last_action_at": "2026-09-29T00:17:38.000000Z",
+    "seal_reason": "idle",
+    "sealed": 1,
+    "started_at": "2026-09-29T00:17:16.000000Z",
+    "state": "uncertain"
+   },
+   {
+    "action_count": 8,
+    "anchors_json": "{\"artifact\": [], \"case\": [], \"surface\": [\"002476d9df63df83215e3b5e43cd74b9\"], \"window\": [\"fa7077aa0b02cf12f0cec45cfc2d6f23\"]}",
+    "ended_at": "2026-09-29T00:18:29.000000Z",
+    "first_action_at": "2026-09-29T00:18:22.000000Z",
+    "id": "c2b21c80c5d4454bb165314fcc2e8894",
+    "instance_id": "2fd1e157e4414e61b3a0ae46d30f51c6",
+    "last_action_at": "2026-09-29T00:18:25.000000Z",
+    "seal_reason": "window",
+    "sealed": 1,
+    "started_at": "2026-09-29T00:18:22.000000Z",
+    "state": "uncertain"
+   },
+   {
+    "action_count": 6,
+    "anchors_json": "{\"artifact\": [\"19e1138d4d857c300c4489da4ab38895\"], \"case\": [], \"surface\": [\"680f685ebd39583bb62c08267888f74c\"], \"window\": [\"fac8390e0ea2cc96c74e4504959bef66\"]}",
+    "ended_at": "2026-09-29T00:19:00.000000Z",
+    "first_action_at": "2026-09-29T00:18:37.000000Z",
+    "id": "34074424955d45c3b2d8ea9cd2487e77",
+    "instance_id": "2fd1e157e4414e61b3a0ae46d30f51c6",
+    "last_action_at": "2026-09-29T00:19:00.000000Z",
+    "seal_reason": "artifact",
+    "sealed": 1,
+    "started_at": "2026-09-29T00:18:37.000000Z",
+    "state": "uncertain"
+   },
+   {
+    "action_count": 2,
+    "anchors_json": "{\"artifact\": [\"df11233c011f57e0f430f8f13185198a\"], \"case\": [], \"surface\": [\"7c51e8647e058d3e9a9558b9b497720b\"], \"window\": [\"fac8390e0ea2cc96c74e4504959bef66\"]}",
+    "ended_at": "2026-09-29T00:19:09.000000Z",
+    "first_action_at": "2026-09-29T00:19:08.000000Z",
+    "id": "78b1e82380284408ae45c7861dad62ef",
+    "instance_id": "ba8733d8d42645228e4e87208661a10a",
+    "last_action_at": "2026-09-29T00:19:09.000000Z",
+    "seal_reason": "window",
+    "sealed": 1,
+    "started_at": "2026-09-29T00:19:08.000000Z",
+    "state": "policy_changed"
+   },
+   {
+    "action_count": 8,
+    "anchors_json": "{\"artifact\": [], \"case\": [], \"surface\": [\"cb0e40e9bacc559d264f543ae57403a1\"], \"window\": [\"fa7077aa0b02cf12f0cec45cfc2d6f23\"]}",
+    "ended_at": "2026-09-29T00:19:49.000000Z",
+    "first_action_at": "2026-09-29T00:19:35.000000Z",
+    "id": "894ce34e0bd644f29418e592ed61b580",
+    "instance_id": "974e520f15e04b1eb9dfb5f7d3051f99",
+    "last_action_at": "2026-09-29T00:19:41.000000Z",
+    "seal_reason": "window",
+    "sealed": 1,
+    "started_at": "2026-09-29T00:19:35.000000Z",
+    "state": "uncertain"
+   },
+   {
+    "action_count": 5,
+    "anchors_json": "{\"artifact\": [\"19e1138d4d857c300c4489da4ab38895\"], \"case\": [], \"surface\": [\"680f685ebd39583bb62c08267888f74c\"], \"window\": [\"b4eafffb6f99e44d51b8fc0e9ad1bc9a\"]}",
+    "ended_at": "2026-09-29T00:20:11.000000Z",
+    "first_action_at": "2026-09-29T00:19:53.000000Z",
+    "id": "64cec807a49240f08da7f27214436208",
+    "instance_id": "974e520f15e04b1eb9dfb5f7d3051f99",
+    "last_action_at": "2026-09-29T00:20:11.000000Z",
+    "seal_reason": "artifact",
+    "sealed": 1,
+    "started_at": "2026-09-29T00:19:53.000000Z",
+    "state": "policy_changed"
+   },
+   {
+    "action_count": 2,
+    "anchors_json": "{\"artifact\": [\"f5e8634fa2e6b127545235cafb046a92\"], \"case\": [], \"surface\": [\"c0263bf1a4631b9305093a456203212b\"], \"window\": [\"b4eafffb6f99e44d51b8fc0e9ad1bc9a\"]}",
+    "ended_at": "2026-09-29T00:20:20.000000Z",
+    "first_action_at": "2026-09-29T00:20:17.000000Z",
+    "id": "da8d8a37fc714d84bb4ea60928deb419",
+    "instance_id": "f42b78c76c044010b81a1280af9e9a33",
+    "last_action_at": "2026-09-29T00:20:20.000000Z",
+    "seal_reason": "policy",
+    "sealed": 1,
+    "started_at": "2026-09-29T00:20:17.000000Z",
+    "state": "policy_changed"
+   }
+  ],
+  "members": [
+   {
+    "action_id": "40056e590dda83911f0882499ff6766d",
+    "episode_id": "34074424955d45c3b2d8ea9cd2487e77"
+   },
+   {
+    "action_id": "62a856cd63b49a5cfe2413d043e944ab",
+    "episode_id": "34074424955d45c3b2d8ea9cd2487e77"
+   },
+   {
+    "action_id": "6438af50a7c4f3042aa5909be84edf32",
+    "episode_id": "34074424955d45c3b2d8ea9cd2487e77"
+   },
+   {
+    "action_id": "b9123ac7f28a141bd2f4d01c6be02882",
+    "episode_id": "34074424955d45c3b2d8ea9cd2487e77"
+   },
+   {
+    "action_id": "d23d8cb784c88dc021be5bbdb7c96f02",
+    "episode_id": "34074424955d45c3b2d8ea9cd2487e77"
+   },
+   {
+    "action_id": "e26d353b71c01f25451ea1f99fee01e0",
+    "episode_id": "34074424955d45c3b2d8ea9cd2487e77"
+   },
+   {
+    "action_id": "1e05b82cabe15f31c97c846af7b29d92",
+    "episode_id": "5e7edfa3dd584ca5a691dafc25a40031"
+   },
+   {
+    "action_id": "3dc345c96df941a906636b3289b9d5b9",
+    "episode_id": "64cec807a49240f08da7f27214436208"
+   },
+   {
+    "action_id": "55505670e169ee553c37778cf0709eba",
+    "episode_id": "64cec807a49240f08da7f27214436208"
+   },
+   {
+    "action_id": "5d87aef6bdb45d5c1885c50338b244b8",
+    "episode_id": "64cec807a49240f08da7f27214436208"
+   },
+   {
+    "action_id": "635d962e81845ec848ac4495631037cc",
+    "episode_id": "64cec807a49240f08da7f27214436208"
+   },
+   {
+    "action_id": "ad68436bc73c8ab5b1bdafd727d0fde3",
+    "episode_id": "64cec807a49240f08da7f27214436208"
+   },
+   {
+    "action_id": "7f53929aae78cd569a8328882385bdd3",
+    "episode_id": "78b1e82380284408ae45c7861dad62ef"
+   },
+   {
+    "action_id": "a65392e8d64e44740d7ec6f0919c8a63",
+    "episode_id": "78b1e82380284408ae45c7861dad62ef"
+   },
+   {
+    "action_id": "0e7601a6c278a24891825df813ea6757",
+    "episode_id": "88b96bdd9d294be08dbb6341ff2ef45a"
+   },
+   {
+    "action_id": "2f9f8d6a071c228de4e42ceb3835f829",
+    "episode_id": "88b96bdd9d294be08dbb6341ff2ef45a"
+   },
+   {
+    "action_id": "7ae714a9acb525189901f6fcf4bdace7",
+    "episode_id": "88b96bdd9d294be08dbb6341ff2ef45a"
+   },
+   {
+    "action_id": "4a351f1bdf197171e720ddfdb5f4d185",
+    "episode_id": "894ce34e0bd644f29418e592ed61b580"
+   },
+   {
+    "action_id": "6b743cd6be93930b65a962eeb5203628",
+    "episode_id": "894ce34e0bd644f29418e592ed61b580"
+   },
+   {
+    "action_id": "6bd67b456565161f42cfa60d7bc49957",
+    "episode_id": "894ce34e0bd644f29418e592ed61b580"
+   },
+   {
+    "action_id": "71aec3f71fb66913f997bbe48f3ab066",
+    "episode_id": "894ce34e0bd644f29418e592ed61b580"
+   },
+   {
+    "action_id": "a75b827d15fd4dd01d1cd67f527a509e",
+    "episode_id": "894ce34e0bd644f29418e592ed61b580"
+   },
+   {
+    "action_id": "ba80cb11ef4737436e71a759ee1fcf91",
+    "episode_id": "894ce34e0bd644f29418e592ed61b580"
+   },
+   {
+    "action_id": "e4594c9543a1ccfabf1f4ad61f5b677c",
+    "episode_id": "894ce34e0bd644f29418e592ed61b580"
+   },
+   {
+    "action_id": "e6ed6dbc30150e16ba2c5f15465908ee",
+    "episode_id": "894ce34e0bd644f29418e592ed61b580"
+   },
+   {
+    "action_id": "3f1316fac98b333b0f5f7d54ab474c05",
+    "episode_id": "9890cafc3c1e4645807f851bc362c437"
+   },
+   {
+    "action_id": "519d60d30d00ca14cdf05b7296e274a4",
+    "episode_id": "9890cafc3c1e4645807f851bc362c437"
+   },
+   {
+    "action_id": "73bb014d8a4176a060ed534fe62ba2c6",
+    "episode_id": "9890cafc3c1e4645807f851bc362c437"
+   },
+   {
+    "action_id": "a3d2fe1a86c0eaf9344ca28abf1ae42e",
+    "episode_id": "9890cafc3c1e4645807f851bc362c437"
+   },
+   {
+    "action_id": "c1baaa3c4a75781f4b8a6f259ac75faa",
+    "episode_id": "9890cafc3c1e4645807f851bc362c437"
+   },
+   {
+    "action_id": "f0274e63f52d5304bf77330e031d9c31",
+    "episode_id": "9890cafc3c1e4645807f851bc362c437"
+   },
+   {
+    "action_id": "f98b4d24eb0b3d363e9e57dca03aeafa",
+    "episode_id": "9890cafc3c1e4645807f851bc362c437"
+   },
+   {
+    "action_id": "e136d5d578f5a4535a1c4a05c79b6a7c",
+    "episode_id": "9bff2342ea5e40c7b0c39d344b1bf2c7"
+   },
+   {
+    "action_id": "0b46791b6ddfbdb13623669fa1fca9fc",
+    "episode_id": "c2b21c80c5d4454bb165314fcc2e8894"
+   },
+   {
+    "action_id": "1e668acf9697c79ceef984945b027dd1",
+    "episode_id": "c2b21c80c5d4454bb165314fcc2e8894"
+   },
+   {
+    "action_id": "289a3b5dc2f310f6117d0333f3f20165",
+    "episode_id": "c2b21c80c5d4454bb165314fcc2e8894"
+   },
+   {
+    "action_id": "359fea30ba7362604b647e121111f8c4",
+    "episode_id": "c2b21c80c5d4454bb165314fcc2e8894"
+   },
+   {
+    "action_id": "797c43c093a3a60442cf11300dd66ec2",
+    "episode_id": "c2b21c80c5d4454bb165314fcc2e8894"
+   },
+   {
+    "action_id": "a5bba15d7afb759f58ac278f4bff3f3c",
+    "episode_id": "c2b21c80c5d4454bb165314fcc2e8894"
+   },
+   {
+    "action_id": "d1f9f7ae6e69e73fd5fa783c52b13553",
+    "episode_id": "c2b21c80c5d4454bb165314fcc2e8894"
+   },
+   {
+    "action_id": "d5293a3d0446e808c70e77eeadf606d6",
+    "episode_id": "c2b21c80c5d4454bb165314fcc2e8894"
+   },
+   {
+    "action_id": "91ce1b3b7f62cf6ea663aee94fc7ea42",
+    "episode_id": "da8d8a37fc714d84bb4ea60928deb419"
+   },
+   {
+    "action_id": "c7501becb833eefbe08a45c8a1a9cdf3",
+    "episode_id": "da8d8a37fc714d84bb4ea60928deb419"
+   }
+  ],
+  "task_episodes": [
+   {
+    "action_count": 1,
+    "close_reason": "diversion",
+    "diversion": 0,
+    "ended_at": "2026-09-29T00:19:35.000000Z",
+    "first_action_at": "2026-09-29T00:16:40.000000Z",
+    "id": "e40a0c88e32c4a759d3b5957c473e10f",
+    "instance_ids": "[\"cb18c7a81fe4407ab56c897181688d4b\"]",
+    "last_action_at": "2026-09-29T00:16:40.000000Z",
+    "relations_json": "[]",
+    "session_count": 1,
+    "signature_json": "{\"apps\": [\"com.google.Chrome\"], \"artifacts\": [], \"steps\": [{\"app\": \"com.google.Chrome\", \"evidence\": [\"1e05b82cabe15f31c97c846af7b29d92\"], \"kind\": \"view\", \"session\": 0}]}",
+    "started_at": "2026-09-29T00:16:40.000000Z",
+    "trivial": 1
+   },
+   {
+    "action_count": 7,
+    "close_reason": "diversion",
+    "diversion": 1,
+    "ended_at": "2026-09-29T00:17:08.000000Z",
+    "first_action_at": "2026-09-29T00:16:56.000000Z",
+    "id": "e045983462624773a5dd33beb9d26f5c",
+    "instance_ids": "[\"a2df1201588d4884aa14e4d14416a19a\"]",
+    "last_action_at": "2026-09-29T00:16:57.000000Z",
+    "relations_json": "[{\"basis\": \"rules\", \"choice\": \"diversion\", \"reason\": \"switch\", \"session\": 0}]",
+    "session_count": 1,
+    "signature_json": "{\"apps\": [\"Google Chrome\"], \"artifacts\": [{\"app\": \"Google Chrome\", \"output\": false, \"ref\": \"f0274e63f52d5304bf77330e031d9c31\", \"session\": 0}], \"steps\": [{\"app\": \"Google Chrome\", \"evidence\": [\"519d60d30d00ca14cdf05b7296e274a4\", \"c1baaa3c4a75781f4b8a6f259ac75faa\", \"f98b4d24eb0b3d363e9e57dca03aeafa\"], \"kind\": \"type\", \"session\": 0}]}",
+    "started_at": "2026-09-29T00:16:56.000000Z",
+    "trivial": 1
+   },
+   {
+    "action_count": 3,
+    "close_reason": "diversion",
+    "diversion": 0,
+    "ended_at": "2026-09-29T00:20:47.000000Z",
+    "first_action_at": "2026-09-29T00:17:10.000000Z",
+    "id": "808eca73376c4fe69a71ce20fb2eea72",
+    "instance_ids": "[\"fdb6a70c398448b5a924f3fd71ffe0e5\"]",
+    "last_action_at": "2026-09-29T00:17:38.000000Z",
+    "relations_json": "[{\"basis\": \"rules\", \"choice\": \"diversion\", \"reason\": \"switch\", \"session\": 0}, {\"basis\": \"rules\", \"choice\": \"same\", \"reason\": \"shared_anchor\", \"session\": 1}]",
+    "session_count": 2,
+    "signature_json": "{\"apps\": [\"com.apple.TextEdit\", \"TextEdit\"], \"artifacts\": [{\"app\": \"TextEdit\", \"output\": true, \"ref\": \"0e7601a6c278a24891825df813ea6757\", \"session\": 2}], \"steps\": [{\"app\": \"com.apple.TextEdit\", \"evidence\": [\"e136d5d578f5a4535a1c4a05c79b6a7c\"], \"kind\": \"view\", \"session\": 0}, {\"app\": \"TextEdit\", \"evidence\": [\"0e7601a6c278a24891825df813ea6757\"], \"kind\": \"save\", \"session\": 2}]}",
+    "started_at": "2026-09-29T00:17:10.000000Z",
+    "trivial": 1
+   },
+   {
+    "action_count": 1,
+    "close_reason": "diversion",
+    "diversion": 1,
+    "ended_at": "2026-09-29T00:17:36.000000Z",
+    "first_action_at": "2026-09-29T00:17:16.000000Z",
+    "id": "e886a3c07f934f3ab7871160a65df6b6",
+    "instance_ids": "[]",
+    "last_action_at": "2026-09-29T00:17:16.000000Z",
+    "relations_json": "[{\"basis\": \"rules\", \"choice\": \"diversion\", \"reason\": \"switch\", \"session\": 0}]",
+    "session_count": 1,
+    "signature_json": "{\"apps\": [\"TextEdit\"], \"artifacts\": [{\"app\": \"TextEdit\", \"output\": false, \"ref\": \"2f9f8d6a071c228de4e42ceb3835f829\", \"session\": 0}], \"steps\": [{\"app\": \"TextEdit\", \"evidence\": [\"2f9f8d6a071c228de4e42ceb3835f829\"], \"kind\": \"create\", \"session\": 0}]}",
+    "started_at": "2026-09-29T00:17:16.000000Z",
+    "trivial": 0
+   },
+   {
+    "action_count": 15,
+    "close_reason": "break",
+    "diversion": 1,
+    "ended_at": "2026-09-29T00:19:09.000000Z",
+    "first_action_at": "2026-09-29T00:18:22.000000Z",
+    "id": "ee6eb68cb53a47e7a9765dcf1466de72",
+    "instance_ids": "[\"2fd1e157e4414e61b3a0ae46d30f51c6\", \"ba8733d8d42645228e4e87208661a10a\"]",
+    "last_action_at": "2026-09-29T00:19:09.000000Z",
+    "relations_json": "[{\"basis\": \"rules\", \"choice\": \"diversion\", \"reason\": \"switch\", \"session\": 0}, {\"basis\": \"rules\", \"choice\": \"same\", \"reason\": \"shared_anchor\", \"session\": 1}, {\"basis\": \"rules\", \"choice\": \"same\", \"reason\": \"shared_anchor\", \"session\": 2}]",
+    "session_count": 3,
+    "signature_json": "{\"apps\": [\"Google Chrome\", \"TextEdit\"], \"artifacts\": [{\"app\": \"Google Chrome\", \"output\": false, \"ref\": \"1e668acf9697c79ceef984945b027dd1\", \"session\": 0}, {\"app\": \"TextEdit\", \"output\": false, \"ref\": \"e26d353b71c01f25451ea1f99fee01e0\", \"session\": 2}, {\"app\": \"TextEdit\", \"output\": true, \"ref\": \"a65392e8d64e44740d7ec6f0919c8a63\", \"session\": 3}], \"steps\": [{\"app\": \"Google Chrome\", \"evidence\": [\"359fea30ba7362604b647e121111f8c4\", \"a5bba15d7afb759f58ac278f4bff3f3c\", \"d5293a3d0446e808c70e77eeadf606d6\"], \"kind\": \"type\", \"session\": 0}, {\"app\": \"TextEdit\", \"evidence\": [\"40056e590dda83911f0882499ff6766d\"], \"kind\": \"create\", \"session\": 2}, {\"app\": \"TextEdit\", \"evidence\": [\"6438af50a7c4f3042aa5909be84edf32\"], \"kind\": \"save\", \"session\": 2}, {\"app\": \"TextEdit\", \"evidence\": [\"a65392e8d64e44740d7ec6f0919c8a63\"], \"kind\": \"close\", \"session\": 3}]}",
+    "started_at": "2026-09-29T00:18:22.000000Z",
+    "trivial": 1
+   },
+   {
+    "action_count": 1,
+    "close_reason": "diversion",
+    "diversion": 1,
+    "ended_at": "2026-09-29T00:18:37.000000Z",
+    "first_action_at": "2026-09-29T00:18:37.000000Z",
+    "id": "e12c18542e1e406084125890afdaa8ad",
+    "instance_ids": "[]",
+    "last_action_at": "2026-09-29T00:18:37.000000Z",
+    "relations_json": "[{\"basis\": \"rules\", \"choice\": \"diversion\", \"reason\": \"switch\", \"session\": 0}]",
+    "session_count": 1,
+    "signature_json": "{\"apps\": [\"TextEdit\"], \"artifacts\": [{\"app\": \"TextEdit\", \"output\": false, \"ref\": \"d23d8cb784c88dc021be5bbdb7c96f02\", \"session\": 0}], \"steps\": [{\"app\": \"TextEdit\", \"evidence\": [\"d23d8cb784c88dc021be5bbdb7c96f02\"], \"kind\": \"create\", \"session\": 0}]}",
+    "started_at": "2026-09-29T00:18:37.000000Z",
+    "trivial": 1
+   },
+   {
+    "action_count": 15,
+    "close_reason": "paused",
+    "diversion": 0,
+    "ended_at": "2026-09-29T00:20:20.000000Z",
+    "first_action_at": "2026-09-29T00:19:35.000000Z",
+    "id": "68a4961824d746c9b6584f4de6a587ee",
+    "instance_ids": "[\"974e520f15e04b1eb9dfb5f7d3051f99\", \"f42b78c76c044010b81a1280af9e9a33\"]",
+    "last_action_at": "2026-09-29T00:20:20.000000Z",
+    "relations_json": "[{\"basis\": \"rules\", \"choice\": \"break\", \"reason\": \"closed\", \"session\": 0}, {\"basis\": \"rules\", \"choice\": \"supporting\", \"reason\": \"shared_words\", \"session\": 1}, {\"basis\": \"rules\", \"choice\": \"same\", \"reason\": \"shared_anchor\", \"session\": 2}, {\"basis\": \"rules\", \"choice\": \"same\", \"reason\": \"shared_anchor\", \"session\": 3}]",
+    "session_count": 4,
+    "signature_json": "{\"apps\": [\"Google Chrome\", \"TextEdit\"], \"artifacts\": [{\"app\": \"Google Chrome\", \"output\": false, \"ref\": \"6b743cd6be93930b65a962eeb5203628\", \"session\": 0}, {\"app\": \"TextEdit\", \"output\": false, \"ref\": \"5d87aef6bdb45d5c1885c50338b244b8\", \"session\": 1}, {\"app\": \"TextEdit\", \"output\": true, \"ref\": \"91ce1b3b7f62cf6ea663aee94fc7ea42\", \"session\": 3}], \"steps\": [{\"app\": \"Google Chrome\", \"evidence\": [\"4a351f1bdf197171e720ddfdb5f4d185\", \"ba80cb11ef4737436e71a759ee1fcf91\", \"e4594c9543a1ccfabf1f4ad61f5b677c\"], \"kind\": \"type\", \"session\": 0}, {\"app\": \"TextEdit\", \"evidence\": [\"55505670e169ee553c37778cf0709eba\", \"635d962e81845ec848ac4495631037cc\"], \"kind\": \"create\", \"session\": 1}, {\"app\": \"TextEdit\", \"evidence\": [\"ad68436bc73c8ab5b1bdafd727d0fde3\"], \"kind\": \"save\", \"session\": 2}, {\"app\": \"TextEdit\", \"evidence\": [\"91ce1b3b7f62cf6ea663aee94fc7ea42\"], \"kind\": \"close\", \"session\": 3}]}",
+    "started_at": "2026-09-29T00:19:35.000000Z",
+    "trivial": 1
+   }
+  ],
+  "tasks": [
+   {
+    "assignment_basis": "task",
+    "grouping": "temporal",
+    "id": "cb18c7a81fe4407ab56c897181688d4b",
+    "instance_revision": 4,
+    "interpretation": "model_outcome_unknown",
+    "last_seen_at": "2026-09-29T00:19:35.000000Z",
+    "lifecycle": "active",
+    "started_at": "2026-09-29T00:16:40.000000Z",
+    "status": "unconfirmed",
+    "title": "Unconfirmed activity"
+   },
+   {
+    "assignment_basis": "task",
+    "grouping": "temporal",
+    "id": "a2df1201588d4884aa14e4d14416a19a",
+    "instance_revision": 3,
+    "interpretation": "pending",
+    "last_seen_at": "2026-09-29T00:17:08.000000Z",
+    "lifecycle": "active",
+    "started_at": "2026-09-29T00:16:56.000000Z",
+    "status": "unconfirmed",
+    "title": "Unconfirmed activity"
+   },
+   {
+    "assignment_basis": "task",
+    "grouping": "temporal",
+    "id": "fdb6a70c398448b5a924f3fd71ffe0e5",
+    "instance_revision": 8,
+    "interpretation": "uncertain",
+    "last_seen_at": "2026-09-29T00:20:47.000000Z",
+    "lifecycle": "active",
+    "started_at": "2026-09-29T00:17:10.000000Z",
+    "status": "unconfirmed",
+    "title": "Unconfirmed activity"
+   },
+   {
+    "assignment_basis": "task",
+    "grouping": "temporal",
+    "id": "2fd1e157e4414e61b3a0ae46d30f51c6",
+    "instance_revision": 11,
+    "interpretation": "uncertain",
+    "last_seen_at": "2026-09-29T00:19:00.000000Z",
+    "lifecycle": "active",
+    "started_at": "2026-09-29T00:18:22.000000Z",
+    "status": "unconfirmed",
+    "title": "Unconfirmed activity"
+   },
+   {
+    "assignment_basis": "temporal",
+    "grouping": "temporal",
+    "id": "ba8733d8d42645228e4e87208661a10a",
+    "instance_revision": 3,
+    "interpretation": "pending",
+    "last_seen_at": "2026-09-29T00:19:09.000000Z",
+    "lifecycle": "active",
+    "started_at": "2026-09-29T00:19:08.000000Z",
+    "status": "unconfirmed",
+    "title": "Unconfirmed activity"
+   },
+   {
+    "assignment_basis": "task",
+    "grouping": "temporal",
+    "id": "974e520f15e04b1eb9dfb5f7d3051f99",
+    "instance_revision": 9,
+    "interpretation": "pending",
+    "last_seen_at": "2026-09-29T00:20:11.000000Z",
+    "lifecycle": "active",
+    "started_at": "2026-09-29T00:19:35.000000Z",
+    "status": "unconfirmed",
+    "title": "Unconfirmed activity"
+   },
+   {
+    "assignment_basis": "temporal",
+    "grouping": "temporal",
+    "id": "f42b78c76c044010b81a1280af9e9a33",
+    "instance_revision": 3,
+    "interpretation": "pending",
+    "last_seen_at": "2026-09-29T00:20:20.000000Z",
+    "lifecycle": "active",
+    "started_at": "2026-09-29T00:20:17.000000Z",
+    "status": "unconfirmed",
+    "title": "Unconfirmed activity"
+   }
+  ]
+ },
+ "tenant_id": "replay-tenant"
+}

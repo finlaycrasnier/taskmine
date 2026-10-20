@@ -1,0 +1,30 @@
+[project]
+name = "taskmine"
+version = "0.1.0"
+description = "Turns what you do on your Mac into a list of tasks, and learns from your corrections."
+requires-python = ">=3.12"
+license = {text = "MIT"}
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[project.scripts]
+taskmine = "taskmine.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["core"]
+
+[tool.setuptools.package-data]
+taskmine = ["page/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["core/tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"

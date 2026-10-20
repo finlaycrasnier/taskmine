@@ -1,0 +1,233 @@
+{
+ "_comment": "Transcribed from CaptureBlocklist.swift, DiscoveryCapture.swift (DiscoveryPrivacy) and WebSurface.swift. Services/observation/sensitive_surfaces.py repeats the same lists. App lists are bundle-ID prefixes compared in lowercase. Host lists match the host itself or any subdomain.",
+ "reasons": {
+  "password_manager": "Credential application excluded",
+  "authentication_dialog": "Authentication dialog excluded",
+  "terminal": "Terminal excluded",
+  "sign_in_page": "Sign-in page excluded",
+  "sensitive_domain": "Sensitive site excluded",
+  "private_browsing": "Private browsing window excluded"
+ },
+ "apps": {
+  "password_manager": [
+   "com.apple.passwords",
+   "com.apple.keychainaccess",
+   "com.agilebits.onepassword",
+   "com.1password.1password",
+   "com.bitwarden.desktop",
+   "com.bitwarden.bitwarden",
+   "com.8bit.bitwarden",
+   "com.lastpass.lastpass",
+   "com.dashlane.dashlane",
+   "com.keepersecurity",
+   "com.protonpass",
+   "me.proton.pass",
+   "org.keepassxc.keepassxc",
+   "com.nordsec.nordpass",
+   "in.sinew.enpass"
+  ],
+  "authentication_dialog": [
+   "com.apple.securityagent",
+   "com.apple.localauthentication",
+   "com.apple.coreauthentication",
+   "com.apple.authenticationservices",
+   "com.apple.loginwindow",
+   "com.apple.screensaver.engine"
+  ],
+  "terminal": [
+   "com.apple.terminal",
+   "com.googlecode.iterm2",
+   "com.mitchellh.ghostty",
+   "dev.warp.warp",
+   "com.github.wez.wezterm",
+   "net.kovidgoyal.kitty",
+   "org.alacritty",
+   "io.alacritty",
+   "co.zeit.hyper",
+   "com.apple.console"
+  ]
+ },
+ "apps_denied_other": {
+  "exact_lowercase": [
+   "com.openai.codex"
+  ],
+  "status": "Application inspection unavailable",
+  "why": "Live computer-use access to this app was denied during an earlier setup. Do not offer an alternate route to read it.",
+  "also_denied_empty_or": [
+   "",
+   "unknown.bundle"
+  ],
+  "empty_status": "Application identity unavailable"
+ },
+ "hosts": {
+  "password_manager": [
+   "1password.com",
+   "1password.eu",
+   "1password.ca",
+   "bitwarden.com",
+   "bitwarden.eu",
+   "lastpass.com",
+   "dashlane.com",
+   "keepersecurity.com",
+   "keepersecurity.eu",
+   "keeper.io",
+   "pass.proton.me",
+   "passwords.google.com",
+   "nordpass.com",
+   "roboform.com"
+  ],
+  "sensitive_domain": [
+   "paypal.com",
+   "venmo.com",
+   "wise.com",
+   "revolut.com",
+   "monzo.com",
+   "starlingbank.com",
+   "klarna.com",
+   "chase.com",
+   "bankofamerica.com",
+   "wellsfargo.com",
+   "citi.com",
+   "capitalone.com",
+   "americanexpress.com",
+   "hsbc.com",
+   "hsbc.co.uk",
+   "barclays.co.uk",
+   "natwest.com",
+   "lloydsbank.com",
+   "santander.co.uk",
+   "halifax.co.uk",
+   "nationwide.co.uk",
+   "schwab.com",
+   "fidelity.com",
+   "vanguard.com",
+   "coinbase.com",
+   "healthcare.gov",
+   "myhealth.va.gov",
+   "patientaccess.com",
+   "onemedical.com",
+   "zocdoc.com",
+   "teladoc.com",
+   "23andme.com",
+   "nhsapp.service.nhs.uk"
+  ]
+ },
+ "sensitive_top_level_domains": [
+  "bank"
+ ],
+ "host_label_rules": {
+  "note": "Only when the host has more than two labels. The first label is compared.",
+  "sign_in_page": [
+   "login",
+   "signin",
+   "auth",
+   "sso",
+   "accounts",
+   "account",
+   "id",
+   "idp",
+   "oauth",
+   "secure"
+  ],
+  "sensitive_domain": [
+   "mychart"
+  ]
+ },
+ "sign_in_path_segments": [
+  "2fa",
+  "auth",
+  "authorization",
+  "authorize",
+  "forgot",
+  "forgot-password",
+  "forgot_password",
+  "log-in",
+  "login",
+  "logon",
+  "mfa",
+  "oauth",
+  "oauth2",
+  "openid",
+  "otp",
+  "passkey",
+  "passkeys",
+  "password",
+  "password-reset",
+  "passwords",
+  "recover",
+  "recovery",
+  "reset-password",
+  "saml",
+  "saml2",
+  "sign-in",
+  "sign_in",
+  "signin",
+  "sso",
+  "two-factor",
+  "webauthn"
+ ],
+ "path_rule": "Percent-decode the path, lowercase it, split on '/'. A match on any whole segment gives sign_in_page. Only http and https addresses are checked.",
+ "host_order": [
+  "password_manager hosts",
+  "top-level domain",
+  "sensitive hosts",
+  "first label sensitive_domain",
+  "first label sign_in_page"
+ ],
+ "private_window": {
+  "title_contains": [
+   "incognito",
+   "inprivate",
+   "private browsing",
+   "private window"
+  ],
+  "title_suffixes": [
+   "(private)",
+   "- private"
+  ],
+  "toolbar_labels_exact": [
+   "incognito",
+   "inprivate",
+   "private",
+   "private browsing",
+   "private window",
+   "private window with tor",
+   "you're incognito",
+   "you’re incognito"
+  ],
+  "toolbar_label_contains": [
+   "incognito",
+   "inprivate"
+  ],
+  "note": "Titles and labels are lowercased first. Labels are trimmed. A false positive only skips capture."
+ },
+ "withheld_categories": [
+  "password_manager",
+  "authentication",
+  "terminal",
+  "sign_in_page",
+  "sensitive_site",
+  "private_browsing",
+  "credential_surface",
+  "secure_surface",
+  "surface_too_large",
+  "inspection_timeout",
+  "excluded_site"
+ ],
+ "recorder_own_files_never_read": [
+  "browser-key.txt",
+  "review-key.txt",
+  "launch-url.txt",
+  "collector-connection.json",
+  "teams-connection.json",
+  "call-worker-connection.json"
+ ],
+ "editor_renderer_exception": {
+  "bundle_ids_lowercase": [
+   "com.microsoft.vscode",
+   "com.todesktop.230313mzl4w4u92",
+   "com.exafunction.windsurf"
+  ],
+  "rule": "A web area in these apps is allowed only when its URL has no user, password or query, is a file: URL (host empty or localhost) or vscode-file://vscode-app, and its path starts with <app path>/Contents/Resources/app/out/ and ends with /workbench.html."
+ }
+}

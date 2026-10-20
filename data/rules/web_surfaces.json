@@ -1,0 +1,195 @@
+{
+ "_comment": "Transcribed from WebSurface.swift and WebAccessibility.swift. Bundle IDs match when equal to the entry or starting with entry + '.', compared in lowercase.",
+ "chromium_browsers": [
+  "com.google.chrome",
+  "org.chromium.chromium",
+  "com.microsoft.edgemac",
+  "com.brave.browser",
+  "com.operasoftware.opera",
+  "com.vivaldi.vivaldi",
+  "company.thebrowser.browser",
+  "company.thebrowser.dia"
+ ],
+ "gecko_browsers": [
+  "org.mozilla.firefox",
+  "org.mozilla.nightly",
+  "app.zen-browser.zen"
+ ],
+ "unsupported_browsers": {
+  "bundle_ids": [
+   "com.apple.safari",
+   "com.apple.safaritechnologypreview",
+   "org.torproject.torbrowser",
+   "com.duckduckgo.macos.browser"
+  ],
+  "why": "The app cannot read these browsers' private-window state through Accessibility, so it never reads their pages. Status: Browser capture requires the verified extension. User text: Safari pages are not read yet. Use Chrome, Edge, Brave, Arc or Firefox for now."
+ },
+ "electron_detection": {
+  "relative_path": "Contents/Frameworks/Electron Framework.framework",
+  "rule": "The app path ends in .app and the framework folder exists."
+ },
+ "wake_attributes": {
+  "chromium_browser": [
+   "AXManualAccessibility"
+  ],
+  "electron": [
+   "AXManualAccessibility"
+  ],
+  "gecko_browser": [
+   "AXEnhancedUserInterface"
+  ]
+ },
+ "wake_rules": [
+  "Try once per process ID.",
+  "If the attribute already reads true, do nothing and do not remember it.",
+  "Write true; remember (pid, attribute, bundle ID) in memory and in a private journal file.",
+  "On capture stop, write false only for attributes this app turned on and only for processes still running.",
+  "At launch, read the journal and turn off what a crashed run left on; skip a process ID that now belongs to another bundle.",
+  "After a successful wake, take another snapshot 1.0 s later."
+ ],
+ "ax_notifications_observed": {
+  "snapshots": [
+   "AXFocusedWindowChanged",
+   "AXFocusedUIElementChanged",
+   "AXValueChanged",
+   "AXTitleChanged",
+   "AXSelectedTextChanged",
+   "AXLoadComplete (web surfaces only)"
+  ],
+  "interactions": [
+   "AXFocusedWindowChanged",
+   "AXFocusedUIElementChanged",
+   "AXSelectedChildrenChanged",
+   "AXValueChanged"
+  ]
+ },
+ "secure_roles": {
+  "rule": "role or subrole equals AXSecureTextField"
+ },
+ "form_field_roles": [
+  "AXTextField",
+  "AXComboBox",
+  "AXSearchField"
+ ],
+ "grid_roles": [
+  "AXTable",
+  "AXGrid",
+  "AXOutline",
+  "AXList"
+ ],
+ "grid_part_roles": [
+  "AXRow",
+  "AXColumn",
+  "AXCell"
+ ],
+ "leaf_roles_may_report_no_children": [
+  "AXStaticText",
+  "AXTextField",
+  "AXTextArea",
+  "AXButton",
+  "AXCheckBox",
+  "AXRadioButton",
+  "AXImage",
+  "AXLink",
+  "AXMenuItem",
+  "AXPopUpButton",
+  "AXSlider",
+  "AXScrollBar",
+  "AXProgressIndicator",
+  "AXValueIndicator",
+  "AXMenuButton",
+  "AXDisclosureTriangle",
+  "AXSplitter",
+  "AXIncrementor",
+  "AXRulerMarker"
+ ],
+ "web_leaf_roles_extra": [
+  "AXGroup",
+  "AXHeading",
+  "AXCell",
+  "AXRow",
+  "AXListMarker",
+  "AXMenuItem"
+ ],
+ "furniture": {
+  "control_roles": [
+   "AXButton",
+   "AXMenuButton",
+   "AXMenuItem",
+   "AXMenuBarItem",
+   "AXCheckBox",
+   "AXRadioButton",
+   "AXPopUpButton",
+   "AXDisclosureTriangle",
+   "AXIncrementor",
+   "AXScrollBar",
+   "AXSlider",
+   "AXSplitter",
+   "AXValueIndicator",
+   "AXProgressIndicator",
+   "AXRuler",
+   "AXRulerMarker",
+   "AXImage",
+   "AXColorWell"
+  ],
+  "control_roles_excluding_subrole": "AXTabButton",
+  "container_roles": [
+   "AXToolbar",
+   "AXMenuBar",
+   "AXMenu"
+  ],
+  "entry_roles": [
+   "AXTextField",
+   "AXTextArea",
+   "AXComboBox",
+   "AXSearchField"
+  ],
+  "max_label_scalars": 48
+ },
+ "content_area_roles": [
+  "AXScrollArea",
+  "AXWebArea",
+  "AXTextArea",
+  "AXTable",
+  "AXOutline",
+  "AXList",
+  "AXBrowser"
+ ],
+ "label_roles_for_private_window_scan": [
+  "AXButton",
+  "AXMenuButton",
+  "AXPopUpButton",
+  "AXStaticText",
+  "AXImage",
+  "AXGroup",
+  "AXToolbar"
+ ],
+ "breadcrumb_ancestor_roles": [
+  "AXWindow",
+  "AXSheet",
+  "AXDialog",
+  "AXGroup",
+  "AXToolbar",
+  "AXTabGroup",
+  "AXSplitGroup",
+  "AXScrollArea",
+  "AXList",
+  "AXOutline",
+  "AXTable",
+  "AXMenu",
+  "AXMenuBar",
+  "AXPopover",
+  "AXWebArea"
+ ],
+ "canvas_documents": {
+  "host": "docs.google.com",
+  "scheme": "https",
+  "path_prefixes": [
+   "/spreadsheets/d/",
+   "/document/d/",
+   "/presentation/d/"
+  ],
+  "optional_account_prefix": "/u/<digits>"
+ },
+ "interaction_shortcut_keys": "abcdefghijklmnopqrstuvwxyz0123456789=,./;'`[]-"
+}
